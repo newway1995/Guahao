@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/actionbar_message"
+        android:icon="@drawable/imge_me_icon_dark"
+        android:title="@string/message"
+        android:showAsAction="ifRoom|collapseActionView"
+        />
+
+</menu>

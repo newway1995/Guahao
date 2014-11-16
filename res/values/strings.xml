@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机挂号网</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="guahao">挂号</string>
+    <string name="zixun">咨询</string>
+    <string name="faxian">发现</string>
+    <string name="geren_center">个人中心</string>
+	<string name="message">消息</string>
+	<string name="message_empty">暂无消息提醒</string>
+	<string name="fenzhen">智能导诊</string>
+	<string name="my_attention">我的关注</string>
+	<string name="my_order">我的预约</string>
+	<string name="cancel">取消</string>
+</resources>
