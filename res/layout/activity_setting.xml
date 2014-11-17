@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical" >
+	    
+	<RelativeLayout 
+	    android:id="@+id/setting_navigate"
+	    android:padding="15dp"
+	    android:background="@drawable/list_item_click"
+	    style="@style/width_fill_parent">
+	    <TextView
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/navigate"
+	        />
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	        
+	        android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	<!-- 分割线 -->
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/doct_list_item_divider"
+	    />
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_about"
+	    android:padding="15dp"
+	    android:background="@drawable/list_item_click"
+	    style="@style/width_fill_parent">
+	    <TextView
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/about_us"
+	        />
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	        
+	        android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+	<!-- 分割线 -->
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/doct_list_item_divider"
+	    />
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_advice"
+	    android:padding="15dp"
+	    android:background="@drawable/list_item_click"
+	    style="@style/width_fill_parent">
+	    <TextView
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/advice_to_us"
+	        />
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	        
+	        android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+	<!-- 分割线 -->
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/doct_list_item_divider"
+	    />
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_check_update"
+	    android:padding="15dp"
+	    android:background="@drawable/list_item_click"
+	    style="@style/width_fill_parent">
+	    <TextView
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/check_update"
+	        />
+	    <TextView
+	        android:id="@+id/setting_version"
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/version"
+	        android:layout_centerInParent="true"
+	        />
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	        
+	        android:contentDescription="@string/app_name"/>
+	</RelativeLayout>
+	
+	<Button 
+	    android:id="@+id/logout"
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/corners_white"
+	    android:text="@string/logout"
+	    android:gravity="center"
+	    android:textColor="@color/red_dark"
+	    />
+</LinearLayout>

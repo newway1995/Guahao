@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/geren_all"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView 
+            style="@style/none_fill_parent"
+            android:id="@+id/geren_portrait"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_me_portrait"
+            android:layout_margin="10dp"
+            />
+        <RelativeLayout
+            style="@style/height_fill_parent"
+            android:layout_margin="10dp"
+            >
+            <TextView 
+	            android:id="@+id/geren_username"
+	            style="@style/none_fill_parent"
+	            android:text="@string/username"
+	            android:textAppearance="@style/black_18"
+	            />
+
+            <TextView
+                android:id="@+id/geren_phone"
+                style="@style/none_fill_parent"
+                android:text="@string/phone"
+                android:textAppearance="@style/gray_14"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <!-- <View
+            style="@style/none_fill_parent"
+            android:background="@drawable/abs__ic_go"
+            android:layout_gravity="right|center"
+            /> -->
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/geren_my_order"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_me_no2"
+            android:text="@string/my_order_list"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/geren_my_zixun"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_me_no3"
+            android:text="@string/my_zixun"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/geren_my_bingli"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_me_no7"
+            android:text="@string/my_bingli"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/geren_guanzhu"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_me_no5"
+            android:text="@string/my_guanzhu"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/geren_setting"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/icon_me_no6"
+            android:text="@string/shezhi"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

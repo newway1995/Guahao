@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <RelativeLayout 
+        android:id="@+id/faxian_mingyizaixian"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/discovery_health_lecture"
+            android:text="@string/mingyizaixian"
+            android:textAppearance="@style/black_18"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+        <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	
+	        android:layout_centerVertical="true"    
+	        android:layout_marginRight="10dp"    
+	        android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/faxian_yisheng_dynamic"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/discovery_dynamic"
+            android:text="@string/yishengdongtai"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            />
+        <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	
+	        android:layout_centerVertical="true"     
+	        android:layout_marginRight="10dp"   
+	        android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/faxian_jibing"
+        style="@style/width_fill_parent"
+        android:background="@drawable/list_item_click"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/discovery_jibing"
+            android:layout_centerVertical="true"
+            android:text="@string/jibing"
+            android:textAppearance="@style/black_18"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            />
+        <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_gravity="right"
+	        android:background="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"	
+	        android:layout_centerVertical="true" 
+	        android:layout_marginRight="10dp"       
+	        android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -10,34 +10,7 @@
         android:layout_weight="1" 
         android:orientation="vertical"
         android:background="@color/gray_light">
-        <View 
-            android:layout_width="match_parent"
-        	android:layout_height="0dp"
-        	android:layout_weight="1" 
-            />
-        <LinearLayout 
-	        style="@style/width_fill_parent"
-	        android:orientation="horizontal"               
-	        >
-	        <TextView
-	            android:id="@+id/main_fenzhen"
-	            style="@style/main_choose_three"
-	            android:drawableTop="@drawable/three_fenzhen_bg"
-	            android:text="@string/fenzhen"
-	            />
-	        <TextView
-	            android:id="@+id/main_attention"
-	            style="@style/main_choose_three"
-	            android:drawableTop="@drawable/three_attention_bg"
-	            android:text="@string/my_attention"
-	            />
-	        <TextView
-	            android:id="@+id/main_order"
-	            style="@style/main_choose_three"
-	            android:drawableTop="@drawable/three_order_bg"
-	            android:text="@string/my_order"
-	            />
-    	</LinearLayout>
+        
     </LinearLayout>
         
     

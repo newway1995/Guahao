@@ -16,6 +16,7 @@
     
     <application
         android:allowBackup="true"
+        android:name="constant.MyApplication"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/CustomActionBarTheme" >
@@ -39,6 +40,18 @@
             android:name="module.activity.guahao.SelectLocationActivity"
             android:label="@string/cancel">            
         </activity> 
+        <!-- 登陆 -->
+        <activity 
+            android:name="module.activity.LoginActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/login">
+        </activity>
+        <!-- 设置 -->
+        <activity
+            android:name="module.activity.geren.SettingActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/shezhi">
+        </activity>
                        
     </application>
 

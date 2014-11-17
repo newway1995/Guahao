@@ -1,12 +1,15 @@
 package module.activity;
 
 
+import module.activity.faxian.FaxianFragment;
+import module.activity.geren.GerenFragment;
+import module.activity.guahao.GuahaoFragment;
 import module.activity.guahao.MessageActivity;
+import module.activity.zixun.ZixunFragment;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -18,10 +21,10 @@ import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 
-	private Fragment fragment1;
-	private Fragment fragment2;
-	private Fragment fragment3;
-	private Fragment fragment4;
+	private GuahaoFragment guahaoFragment;
+	private ZixunFragment zixunFragment;
+	private FaxianFragment faxianFragment;
+	private GerenFragment gerenFragment;
 	
 	
 	/**
@@ -84,13 +87,14 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());
 			guahaoText.setCompoundDrawables(null, drawable, null, null);
 			setTextColor(guahaoText);
-			if (fragment1 == null){
+			if (guahaoFragment == null){
 				// 如果MessageFragment为空，则创建一个并添加到界面上
-				fragment1 = new Fragment();
-				transaction.add(R.id.main_content, fragment1);
+				guahaoFragment = new GuahaoFragment();
+				transaction.add(R.id.main_content, guahaoFragment);
 			} else{
 				// 如果MessageFragment不为空，则直接将它显示出来
-				transaction.show(fragment1);
+				guahaoFragment.updataActionBar();
+				transaction.show(guahaoFragment);
 			}
 			break;
 		case 1:
@@ -98,11 +102,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());
 			zixunText.setCompoundDrawables(null, drawable, null, null);
 			setTextColor(zixunText);
-			if (fragment2 == null){
-				fragment2 = new Fragment();
-				transaction.add(R.id.main_content, fragment2);
+			if (zixunFragment == null){
+				zixunFragment = new ZixunFragment();
+				transaction.add(R.id.main_content, zixunFragment);
 			} else{
-				transaction.show(fragment2);
+				zixunFragment.updataActionBar();
+				transaction.show(zixunFragment);
 			}
 			break;
 		case 2:
@@ -110,11 +115,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());
 			faxianText.setCompoundDrawables(null, drawable, null, null);
 			setTextColor(faxianText);
-			if (fragment3 == null){
-				fragment3 = new Fragment();
-				transaction.add(R.id.main_content, fragment3);
+			if (faxianFragment == null){
+				faxianFragment = new FaxianFragment();
+				transaction.add(R.id.main_content, faxianFragment);
 			} else{
-				transaction.show(fragment1);
+				faxianFragment.updataActionBar();
+				transaction.show(faxianFragment);
 			}
 			break;
 		case 3:
@@ -122,11 +128,12 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());
 			gerenText.setCompoundDrawables(null, drawable, null, null);
 			setTextColor(gerenText);
-			if (fragment4 == null){
-				fragment4 = new Fragment();
-				transaction.add(R.id.main_content, fragment4);
+			if (gerenFragment == null){
+				gerenFragment = new GerenFragment();
+				transaction.add(R.id.main_content, gerenFragment);
 			} else{
-				transaction.show(fragment1);
+				gerenFragment.updataActionBar();
+				transaction.show(gerenFragment);
 			}
 			break;
 			
@@ -165,7 +172,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     	drawable = resources.getDrawable(R.drawable.ic_tab_discovery_unchecked);
     	drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
     	faxianText.setCompoundDrawables(null,drawable , null, null);
-    	unSetTextColor(zixunText);
+    	unSetTextColor(faxianText);
     	drawable = resources.getDrawable(R.drawable.ic_tab_me_unchecked);
     	drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
     	gerenText.setCompoundDrawables(null, drawable, null, null);
@@ -179,21 +186,21 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	 *            用于对Fragment执行操作的事务
 	 */
     private void hideFragments(FragmentTransaction transaction){
-    	if (fragment1 != null)
+    	if (guahaoFragment != null)
 		{
-			transaction.hide(fragment1);
+			transaction.hide(guahaoFragment);
 		}
-		if (fragment2 != null)
+		if (zixunFragment != null)
 		{
-			transaction.hide(fragment2);
+			transaction.hide(zixunFragment);
 		}
-		if (fragment3 != null)
+		if (faxianFragment != null)
 		{
-			transaction.hide(fragment3);
+			transaction.hide(faxianFragment);
 		}
-		if (fragment4 != null)
+		if (gerenFragment != null)
 		{
-			transaction.hide(fragment4);
+			transaction.hide(gerenFragment);
 		}
     }
 
@@ -231,7 +238,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		case R.id.actionbar_message:
 			Intent intent = new Intent(MainActivity.this,MessageActivity.class);
 			startActivity(intent);
-			overridePendingTransition(R.anim.activity_in, R.anim.activity_out);
+			//overridePendingTransition(R.anim.activity_exist_in, R.anim.activity_exist_out);
 			break;
 
 		default:

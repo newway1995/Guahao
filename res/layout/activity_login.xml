@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<TextView
+	    style="@style/width_fill_parent"
+	    android:gravity="center"
+	    android:layout_margin="5dp"
+	    android:text="@string/login_hint"
+	    android:textAppearance="@style/gray_12"
+	    />    
+	<EditText
+	    android:id="@+id/login_username"
+	    style="@style/width_fill_parent"
+	    android:drawableLeft="@drawable/icon_account"
+	    android:inputType="phone"
+	    android:hint="@string/login_hint_username"
+	    android:drawablePadding="10dp"
+	    />
+	<EditText
+	    android:id="@+id/login_password"
+	    style="@style/width_fill_parent"
+	    android:drawableLeft="@drawable/icon_pwd"
+	    android:inputType="textPassword"
+	    android:hint="@string/login_hint_password"
+	    android:drawablePadding="10dp"
+	    />
+
+	<Button
+	    android:id="@+id/login_btn"
+	    style="@style/width_fill_parent"
+	    android:layout_margin="8dp"
+	    android:background="@drawable/login_btn_bg"
+	    android:gravity="center"
+	    android:text="@string/login"
+	    android:textAppearance="@style/white_18" />
+	
+	<LinearLayout 
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:id="@+id/login_register"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="@string/register_new"
+	        android:textAppearance="@style/black_12"
+	        android:layout_weight="1"
+	        android:gravity="right"
+	        />
+	    <View 
+	        android:layout_height="15dp"
+	        android:layout_width="1dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/divider_blue_vertical"
+	        />
+	    <TextView 
+	        android:id="@+id/login_forget_pwd"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:text="@string/forget_pwd"
+	        android:textAppearance="@style/black_12"
+	        android:layout_weight="1"
+	        />
+	</LinearLayout>
+
+</LinearLayout>

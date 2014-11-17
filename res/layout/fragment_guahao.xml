@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView 
+	    android:id="@+id/guahao_search"
+	    style="@style/width_fill_parent"
+	    android:layout_margin="10dp"	    
+	    android:text="@string/zixun_hint"
+	    android:textAppearance="@style/gray_14"
+	    android:padding="10dp"
+	    android:background="@color/white"
+	    android:drawableLeft="@drawable/icon_search_blue"
+	    android:drawablePadding="10dp"
+	    android:gravity="center_vertical"
+	    />   
+    <!-- 选择医院 -->
+    <RelativeLayout 
+        android:id="@+id/guahao_choose_hospital"
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1" 
+    	android:background="@drawable/list_item_click"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:drawableLeft="@drawable/gh_ic_hospital_dark"
+            android:text="@string/guahao_choose_hospital"
+            android:textAppearance="@style/gray_14"
+            android:gravity="center"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />        
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/doct_list_item_divider"
+        />
+    
+    <!-- 选择科室 -->
+    <RelativeLayout 
+        android:id="@+id/guahao_choose_dept"
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1" 
+    	android:background="@drawable/list_item_click"
+        >
+        <TextView
+            style="@style/none_fill_parent"
+            android:drawableLeft="@drawable/gh_ic_dept_dark"
+            android:text="@string/guahao_choose_dept"
+            android:textAppearance="@style/gray_14"
+            android:gravity="center"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/doct_list_item_divider"
+        />
+    <!-- 去挂号 -->
+    <RelativeLayout         
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1" 
+    	android:background="@color/white"
+        >
+        <Button 
+            android:id="@+id/guahao_go_guahao"
+            style="@style/width_fill_parent"
+            android:layout_marginLeft="15dp"  
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/go_guahao"
+            />        
+    </RelativeLayout>
+    
+    <LinearLayout 
+     	style="@style/width_fill_parent"
+     	android:orientation="horizontal"               
+	     >
+	     <TextView
+	         android:id="@+id/main_fenzhen"
+	         style="@style/main_choose_three"
+	         android:drawableTop="@drawable/three_fenzhen_bg"
+	         android:text="@string/fenzhen"
+	         />
+	     <TextView
+	         android:id="@+id/main_attention"
+	         style="@style/main_choose_three"
+	         android:drawableTop="@drawable/three_attention_bg"
+	         android:text="@string/my_attention"
+	         />
+	     <TextView
+	         android:id="@+id/main_order"
+	         style="@style/main_choose_three"
+	         android:drawableTop="@drawable/three_order_bg"
+	         android:text="@string/my_order"
+	         />
+	</LinearLayout>
+
+</LinearLayout>

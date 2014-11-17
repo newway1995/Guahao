@@ -23,6 +23,7 @@
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
         <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+        <item name="android:windowAnimationStyle">@style/SwipeAnimationActivity</item>
     </style>
 
     <!-- ActionBar styles -->
@@ -43,6 +44,13 @@
            parent="@android:style/Widget.Holo.ActionBar.TabText">
         <item name="android:textColor">@color/actionbar_text</item>
     </style> 
+    <!-- 右侧滑进 左侧不动 -->    
+    <style name="SwipeAnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_in</item>
+    	<item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+    	<item name="android:activityCloseEnterAnimation">@anim/activity_exist_in</item>
+    	<item name="android:activityCloseExitAnimation">@anim/activity_exist_out</item>
+    </style>
     
     
     <style name="both_fill_parent">
@@ -118,10 +126,20 @@
 	    <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">18sp</item>
 	</style>
+	<!-- 灰色 14sp -->
+	<style name="gray_14">
+	    <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+	</style>
 	<!-- 灰色 12sp -->
 	<style name="gray_12">
 	    <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">12sp</item>
+	</style>
+	<!-- 灰色 10sp -->
+	<style name="gray_10">
+	    <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">10sp</item>
 	</style>
 	<!-- 灰色 8sp -->
 	<style name="gray_8">

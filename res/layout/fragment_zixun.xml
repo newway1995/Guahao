@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/zixun_search"
+	    style="@style/width_fill_parent"
+	    android:layout_margin="10dp"	    
+	    android:text="@string/zixun_hint"
+	    android:textAppearance="@style/gray_14"
+	    android:padding="10dp"
+	    android:background="@color/white"
+	    android:drawableLeft="@drawable/icon_search_blue"
+	    android:drawablePadding="10dp"
+	    android:gravity="center_vertical"
+	    />    
+	    
+	<RelativeLayout 
+	    style="@style/width_fill_parent"
+	    android:background="@drawable/zixun_bg">
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:src="@drawable/consult_text"
+	        android:contentDescription="@string/app_name"
+	        />
+	    <ImageView 
+	        style="@style/none_fill_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/zixun_consult_bg"
+	        android:contentDescription="@string/app_name"
+	        />
+	</RelativeLayout>
+	
+	<TextView
+	    android:id="@+id/zixun_more_zhuanjia"
+	    style="@style/none_fill_parent"
+	    android:textColor="@color/actionbar_background"
+	    android:textSize="15sp"
+	    android:layout_gravity="bottom|right"
+	    android:text="@string/zixun_more_zhuanjia"
+	    android:drawableRight="@drawable/blue_righr_arrow"
+	    android:gravity="center"
+	    android:drawablePadding="5dp"
+	    />
+
+</LinearLayout>
