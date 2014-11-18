@@ -52,6 +52,13 @@
     	<item name="android:activityCloseExitAnimation">@anim/activity_exist_out</item>
     </style>
     
+    <style name="ExistDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
     
     <style name="both_fill_parent">
         <item name="android:layout_width">fill_parent</item>
@@ -146,6 +153,31 @@
 	    <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">8sp</item>
 	</style>
+	<!-- 深灰色 18sp -->
+	<style name="gray_dark_18">
+	    <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">18sp</item>
+	</style>
+	<!-- 深灰色 14sp -->
+	<style name="gray_dark_14">
+	    <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">14sp</item>
+	</style>
+	<!-- 深灰色 12sp -->
+	<style name="gray_dark_12">
+	    <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">12sp</item>
+	</style>
+	<!-- 深灰色 10sp -->
+	<style name="gray_dark_10">
+	    <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">10sp</item>
+	</style>
+	<!-- 深灰色 8sp -->
+	<style name="gray_dark_8">
+	    <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">8sp</item>
+	</style>
 	<!-- 浅黑色18 -->
 	<style name="black_light_18">
 	    <item name="android:textColor">@color/black_light</item>
@@ -156,6 +188,17 @@
 	    <item name="android:textColor">@color/black_light</item>
         <item name="android:textSize">14sp</item>
 	</style>
+	<!-- 蓝色18 -->
+	<style name="blue_18">
+	    <item name="android:textColor">@color/actionbar_background</item>
+        <item name="android:textSize">18sp</item>
+	</style>
+	<!-- 蓝色14 -->
+	<style name="blue_14">
+	    <item name="android:textColor">@color/actionbar_background</item>
+        <item name="android:textSize">14sp</item>
+	</style>
+	
 
 	
 </resources>

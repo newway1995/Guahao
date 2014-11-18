@@ -67,7 +67,7 @@ public class GerenFragment extends Fragment implements OnClickListener{
 			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.geren_my_order:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),OrderActivity.class));
 			break;
 		case R.id.geren_my_bingli:
 			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();

@@ -3,6 +3,7 @@
     <color name="white">#ffffff</color>
     <color name="gray">#AAAAAA</color>
     <color name="gray_light">#EBEBEB</color>
+    <color name="gray_dark">#575757</color>
     <color name="tab_click_blue">#2668D1</color>
     <color name="black">#000000</color>
     <color name="black_light">#303030</color>

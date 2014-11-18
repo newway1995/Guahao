@@ -6,6 +6,7 @@ import module.activity.geren.GerenFragment;
 import module.activity.guahao.GuahaoFragment;
 import module.activity.guahao.MessageActivity;
 import module.activity.zixun.ZixunFragment;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -13,10 +14,13 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
@@ -245,5 +249,34 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 			break;
 		}
 		return super.onOptionsItemSelected(item);
+	}	
+	
+	@Override
+	public boolean onKeyDown(int keyCode,KeyEvent event){
+		if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME) {//弹出确认
+			final Dialog dialog = new Dialog(MainActivity.this,R.style.ExistDialog);
+			//设置它的ContentView
+            dialog.setContentView(R.layout.exist_dialog);            
+            LayoutInflater inflater = getLayoutInflater();
+            View view = inflater.inflate(R.layout.exist_dialog, null);
+            dialog.show(); 
+            ((Button)view.findViewById(R.id.exist_sure)).setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					finish();
+				}
+			});
+            ((Button)view.findViewById(R.id.exist_cancel)).setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					dialog.dismiss();
+				}
+			});                       
+		}
+		return super.onKeyDown(keyCode, event);
 	}	
 }

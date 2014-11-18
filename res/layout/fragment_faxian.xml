@@ -9,10 +9,10 @@
         style="@style/width_fill_parent"
         android:background="@drawable/list_item_click"
         android:layout_marginTop="10dp"
+        android:padding="20dp"
         >
         <TextView
             style="@style/none_fill_parent"
-            android:layout_margin="10dp"
             android:drawableLeft="@drawable/discovery_health_lecture"
             android:text="@string/mingyizaixian"
             android:textAppearance="@style/black_18"
@@ -26,7 +26,6 @@
 	        android:background="@drawable/right_arrow"
 	        android:layout_alignParentRight="true"	
 	        android:layout_centerVertical="true"    
-	        android:layout_marginRight="10dp"    
 	        android:contentDescription="@string/app_name"/>
     </RelativeLayout>
     
@@ -35,10 +34,10 @@
         style="@style/width_fill_parent"
         android:background="@drawable/list_item_click"
         android:layout_marginTop="10dp"
+        android:padding="20dp"
         >
         <TextView
             style="@style/none_fill_parent"
-            android:layout_margin="10dp"
             android:drawableLeft="@drawable/discovery_dynamic"
             android:text="@string/yishengdongtai"
             android:textAppearance="@style/black_18"
@@ -52,7 +51,6 @@
 	        android:background="@drawable/right_arrow"
 	        android:layout_alignParentRight="true"	
 	        android:layout_centerVertical="true"     
-	        android:layout_marginRight="10dp"   
 	        android:contentDescription="@string/app_name"/>
     </RelativeLayout>
     
@@ -61,10 +59,10 @@
         style="@style/width_fill_parent"
         android:background="@drawable/list_item_click"
         android:layout_marginTop="10dp"
+        android:padding="20dp"
         >
         <TextView
             style="@style/none_fill_parent"
-            android:layout_margin="10dp"
             android:drawableLeft="@drawable/discovery_jibing"
             android:layout_centerVertical="true"
             android:text="@string/jibing"
@@ -78,7 +76,6 @@
 	        android:background="@drawable/right_arrow"
 	        android:layout_alignParentRight="true"	
 	        android:layout_centerVertical="true" 
-	        android:layout_marginRight="10dp"       
 	        android:contentDescription="@string/app_name"/>
     </RelativeLayout>
 

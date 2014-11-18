@@ -52,6 +52,30 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/shezhi">
         </activity>
+        <!-- 名医在线 -->
+        <activity
+            android:name="module.activity.faxian.MingyiActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/mingyizaixian">
+        </activity>
+        <!-- 医生动态 -->
+        <activity
+            android:name="module.activity.faxian.YishengDynamic"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/yishengdongtai">
+        </activity>
+        <!-- 疾病与营养 -->
+        <activity
+            android:name="module.activity.faxian.JBActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/jibing">
+        </activity>
+        <!-- 我的预约单 -->
+        <activity
+            android:name="module.activity.geren.OrderActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/my_order_list">
+        </activity>
                        
     </application>
 

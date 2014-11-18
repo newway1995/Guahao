@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="300dp"
+	    android:layout_height="200dp">
+	    <View 
+	        android:layout_width="wrap_content"
+	        android:layout_height="3dp"
+	        android:background="@drawable/spider"/>
+	    <TextView 
+	        style="@style/none_fill_parent"
+	        android:layout_centerInParent="true"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/exist_query"
+	        android:drawableLeft="@drawable/alert_x_default"
+	        android:gravity="center"
+	        android:drawablePadding="10dp"
+	        />
+	</RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button
+	        android:id="@+id/exist_sure"
+	        style="?android:attr/actionBarDivider"	        
+	        android:background="@drawable/exist_btn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/sure"/>
+	    <Button
+	        android:id="@+id/exist_cancel"
+	        style="?android:attr/actionBarDivider"
+	        android:background="@drawable/exist_btn"
+	        android:layout_height="wrap_content"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:textAppearance="@style/black_18"
+	        android:text="@string/cancel"/>
+	</LinearLayout>
+	
+</LinearLayout>

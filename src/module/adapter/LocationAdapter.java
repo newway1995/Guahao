@@ -1,4 +1,4 @@
-package module.activity.guahao.view;
+package module.adapter;
 
 import module.activity.R;
 import android.content.Context;

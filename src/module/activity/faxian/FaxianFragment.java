@@ -1,6 +1,7 @@
 package module.activity.faxian;
 
 import module.activity.R;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -56,13 +56,13 @@ public class FaxianFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.faxian_mingyizaixian:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),MingyiActivity.class));
 			break;
 		case R.id.faxian_yisheng_dynamic:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),YishengDynamic.class));
 			break;
 		case R.id.faxian_jibing:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),JBActivity.class));
 			break;
 		default:
 			break;
