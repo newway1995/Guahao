@@ -18,9 +18,8 @@
     <!-- 选择医院 -->
     <RelativeLayout 
         android:id="@+id/guahao_choose_hospital"
-        android:layout_width="match_parent"
-    	android:layout_height="0dp"
-    	android:layout_weight="1" 
+        android:layout_width="fill_parent"        
+        android:layout_height="140dp"
     	android:background="@drawable/list_item_click"
         >
         <TextView
@@ -43,9 +42,8 @@
     <!-- 选择科室 -->
     <RelativeLayout 
         android:id="@+id/guahao_choose_dept"
-        android:layout_width="match_parent"
-    	android:layout_height="0dp"
-    	android:layout_weight="1" 
+        android:layout_width="fill_parent"        
+        android:layout_height="140dp"
     	android:background="@drawable/list_item_click"
         >
         <TextView
@@ -67,9 +65,8 @@
         />
     <!-- 去挂号 -->
     <RelativeLayout         
-        android:layout_width="match_parent"
-    	android:layout_height="0dp"
-    	android:layout_weight="1" 
+        android:layout_width="fill_parent"        
+        android:layout_height="100dp"
     	android:background="@color/white"
         >
         <Button 

@@ -14,6 +14,10 @@
 	<string name="my_order">我的预约</string>
 	<string name="cancel">取消</string>
 	<string name="sure">确定</string>
+	<string name="sex">性别</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="age">年龄:</string>
 	<string name="login">登陆</string>	
 	<string name="login_hint">挂号网账户可直接登陆</string>
 	<string name="login_hint_username">登录名或手机号</string>
@@ -23,12 +27,16 @@
 	<string name="forget_pwd">忘记密码</string>
 	
 	<string name="username">牛威</string>
+	<string name="zhuzhi">主治医师</string>
 	<string name="phone">登录名:15652953455</string>
 	<string name="my_order_list">我的预约单</string>
+	<string name="change_pwd">修改密码</string>
+	<string name="login_name">用户名</string>
 	<string name="my_zixun">我的咨询</string>
 	<string name="my_bingli">我的病例</string>
 	<string name="my_guanzhu">我的关注</string>
 	<string name="shezhi">设置</string>
+	<string name="user_info">用户信息</string>
 	
 	<string name="mingyizaixian">名医在线</string>
 	<string name="yishengdongtai">医生动态</string>
@@ -40,7 +48,9 @@
 	
 	<string name="guahao_choose_hospital">请选择医院</string>
 	<string name="guahao_choose_dept">请选择科室</string>
+	<string name="dept">外科、内科、妇产科</string>
 	<string name="go_guahao">去挂号</string>
+	<string name="zixun_doctor">向专家咨询</string>
 	
 	<string name="navigate">新手导航</string>
 	<string name="about_us">关于我们</string>
@@ -49,4 +59,7 @@
 	<string name="version">0.1.1</string>
 	<string name="logout">退出登录</string>
 	<string name="exist_query">确认退出吗?</string>
+	<string name="hospital_name">全世界最帅医院特别门诊——专治各种不服</string>
+	<string name="loading">正在加载</string>
+	<string name="connect_timeout">连接超时</string>
 </resources>

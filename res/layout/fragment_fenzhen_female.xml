@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout 
+	    style="@style/none_fill_parent"
+	    android:layout_margin="20dp">
+	    <ImageView 
+		    android:id="@+id/fragment_fenzhen_female_icon"
+		    style="@style/none_fill_parent"		    
+		    android:contentDescription="@string/app_name"
+		    android:background="@drawable/gh_sex_woman"
+		    android:visibility="gone"
+		    />
+		<ImageView 
+		    android:id="@+id/fragment_fenzhen_male_icon"
+		    style="@style/none_fill_parent"
+		    android:contentDescription="@string/app_name"
+		    android:background="@drawable/gh_sex_man"
+		    />
+	</RelativeLayout>    
+	<RelativeLayout 
+	    style="@style/width_fill_parent">
+	    <ImageView 
+	        android:id="@+id/fragment_fenzhen_female_body"
+	        style="@style/none_fill_parent"		    
+		    android:contentDescription="@string/app_name"
+		    android:background="@drawable/woman_face"
+		    android:layout_centerInParent="true"		
+		    android:visibility="gone"    
+	        />
+	    <ImageView 
+	        android:id="@+id/fragment_fenzhen_male_body"
+	        style="@style/none_fill_parent"		    
+		    android:contentDescription="@string/app_name"
+		    android:background="@drawable/man_face"
+		    android:layout_centerInParent="true"		
+	        />
+
+	    <ImageView
+	        android:id="@+id/fenzhen_swipe_face"
+	        style="@style/none_fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="40dp"
+	        android:background="@drawable/rotate"
+	        android:contentDescription="@string/app_name" />
+
+	</RelativeLayout>	
+</LinearLayout>

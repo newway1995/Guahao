@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        style="@style/width_fill_parent"
+        android:divider="@drawable/doct_list_item_divider"
+        android:orientation="horizontal">
+        <RadioGroup 
+            android:id="@+id/zixun_gnnder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/sex">
+            <RadioButton               
+                android:id="@+id/zixun_male"
+                android:text="@string/male"  
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/submit_patient_info_man_unselect"
+                android:checked="true"/>
+            <RadioButton               
+                android:id="@+id/zixun_female"
+                android:text="@string/female"  
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/submit_patient_info_man_select"
+                android:checked="true"/>
+        </RadioGroup>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="@string/age"
+            />
+    </LinearLayout>
+    <!-- 分割线 -->
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/doct_list_item_divider"
+        />
+    
+
+</LinearLayout>

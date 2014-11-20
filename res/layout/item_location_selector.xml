@@ -6,7 +6,8 @@
     <TextView
         android:id="@+id/location_item"
         style="@style/none_fill_parent"
-        android:textAppearance="@style/black_12"
+        android:textAppearance="@style/black_18"
+        android:padding="5dp"        
         />
 
 </LinearLayout>

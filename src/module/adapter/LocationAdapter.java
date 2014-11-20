@@ -46,7 +46,7 @@ public class LocationAdapter extends BaseAdapter{
 	    if(selectedPosition == position){
 	    	textView.setTextColor(Color.BLUE);
 	    }else {
-	    	textView.setTextColor(Color.WHITE);   
+	    	textView.setTextColor(Color.BLACK);   
 		}
 	    textView.setText(provinces[position]);
 		return convertView;

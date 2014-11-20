@@ -40,6 +40,7 @@ public class LocationSubAdapter extends BaseAdapter{
 		}
 		TextView textView = (TextView)arg1.findViewById(R.id.location_item);
 		textView.setTextColor(Color.BLACK);
+		textView.setBackgroundColor(Color.WHITE);
 		textView.setText(cities[arg0]);
 		return arg1;
 	}

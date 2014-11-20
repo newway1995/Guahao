@@ -24,6 +24,7 @@
 	        android:id="@+id/item_mingyi_image"
 	        style="@style/none_fill_parent"
 	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/doctor_empty_image_light"
 	        android:contentDescription="@string/app_name"
 	        />
 	    <TextView
@@ -31,12 +32,15 @@
 	        style="@style/none_fill_parent"
 	        android:textAppearance="@style/black_14"
 	        android:text="@string/app_name"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginBottom="5dp"
 	        android:layout_toRightOf="@id/item_mingyi_image"
 	        />
 	    <TextView
 	        android:id="@+id/item_mingyi_time"
 	        style="@style/none_fill_parent"
 	        android:textAppearance="@style/gray_14"
+	        android:layout_marginLeft="10dp"
 	        android:text="@string/about_us"
 	        android:layout_below="@id/item_mingyi_description"
 	        android:layout_toRightOf="@id/item_mingyi_image"

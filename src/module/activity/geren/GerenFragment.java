@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -64,19 +63,19 @@ public class GerenFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.geren_all:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),UserInfoActivity.class));
 			break;
 		case R.id.geren_my_order:
 			startActivity(new Intent(getActivity(),OrderActivity.class));
 			break;
 		case R.id.geren_my_bingli:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),BingliActivity.class));
 			break;
 		case R.id.geren_my_zixun:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),ZixunActivity.class));
 			break;
 		case R.id.geren_guanzhu:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),GuanzhuActivity.class));
 			break;
 		case R.id.geren_setting:
 			startActivity(new Intent(getActivity(),SettingActivity.class));

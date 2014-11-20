@@ -38,6 +38,7 @@
         <!-- 选择位置 -->
         <activity
             android:name="module.activity.guahao.SelectLocationActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/cancel">            
         </activity> 
         <!-- 登陆 -->
@@ -75,6 +76,44 @@
             android:name="module.activity.geren.OrderActivity"
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/my_order_list">
+        </activity>
+        <!-- 我的咨询 -->
+        <activity
+            android:name="module.activity.geren.ZixunActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/my_zixun">
+        </activity>
+        <!-- 我的病例 -->
+        <activity
+            android:name="module.activity.geren.BingliActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/my_bingli">
+        </activity>
+        <!-- 我的关注 -->
+        <activity
+            android:name="module.activity.geren.GuanzhuActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/my_guanzhu">
+        </activity>
+        <!-- user info -->
+        <activity
+            android:name="module.activity.geren.UserInfoActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/user_info">
+        </activity>
+        
+        <!-- 咨询 -->
+        <activity
+            android:name="module.activity.zixun.ConsultActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/zixun">
+        </activity>
+        
+        <!-- 挂号  智能导诊 -->
+        <activity
+            android:name="module.activity.guahao.FenZhenActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/fenzhen">
         </activity>
                        
     </application>

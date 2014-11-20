@@ -8,6 +8,8 @@
     <color name="black">#000000</color>
     <color name="black_light">#303030</color>
     <color name="actionbar_background">#2668D1</color>
+    <color name="click_btn_color">#CAE1FF</color>
     <color name="actionbar_text">#ffffff</color>
     <color name="red_dark">#CD3333</color>
+    <color name="green">#32CD32</color>
 </resources>
