@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="body_list">
+        <item>头部</item>
+        <item>颈部</item>
+        <item>胸部</item>
+        <item>腹部</item>
+        <item>四肢</item>
+        <item>皮肤</item>
+        <item>生殖器</item>
+        <item>排泄部位</item>
+        <item>背部</item>
+        <item>耳眼口鼻</item>
+        <item>上肢</item>
+    </string-array>
+    
+    <string-array name="body_toubu">
+        <item>腮腺肿大</item>
+        <item>语言障碍</item>
+        <item>头疼</item>
+        <item>面部疼痛</item>
+        <item>头晕</item>
+        <item>耳痛</item>
+    </string-array>
+    
+    <string-array name="body_jingbu">
+        <item>颈部疼痛或僵硬</item>
+        <item>咽喉疼痛</item>
+        <item>吞咽困难</item>
+        <item>面部疼痛</item>
+        <item>甲状腺肿大</item>
+    </string-array>
+    
+    <string-array name="body_xiongbu">
+        <item>咯血</item>
+        <item>肩部疼痛</item>
+        <item>咳嗽</item>
+        <item>呼吸困难</item>
+        <item>胸痛</item>
+        <item>哮喘</item>
+        <item>心悸</item>
+    </string-array>
+    
+    <string-array name="body_fubu">
+        <item>反酸</item>
+        <item>痛经</item>
+        <item>腹痛</item>
+        <item>腹泻</item>
+        <item>恶心吐吐</item>
+    </string-array>
+    
+    <string-array name="body_pifu">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_shengzhiqi">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_paixiebu">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_beibu">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_eryankoubi">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_shangzhi">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_xiazhi">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+    
+    <string-array name="body_qita">
+        <item>皮疹</item>
+        <item>红斑</item>
+        <item>皮肤损伤</item>
+        <item>鳞屑</item>
+        <item>脱发</item>
+    </string-array>
+</resources>

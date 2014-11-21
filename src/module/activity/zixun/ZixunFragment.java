@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -29,8 +30,9 @@ import android.widget.TextView;
  */
 public class ZixunFragment extends Fragment implements OnClickListener{
 	private final static String TAG = "ZixunFragment";
-	private TextView zixun_search;
+	private TextView zixun_search;//咨询搜索
 	private ImageView zixun_consult;
+	private TextView zixun_more_zhuanjia;//咨询更多专家
 	
 	/**
 	 * 下面滑动图片导航
@@ -60,8 +62,10 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 		updataActionBar();
 		zixun_search = (TextView)parentView.findViewById(R.id.zixun_search);
 		zixun_consult = (ImageView)parentView.findViewById(R.id.zixun_consult);
+		zixun_more_zhuanjia = (TextView)parentView.findViewById(R.id.zixun_more_zhuanjia);
 		zixun_search.setOnClickListener(this);
 		zixun_consult.setOnClickListener(this);
+		zixun_more_zhuanjia.setOnClickListener(this);
 		
 		viewPager = (ViewPager)parentView.findViewById(R.id.zixun_vp);
 		viewPager.setAdapter(new MyAdapter());// 设置填充ViewPager页面的适配器
@@ -111,6 +115,9 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.zixun_consult:
 			startActivity(new Intent(getActivity(),ConsultActivity.class));
+			break;
+		case R.id.zixun_more_zhuanjia:
+			Toast.makeText(getActivity(), "咨询更多专家", Toast.LENGTH_SHORT).show();
 			break;
 		default:
 			break;

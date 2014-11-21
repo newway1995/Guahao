@@ -1,6 +1,8 @@
 package module.activity.guahao;
 
 import module.activity.R;
+import module.activity.geren.GuanzhuActivity;
+import module.activity.geren.OrderActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -74,10 +76,10 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 			startActivity(new Intent(getActivity(),FenZhenActivity.class));
 			break;
 		case R.id.main_attention:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),GuanzhuActivity.class));
 			break;
 		case R.id.main_order:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),OrderActivity.class));
 			break;
 		case R.id.guahao_choose_hospital:
 			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();

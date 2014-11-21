@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical" >
 	<RelativeLayout 
 	    style="@style/none_fill_parent"
@@ -28,14 +29,15 @@
 		    android:contentDescription="@string/app_name"
 		    android:background="@drawable/woman_face"
 		    android:layout_centerInParent="true"		
-		    android:visibility="gone"    
+		    android:visibility="invisible"    
 	        />
 	    <ImageView 
 	        android:id="@+id/fragment_fenzhen_male_body"
 	        style="@style/none_fill_parent"		    
 		    android:contentDescription="@string/app_name"
-		    android:background="@drawable/man_face"
-		    android:layout_centerInParent="true"		
+		    android:background="@drawable/man_face"		    
+		    android:layout_centerInParent="true"
+		    android:visibility="visible"
 	        />
 
 	    <ImageView

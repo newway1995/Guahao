@@ -7,9 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
-import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-import android.view.animation.AnticipateOvershootInterpolator;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class FenZhenLeftFragment extends Fragment implements OnClickListener{
@@ -55,23 +54,18 @@ public class FenZhenLeftFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.fragment_fenzhen_female_body:
-			
 			break;
 		case R.id.fragment_fenzhen_male_body:
-			
 			break;
-		case R.id.fragment_fenzhen_female_icon:
-			femaleImageView.setVisibility(View.GONE);
-			maleImageView.setVisibility(View.VISIBLE);
+			
+		case R.id.fragment_fenzhen_female_icon:	
+			showMan();
 			break;
 		case R.id.fragment_fenzhen_male_icon:
-			maleImageView.setVisibility(View.GONE);
-			femaleImageView.setVisibility(View.VISIBLE);
+			showWoman();
 			break;
-		case R.id.fenzhen_swipe_face:
-			Animation animation = new AlphaAnimation(0f, 1.0f);
-			animation.setDuration(400);
-			animation.setInterpolator(new AnticipateOvershootInterpolator());
+		case R.id.fenzhen_swipe_face:			
+			Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.image_rotate);
 			if (manImageView.getVisibility() == View.VISIBLE) {
 				if (manFace) 
 					manImageView.setImageResource(R.drawable.man_back);
@@ -91,5 +85,29 @@ public class FenZhenLeftFragment extends Fragment implements OnClickListener{
 		default:
 			break;
 		}
+	}
+	
+	//不要也没关系
+	private void clearAnimation(){
+		femaleImageView.clearAnimation();
+		maleImageView.clearAnimation();
+		manImageView.clearAnimation();
+		womanImageView.clearAnimation();
+	}
+	
+	private void showMan(){
+		clearAnimation();
+		femaleImageView.setVisibility(View.INVISIBLE);
+		womanImageView.setVisibility(View.INVISIBLE);
+		maleImageView.setVisibility(View.VISIBLE);
+		manImageView.setVisibility(View.VISIBLE);
+	}
+	
+	private void showWoman(){
+		clearAnimation();
+		maleImageView.setVisibility(View.INVISIBLE);
+		manImageView.setVisibility(View.INVISIBLE);
+		femaleImageView.setVisibility(View.VISIBLE);
+		womanImageView.setVisibility(View.VISIBLE);
 	}
 }

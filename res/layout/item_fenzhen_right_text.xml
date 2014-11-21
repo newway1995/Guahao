@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    >
+    <TextView
+        android:id="@+id/item_fenzhen_right_text"
+        style="@style/none_fill_parent"
+        android:textAppearance="@style/black_14"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        />
+    <ImageView
+        android:background="@drawable/right_arrow"
+        style="@style/none_fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/app_name"
+        />
+</RelativeLayout>
