@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import module.activity.R;
+import module.activity.guahao.FenZhenLeftFragment.OnBodyClick;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -70,6 +71,9 @@ public class FenZhenActivity extends FragmentActivity{
 				dots.get(oldPosition).setBackgroundResource(R.drawable.dot_normal);
 				dots.get(position).setBackgroundResource(R.drawable.dot_focused);
 				oldPosition = position;
+				if (position == 1) {
+					fenZhenRightFragment.setList();
+				}
 			}
 			
 			@Override
@@ -87,13 +91,30 @@ public class FenZhenActivity extends FragmentActivity{
 			
 		});
 		viewPager.setCurrentItem(0);
+		setBodyClickListener();
+	}
+	
+	//设置分诊人体图点击事件
+	private void setBodyClickListener(){
+		fenZhenLeftFragment.setOnBodyClick(new OnBodyClick() {
+			
+			@Override
+			public void onClick(int req) {
+				viewPager.setCurrentItem(1);
+				fenZhenRightFragment.setList(req);
+			}
+		});
 	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			this.finish();
+			if (fenZhenRightFragment.getCurrentList() != 0) {//如果不是第一个列表 那么返回的时候应该回到第一个列表
+				fenZhenRightFragment.setList();
+			}else {//如果是第一个列表 那么就直接返回到前一个activity
+				finish();
+			}
 			break;
 		case R.id.actionbar_share:
 			Toast.makeText(this, "分享还没做好,不要着急哦,亲", Toast.LENGTH_SHORT).show();

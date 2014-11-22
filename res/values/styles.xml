@@ -218,6 +218,11 @@
 	    <item name="android:textColor">@color/actionbar_background</item>
         <item name="android:textSize">18sp</item>
 	</style>
+	<!-- 蓝色24 -->
+	<style name="blue_24">
+	    <item name="android:textColor">@color/actionbar_background</item>
+        <item name="android:textSize">24sp</item>
+	</style>
 	<!-- 蓝色14 -->
 	<style name="blue_14">
 	    <item name="android:textColor">@color/actionbar_background</item>

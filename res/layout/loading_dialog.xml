@@ -3,20 +3,30 @@
     android:id="@+id/loading_view"   
     android:layout_width="fill_parent"   
     android:layout_height="fill_parent"  
-    android:minHeight="60dp"  
-    android:minWidth="180dp"
+    android:minHeight="76dp"  
+    android:minWidth="76dp"
     android:gravity="center"  
     android:padding="10dp"
     android:background="@color/gray_light"
     android:orientation="vertical" >
     
-	<ImageView   
-        android:id="@+id/loading_img"  
-        android:layout_width="wrap_content"   
-        android:layout_height="wrap_content"   
-        android:src="@drawable/refresh"  
-        android:gravity="center"
-        android:contentDescription="@string/about_us"
-        />  
+	<RelativeLayout 
+	    style="@style/none_fill_parent"
+	    android:background="@color/white">
+	    <ImageView   
+	        android:id="@+id/loading_img"  
+	        android:layout_width="wrap_content"   
+	        android:layout_height="wrap_content"   
+	        android:src="@drawable/refresh"          
+	        android:gravity="center"
+	        android:contentDescription="@string/about_us"
+	        />
+	    <ImageView
+	        style="@style/none_fill_parent"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/ic_tab_guahao_checked"
+	        android:contentDescription="@string/about_us"
+	        />
+	</RelativeLayout>  
     
 </LinearLayout>

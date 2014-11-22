@@ -9,12 +9,20 @@ import org.kymjs.aframe.http.StringCallBack;
 import module.activity.R;
 import module.adapter.MingyiNewsAdapter;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -54,6 +62,7 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 		swipeRefreshLayout.setOnRefreshListener(this);
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
 				android.R.color.holo_orange_light, android.R.color.holo_red_light);
+		createLoadingDialog(this).show();
 	}
 	
 	//异步获取数据
@@ -114,4 +123,29 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 			}
 		}, 1000);
 	}	
+	
+	/** 
+     * 得到自定义的progressDialog 
+     * @param context 
+     * @param msg 
+     * @return 
+     */ 
+	private Dialog createLoadingDialog(Context context) {
+		LayoutInflater inflater = LayoutInflater.from(context);  
+		View v = inflater.inflate(R.layout.loading_dialog, null);// 得到加载view  
+        LinearLayout layout = (LinearLayout) v.findViewById(R.id.loading_view);// 加载布局
+        // main.xml中的ImageView  
+        ImageView spaceshipImage = (ImageView) v.findViewById(R.id.loading_img);  
+        Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(  
+                context, R.anim.loading_animation);
+        spaceshipImage.startAnimation(hyperspaceJumpAnimation); 
+        
+        Dialog loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog  
+        
+        loadingDialog.setCancelable(true);// 不可以用“返回键”取消  
+        loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(  
+                LinearLayout.LayoutParams.MATCH_PARENT,  
+                LinearLayout.LayoutParams.MATCH_PARENT));// 设置布局  
+        return loadingDialog;  
+	}
 }

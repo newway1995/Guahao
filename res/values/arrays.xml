@@ -5,15 +5,14 @@
         <item>颈部</item>
         <item>胸部</item>
         <item>腹部</item>
-        <item>四肢</item>
-        <item>皮肤</item>
         <item>生殖器</item>
         <item>排泄部位</item>
-        <item>背部</item>
+        <item>腰部</item>
         <item>耳眼口鼻</item>
-        <item>上肢</item>
+        <item>下肢</item>
+        <item>其他</item>
     </string-array>
-    
+    <!-- 头部 -->
     <string-array name="body_toubu">
         <item>腮腺肿大</item>
         <item>语言障碍</item>
@@ -22,6 +21,16 @@
         <item>头晕</item>
         <item>耳痛</item>
     </string-array>
+    <!-- advice_toubu -->
+    <string-array name="advice_toubu">
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+    </string-array>
+    
     
     <string-array name="body_jingbu">
         <item>颈部疼痛或僵硬</item>
@@ -29,6 +38,15 @@
         <item>吞咽困难</item>
         <item>面部疼痛</item>
         <item>甲状腺肿大</item>
+    </string-array>
+    
+    <!-- advice_jingbu -->
+    <string-array name="advice_jingbu">
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
     </string-array>
     
     <string-array name="body_xiongbu">
@@ -40,6 +58,17 @@
         <item>哮喘</item>
         <item>心悸</item>
     </string-array>
+    <!-- advice_xiongbu -->
+    <string-array name="advice_xiongbu">
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+    </string-array>
+    
     
     <string-array name="body_fubu">
         <item>反酸</item>
@@ -48,68 +77,96 @@
         <item>腹泻</item>
         <item>恶心吐吐</item>
     </string-array>
-    
-    <string-array name="body_pifu">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+    <!-- advice_fubu -->
+    <string-array name="advice_fubu">
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
     </string-array>
     
     <string-array name="body_shengzhiqi">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+        <item>阳痿</item>
+        <item>早泄</item>        
+    </string-array>
+    <!-- advice_shengzhiqi -->
+    <string-array name="advice_shengzhiqi">
+        <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
+        <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
     </string-array>
     
     <string-array name="body_paixiebu">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+        <item>便秘</item>
+        <item>肛门瘙痒</item>
+        <item>尿频</item>
+        <item>便血</item>
+        <item>血尿</item>
+    </string-array>
+    <!-- advice_paixiebu -->
+    <string-array name="advice_paixiebu">
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
     </string-array>
     
-    <string-array name="body_beibu">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+    <string-array name="body_yaobu">
+        <item>腰部</item>
+    </string-array>
+    <!-- advice_yaobu -->
+    <string-array name="advice_yaobu">
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
     </string-array>
     
     <string-array name="body_eryankoubi">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+        <item>眼睛干涩</item>
+        <item>视力下降</item>
+        <item>眼痛</item>
+        <item>牙痛</item>
+        <item>牙齿异常</item>
+        <item>眼球突出</item>
+        <item>鼻塞涕流</item>
     </string-array>
-    
-    <string-array name="body_shangzhi">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+    <!-- advice_yeyankoubi -->
+    <string-array name="advice_eryankoubi">
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
     </string-array>
     
     <string-array name="body_xiazhi">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+        <item>膝关节疼痛</item>
+        <item>髋关节疼痛</item>
+        <item>踝部肿胀</item>
+    </string-array>
+    <!-- advice_xiazhi -->
+    <string-array name="advice_xiazhi">
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
     </string-array>
     
     <string-array name="body_qita">
-        <item>皮疹</item>
-        <item>红斑</item>
-        <item>皮肤损伤</item>
-        <item>鳞屑</item>
-        <item>脱发</item>
+        <item>震惊和抽搐</item>
+        <item>婴儿夜惊</item>
+        <item>失眠</item>
+        <item>焦虑</item>
+        <item>低血压</item>
     </string-array>
+    <!-- advice_qita -->
+    <string-array name="advice_qita">
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+    </string-array>
+    
+    
 </resources>

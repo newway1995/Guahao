@@ -62,4 +62,8 @@
 	<string name="hospital_name">全世界最帅医院特别门诊——专治各种不服</string>
 	<string name="loading">正在加载</string>
 	<string name="connect_timeout">连接超时</string>
+	
+	<string name="our_team">\t[挂号网]是背景航空航天大学软件学院系统分析设计小组——团灭发动机共同开发完成,软件包括客户端和网页端,android客户端在实现了完整的功能的基础上尽量在提升用户的使用体验.挂号网APP专为患者量身打造,用户版包括专家咨询、智能分诊、即时挂号、院外候诊、处方查询.\n\t您的支持是我们最大的幸运</string>
+	<string name="contact_you">方便我们联系您</string>
+	<string name="contact_phone">可不填</string>
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    style="@style/none_fill_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:padding="50dp"
+	    android:gravity="center"
+	    android:text="@string/app_name"
+	    android:textAppearance="@style/blue_24"
+	    />
+	<TextView 
+	    style="@style/none_fill_parent"
+	    android:padding="10dp"
+	    android:gravity="center"
+	    android:text="@string/our_team"
+	    android:textAppearance="@style/black_light_18"
+	    />
+</LinearLayout>
