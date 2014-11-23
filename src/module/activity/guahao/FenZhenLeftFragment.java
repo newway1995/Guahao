@@ -175,6 +175,14 @@ public class FenZhenLeftFragment extends Fragment implements OnClickListener,OnT
 		return false;
 	}
 	
+	/**
+	 * 判断当前显示的是male照片还是female
+	 * @return manImageView is showing -- true , else return false
+	 * */
+	public boolean isMaleShowing(){		
+		return manImageView.getVisibility() == View.VISIBLE;
+	}
+	
 	public void setOnBodyClick(OnBodyClick click){
 		onBodyClick = click;
 	}

@@ -22,7 +22,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -37,6 +36,8 @@ public class FenZhenActivity extends FragmentActivity{
 	private List<Fragment> mViews;
 	private FenZhenLeftFragment fenZhenLeftFragment;
 	private FenZhenRightFragment fenZhenRightFragment;
+	
+	public static boolean isMaleShowing = true;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,7 @@ public class FenZhenActivity extends FragmentActivity{
 				if (position == 1) {
 					fenZhenRightFragment.setList();
 				}
+				isMaleShowing = fenZhenLeftFragment.isMaleShowing();//每一次转换之前需要赋值  要不然不准
 			}
 			
 			@Override
@@ -101,7 +103,8 @@ public class FenZhenActivity extends FragmentActivity{
 			@Override
 			public void onClick(int req) {
 				viewPager.setCurrentItem(1);
-				fenZhenRightFragment.setList(req);
+				isMaleShowing = fenZhenLeftFragment.isMaleShowing();
+				fenZhenRightFragment.setList(req,isMaleShowing);
 			}
 		});
 	}
@@ -115,11 +118,7 @@ public class FenZhenActivity extends FragmentActivity{
 			}else {//如果是第一个列表 那么就直接返回到前一个activity
 				finish();
 			}
-			break;
-		case R.id.actionbar_share:
-			Toast.makeText(this, "分享还没做好,不要着急哦,亲", Toast.LENGTH_SHORT).show();
-			break;
-
+			break;		
 		default:
 			break;
 		}

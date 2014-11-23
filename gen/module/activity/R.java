@@ -21,49 +21,94 @@ public final class R {
         public static final int loading_animation=0x7f040009;
     }
     public static final class array {
-        /**  advice_yeyankoubi 
-         */
-        public static final int advice_eryankoubi=0x7f050010;
-        /**  advice_fubu 
-         */
-        public static final int advice_fubu=0x7f050008;
-        /**  advice_jingbu 
-         */
-        public static final int advice_jingbu=0x7f050004;
-        /**  advice_paixiebu 
-         */
-        public static final int advice_paixiebu=0x7f05000c;
-        /**  advice_qita 
-         */
-        public static final int advice_qita=0x7f050014;
-        /**  advice_shengzhiqi 
-         */
-        public static final int advice_shengzhiqi=0x7f05000a;
-        /**  advice_toubu 
-         */
-        public static final int advice_toubu=0x7f050002;
-        /**  advice_xiazhi 
-         */
-        public static final int advice_xiazhi=0x7f050012;
-        /**  advice_xiongbu 
-         */
-        public static final int advice_xiongbu=0x7f050006;
-        /**  advice_yaobu 
-         */
-        public static final int advice_yaobu=0x7f05000e;
-        public static final int body_eryankoubi=0x7f05000f;
-        public static final int body_fubu=0x7f050007;
-        public static final int body_jingbu=0x7f050003;
         public static final int body_list=0x7f050000;
-        public static final int body_paixiebu=0x7f05000b;
-        public static final int body_qita=0x7f050013;
-        public static final int body_shengzhiqi=0x7f050009;
-        /**  头部 
+        /**  female_advice_yeyankoubi 
          */
-        public static final int body_toubu=0x7f050001;
-        public static final int body_xiazhi=0x7f050011;
-        public static final int body_xiongbu=0x7f050005;
-        public static final int body_yaobu=0x7f05000d;
+        public static final int female_advice_eryankoubi=0x7f050024;
+        /**  female_advice_fubu 
+         */
+        public static final int female_advice_fubu=0x7f05001c;
+        /**  female_advice_jingbu 
+         */
+        public static final int female_advice_jingbu=0x7f050018;
+        /**  female_advice_paixiebu 
+         */
+        public static final int female_advice_paixiebu=0x7f050020;
+        /**  female_advice_qita 
+         */
+        public static final int female_advice_qita=0x7f050028;
+        /**  female_advice_shengzhiqi 
+         */
+        public static final int female_advice_shengzhiqi=0x7f05001e;
+        /**  female_advice_toubu 
+         */
+        public static final int female_advice_toubu=0x7f050016;
+        /**  female_advice_xiazhi 
+         */
+        public static final int female_advice_xiazhi=0x7f050026;
+        /**  female_advice_xiongbu 
+         */
+        public static final int female_advice_xiongbu=0x7f05001a;
+        /**  female_advice_yaobu 
+         */
+        public static final int female_advice_yaobu=0x7f050022;
+        public static final int female_body_eryankoubi=0x7f050023;
+        public static final int female_body_fubu=0x7f05001b;
+        public static final int female_body_jingbu=0x7f050017;
+        public static final int female_body_paixiebu=0x7f05001f;
+        public static final int female_body_qita=0x7f050027;
+        public static final int female_body_shengzhiqi=0x7f05001d;
+        /**  ========================================================= 
+ 女性 
+ 头部 
+         */
+        public static final int female_body_toubu=0x7f050015;
+        public static final int female_body_xiazhi=0x7f050025;
+        public static final int female_body_xiongbu=0x7f050019;
+        public static final int female_body_yaobu=0x7f050021;
+        /**  male_advice_yeyankoubi 
+         */
+        public static final int male_advice_eryankoubi=0x7f050010;
+        /**  male_advice_fubu 
+         */
+        public static final int male_advice_fubu=0x7f050008;
+        /**  male_advice_jingbu 
+         */
+        public static final int male_advice_jingbu=0x7f050004;
+        /**  male_advice_paixiebu 
+         */
+        public static final int male_advice_paixiebu=0x7f05000c;
+        /**  male_advice_qita 
+         */
+        public static final int male_advice_qita=0x7f050014;
+        /**  male_advice_shengzhiqi 
+         */
+        public static final int male_advice_shengzhiqi=0x7f05000a;
+        /**  male_advice_toubu 
+         */
+        public static final int male_advice_toubu=0x7f050002;
+        /**  male_advice_xiazhi 
+         */
+        public static final int male_advice_xiazhi=0x7f050012;
+        /**  male_advice_xiongbu 
+         */
+        public static final int male_advice_xiongbu=0x7f050006;
+        /**  male_advice_yaobu 
+         */
+        public static final int male_advice_yaobu=0x7f05000e;
+        public static final int male_body_eryankoubi=0x7f05000f;
+        public static final int male_body_fubu=0x7f050007;
+        public static final int male_body_jingbu=0x7f050003;
+        public static final int male_body_paixiebu=0x7f05000b;
+        public static final int male_body_qita=0x7f050013;
+        public static final int male_body_shengzhiqi=0x7f050009;
+        /**  男性 
+ 头部 
+         */
+        public static final int male_body_toubu=0x7f050001;
+        public static final int male_body_xiazhi=0x7f050011;
+        public static final int male_body_xiongbu=0x7f050005;
+        public static final int male_body_yaobu=0x7f05000d;
     }
     public static final class attr {
     }

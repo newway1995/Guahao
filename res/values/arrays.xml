@@ -12,8 +12,10 @@
         <item>下肢</item>
         <item>其他</item>
     </string-array>
+    <!-- 男性 -->
     <!-- 头部 -->
-    <string-array name="body_toubu">
+    <string-array name="male_body_toubu">
+        <item>male</item>
         <item>腮腺肿大</item>
         <item>语言障碍</item>
         <item>头疼</item>
@@ -21,8 +23,8 @@
         <item>头晕</item>
         <item>耳痛</item>
     </string-array>
-    <!-- advice_toubu -->
-    <string-array name="advice_toubu">
+    <!-- male_advice_toubu -->
+    <string-array name="male_advice_toubu">
         <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
         <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
         <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
@@ -32,7 +34,7 @@
     </string-array>
     
     
-    <string-array name="body_jingbu">
+    <string-array name="male_body_jingbu">
         <item>颈部疼痛或僵硬</item>
         <item>咽喉疼痛</item>
         <item>吞咽困难</item>
@@ -40,8 +42,8 @@
         <item>甲状腺肿大</item>
     </string-array>
     
-    <!-- advice_jingbu -->
-    <string-array name="advice_jingbu">
+    <!-- male_advice_jingbu -->
+    <string-array name="male_advice_jingbu">
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
@@ -49,7 +51,7 @@
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
     </string-array>
     
-    <string-array name="body_xiongbu">
+    <string-array name="male_body_xiongbu">
         <item>咯血</item>
         <item>肩部疼痛</item>
         <item>咳嗽</item>
@@ -58,8 +60,8 @@
         <item>哮喘</item>
         <item>心悸</item>
     </string-array>
-    <!-- advice_xiongbu -->
-    <string-array name="advice_xiongbu">
+    <!-- male_advice_xiongbu -->
+    <string-array name="male_advice_xiongbu">
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
@@ -70,15 +72,15 @@
     </string-array>
     
     
-    <string-array name="body_fubu">
+    <string-array name="male_body_fubu">
         <item>反酸</item>
         <item>痛经</item>
         <item>腹痛</item>
         <item>腹泻</item>
         <item>恶心吐吐</item>
     </string-array>
-    <!-- advice_fubu -->
-    <string-array name="advice_fubu">
+    <!-- male_advice_fubu -->
+    <string-array name="male_advice_fubu">
         <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
         <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
         <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
@@ -86,25 +88,25 @@
         <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
     </string-array>
     
-    <string-array name="body_shengzhiqi">
+    <string-array name="male_body_shengzhiqi">
         <item>阳痿</item>
         <item>早泄</item>        
     </string-array>
-    <!-- advice_shengzhiqi -->
-    <string-array name="advice_shengzhiqi">
+    <!-- male_advice_shengzhiqi -->
+    <string-array name="male_advice_shengzhiqi">
         <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
         <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
     </string-array>
     
-    <string-array name="body_paixiebu">
+    <string-array name="male_body_paixiebu">
         <item>便秘</item>
         <item>肛门瘙痒</item>
         <item>尿频</item>
         <item>便血</item>
         <item>血尿</item>
     </string-array>
-    <!-- advice_paixiebu -->
-    <string-array name="advice_paixiebu">
+    <!-- male_advice_paixiebu -->
+    <string-array name="male_advice_paixiebu">
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
@@ -112,15 +114,15 @@
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
     </string-array>
     
-    <string-array name="body_yaobu">
+    <string-array name="male_body_yaobu">
         <item>腰部</item>
     </string-array>
-    <!-- advice_yaobu -->
-    <string-array name="advice_yaobu">
+    <!-- male_advice_yaobu -->
+    <string-array name="male_advice_yaobu">
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
     </string-array>
     
-    <string-array name="body_eryankoubi">
+    <string-array name="male_body_eryankoubi">
         <item>眼睛干涩</item>
         <item>视力下降</item>
         <item>眼痛</item>
@@ -129,8 +131,8 @@
         <item>眼球突出</item>
         <item>鼻塞涕流</item>
     </string-array>
-    <!-- advice_yeyankoubi -->
-    <string-array name="advice_eryankoubi">
+    <!-- male_advice_yeyankoubi -->
+    <string-array name="male_advice_eryankoubi">
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
@@ -140,27 +142,27 @@
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
     </string-array>
     
-    <string-array name="body_xiazhi">
+    <string-array name="male_body_xiazhi">
         <item>膝关节疼痛</item>
         <item>髋关节疼痛</item>
         <item>踝部肿胀</item>
     </string-array>
-    <!-- advice_xiazhi -->
-    <string-array name="advice_xiazhi">
+    <!-- male_advice_xiazhi -->
+    <string-array name="male_advice_xiazhi">
         <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
         <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
         <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
     </string-array>
     
-    <string-array name="body_qita">
+    <string-array name="male_body_qita">
         <item>震惊和抽搐</item>
         <item>婴儿夜惊</item>
         <item>失眠</item>
         <item>焦虑</item>
         <item>低血压</item>
     </string-array>
-    <!-- advice_qita -->
-    <string-array name="advice_qita">
+    <!-- male_advice_qita -->
+    <string-array name="male_advice_qita">
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
@@ -168,5 +170,162 @@
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
     </string-array>
     
+    <!-- ========================================================= -->
+    <!-- 女性 -->
+    <!-- 头部 -->
+    <string-array name="female_body_toubu">
+        <item>female</item>
+        <item>腮腺肿大</item>
+        <item>语言障碍</item>
+        <item>头疼</item>
+        <item>面部疼痛</item>
+        <item>头晕</item>
+        <item>耳痛</item>
+    </string-array>
+    <!-- female_advice_toubu -->
+    <string-array name="female_advice_toubu">
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+        <item>女可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
+    </string-array>
     
+    
+    <string-array name="female_body_jingbu">
+        <item>颈部疼痛或僵硬</item>
+        <item>咽喉疼痛</item>
+        <item>吞咽困难</item>
+        <item>面部疼痛</item>
+        <item>甲状腺肿大</item>
+    </string-array>
+    
+    <!-- female_advice_jingbu -->
+    <string-array name="female_advice_jingbu">
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
+    </string-array>
+    
+    <string-array name="female_body_xiongbu">
+        <item>咯血</item>
+        <item>肩部疼痛</item>
+        <item>咳嗽</item>
+        <item>呼吸困难</item>
+        <item>胸痛</item>
+        <item>哮喘</item>
+        <item>心悸</item>
+    </string-array>
+    <!-- female_advice_xiongbu -->
+    <string-array name="female_advice_xiongbu">
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+    </string-array>
+    
+    
+    <string-array name="female_body_fubu">
+        <item>反酸</item>
+        <item>痛经</item>
+        <item>腹痛</item>
+        <item>腹泻</item>
+        <item>恶心吐吐</item>
+    </string-array>
+    <!-- female_advice_fubu -->
+    <string-array name="female_advice_fubu">
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+        <item>可能为生理化反酸，建议戒烟戒酒，清单饮食，若果症状持续应到医院消化内科就诊</item>
+    </string-array>
+    
+    <string-array name="female_body_shengzhiqi">
+        <item>阳痿</item>
+        <item>早泄</item>        
+    </string-array>
+    <!-- female_advice_shengzhiqi -->
+    <string-array name="female_advice_shengzhiqi">
+        <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
+        <item>可能为初次性交由于紧张和焦虑造成勃起困难，这是正常现象，建议心情放松，勃起困难会逐渐克服的</item>
+    </string-array>
+    
+    <string-array name="female_body_paixiebu">
+        <item>便秘</item>
+        <item>肛门瘙痒</item>
+        <item>尿频</item>
+        <item>便血</item>
+        <item>血尿</item>
+    </string-array>
+    <!-- female_advice_paixiebu -->
+    <string-array name="female_advice_paixiebu">
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
+    </string-array>
+    
+    <string-array name="female_body_yaobu">
+        <item>腰部</item>
+    </string-array>
+    <!-- female_advice_yaobu -->
+    <string-array name="female_advice_yaobu">
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+    </string-array>
+    
+    <string-array name="female_body_eryankoubi">
+        <item>眼睛干涩</item>
+        <item>视力下降</item>
+        <item>眼痛</item>
+        <item>牙痛</item>
+        <item>牙齿异常</item>
+        <item>眼球突出</item>
+        <item>鼻塞涕流</item>
+    </string-array>
+    <!-- female_advice_yeyankoubi -->
+    <string-array name="female_advice_eryankoubi">
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
+    </string-array>
+    
+    <string-array name="female_body_xiazhi">
+        <item>膝关节疼痛</item>
+        <item>髋关节疼痛</item>
+        <item>踝部肿胀</item>
+    </string-array>
+    <!-- female_advice_xiazhi -->
+    <string-array name="female_advice_xiazhi">
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
+        <item>可能为骨折或者关节脱位，建议尽快去医院急诊科或骨科就诊</item>
+    </string-array>
+    
+    <string-array name="female_body_qita">
+        <item>震惊和抽搐</item>
+        <item>婴儿夜惊</item>
+        <item>失眠</item>
+        <item>焦虑</item>
+        <item>低血压</item>
+    </string-array>
+    <!-- female_advice_qita -->
+    <string-array name="female_advice_qita">
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
+    </string-array>
 </resources>

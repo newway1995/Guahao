@@ -67,10 +67,17 @@ public class FenZhenRightFragment extends Fragment{
 			public void onItemClick(AdapterView<?> arg0, View v, int position,
 					long arg3) {
 				if (firstPosition) {//第一次跳转之后的列表
-					setList(position);					
+					setList(position,FenZhenActivity.isMaleShowing);
+					Log.d(TAG, "第一次跳转之后的列表");
 				}else {//第二次跳转之后
+					Log.d(TAG, "isMaleShowing = " + FenZhenActivity.isMaleShowing);
 					//跳出一个弹出提示框
-					Toast.makeText(getActivity(), Constant.getSickSolution(first, position, res), Toast.LENGTH_LONG).show();
+					if (FenZhenActivity.isMaleShowing) {//male
+						Toast.makeText(getActivity(), Constant.getMaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
+					}else {//female
+						Toast.makeText(getActivity(), Constant.getFemaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
+					}
+					
 				}
 			}
 		});
@@ -85,9 +92,14 @@ public class FenZhenRightFragment extends Fragment{
 			data.add(map);
 		}
 	}
-	//设置list第二个列表(具体哪一方面疾病的列表) 可以提供外部引用
-	public void setList(int position){
-		String []strs = Constant.getSickList(position,res);
+	//设置list第二个男性列表(具体哪一方面疾病的列表) 可以提供外部引用
+	public void setList(int position,boolean isMaleShowing){
+		String []strs;
+		if (isMaleShowing) {
+			strs = Constant.getMaleSickList(position,res);
+		}else {
+			strs = Constant.getFemaleSickList(position,res);
+		}
 		setListData(strs);
 		simpleAdapter = new SimpleAdapter(getActivity(), data, R.layout.item_fenzhen_right_text, from, to);
 		listView.setAdapter(simpleAdapter);
@@ -103,6 +115,7 @@ public class FenZhenRightFragment extends Fragment{
 		simpleAdapter = new SimpleAdapter(getActivity(), data, R.layout.item_fenzhen_right_text, from, to);
 		listView.setAdapter(simpleAdapter);
 	}
+		
 	
 	//外部引用 返回当前是第几个列表
 	public int getCurrentList(){
