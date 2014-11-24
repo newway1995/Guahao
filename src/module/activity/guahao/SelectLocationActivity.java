@@ -6,6 +6,7 @@ import module.adapter.LocationSubAdapter;
 import module.view.LocationListView;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +20,7 @@ import android.widget.AdapterView.OnItemClickListener;
  * 位置选择
  */
 public class SelectLocationActivity extends Activity {
-	
+	private static final String TAG = "SelectLocationActivity";
 	private LocationListView provincelList;
 	private LocationListView cityList;
 	private LocationAdapter provinceAdapter;
@@ -84,8 +85,10 @@ public class SelectLocationActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
+				Log.d(TAG, "position = " + arg2);
+				provinceAdapter.setSelectedPosition(arg2);
 				currentProvince = arg2;
-				cityAdapter = new LocationSubAdapter(getApplicationContext(), cityes[arg2]);
+				cityAdapter = new LocationSubAdapter(getApplicationContext(), cityes[arg2]);				
 				cityList.setAdapter(cityAdapter);
 			}
 		});

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">手机挂号网</string>
     <string name="action_settings">Settings</string>
+	<string name="network_error">当前无网络连接,请检查是否有可用网络</string>
+	<string name="change_wifi">当前WIFI连接</string>
+	<string name="change_3g">当前为3G连接,请注意您的流量哦</string>    
+    
     <string name="guahao">挂号</string>
     <string name="zixun">咨询</string>
     <string name="faxian">发现</string>

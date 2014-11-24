@@ -32,11 +32,14 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+
 /**
  * @author niuwei
  * @email nniuwei@163.com
- * 上午10:41:29
- *
+ * @ClassName:NetHandler.java
+ * @Package:common.util
+ * @time:下午11:17:09 2014-11-24
+ * @useage:网络状态判断
  */
 public class NetHandler {
 	/** 
@@ -278,11 +281,6 @@ public class NetHandler {
                 while((line = reader.readLine()) != null){
                     result = result + line;
                 }
-//	                byte[] b = result.getBytes();
-//	                result = new String(b, "gb2312");
-//	                String re = result.substring(0, result.lastIndexOf("}"));
-//	                System.out.println(re);
-                //System.out.println("result = " + result);
                
             } catch (Exception e) {
                 e.printStackTrace();
