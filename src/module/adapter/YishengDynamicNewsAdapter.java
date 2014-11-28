@@ -57,10 +57,10 @@ public class YishengDynamicNewsAdapter extends BaseAdapter{
 		TextView contentText = (TextView)convertView.findViewById(R.id.item_yishengdynamic_content);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("imageUrl"));
-		nameText.setText(list.get(position).get("title"));
+		kjBitmap.display(imageView, list.get(position).get("img"));
+		nameText.setText(list.get(position).get("doctor_name"));
 		timeText.setText(list.get(position).get("time"));
-		contentText.setText(list.get(position).get("description"));
+		contentText.setText(list.get(position).get("content"));
 		return convertView;
 	}
 }

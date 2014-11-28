@@ -59,6 +59,16 @@ public class AppNet {
 			String[] paramList = new String[] {"old_password","new_password","user_id","action"};
 			return getUrl(result, params, paramList);
 		}
+		
+		/**
+		 * 获取医生在线
+		 * */
+		private static final String doctorOnline = URL;
+		public static String doctorOnline(ArrayList<NameValuePair> params){
+			String result = doctorOnline;
+			String[] paramList = new String[] {"pageCount","pageFrom","action"};
+			return getUrl(result, params, paramList);
+		}
 	}
 	
 	//返回完整的api地址

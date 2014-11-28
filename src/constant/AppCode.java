@@ -14,9 +14,13 @@ public class AppCode {
 	
 	public static final String ACTION_CHANGE_PWD = "API_GH_CHANGE_PWD";
 	public static final String ACTION_LOGIN = "API_GH_LOGIN";
+	public static final String ACTION_DOCTOR_ONLINE = "API_GH_GET_DOCTOR_ONLINE";
+	public static final String ACTION_DOCTOR_DYNAMIC = "API_GH_GET_DOCTOR_DYNAMIC";
+	public static final String ACTION_HEALTH_NEWS = "API_GH_GET_HEALTHY_NEWS";
 	
 	public static final int LOGIN = 1;
 	public static final int CHANGE_PWD = 2;
+	public static final int DOCTOR_ONLINE = 3;
 	public static final int ISLOGIN = -2;
 	
 	/**
@@ -35,6 +39,8 @@ public class AppCode {
 			Log.d(TAG, "url = " + urlName);
 			break;
 		case CHANGE_PWD://修改密码
+			urlName = AppNet.NetUrl.changePwd(params);
+		case DOCTOR_ONLINE://获取医生在线
 			urlName = AppNet.NetUrl.changePwd(params);
 		default:
 			break;

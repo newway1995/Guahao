@@ -58,9 +58,9 @@ public class JBNewsAdapter extends BaseAdapter{
 		TextView dscptText = (TextView)convertView.findViewById(R.id.item_jibing_description);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("imageUrl"));
+		kjBitmap.display(imageView, list.get(position).get("img"));
 		titleText.setText(list.get(position).get("title"));
-		dscptText.setText(list.get(position).get("description"));
+		dscptText.setText(list.get(position).get("content"));
 		return convertView;
 	}
 }

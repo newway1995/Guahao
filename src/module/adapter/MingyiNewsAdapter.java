@@ -58,10 +58,10 @@ public class MingyiNewsAdapter extends BaseAdapter{
 		TextView dscptText = (TextView)convertView.findViewById(R.id.item_mingyi_description);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("imageUrl"));
+		kjBitmap.display(imageView, list.get(position).get("img"));
 		titleText.setText(list.get(position).get("title"));
 		timeText.setText(list.get(position).get("time"));
-		dscptText.setText(list.get(position).get("description"));
+		dscptText.setText(list.get(position).get("content"));
 		return convertView;
 	}
 }

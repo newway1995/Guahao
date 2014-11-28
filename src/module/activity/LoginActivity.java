@@ -132,8 +132,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 				// TODO Auto-generated method stub
 				Log.d(TAG, "doInBackground");
 				ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
-				params.add(new BasicNameValuePair("username", username));
-				params.add(new BasicNameValuePair("password", password));
+				params.add(new BasicNameValuePair("username", Constant.USERNAME));
+				params.add(new BasicNameValuePair("password", Constant.PASSWORD));
 				params.add(new BasicNameValuePair("action", AppCode.ACTION_LOGIN));
 				result = AppCode.getData(LoginActivity.this, AppCode.LOGIN, params, AppNet.Access.GET);
 			}

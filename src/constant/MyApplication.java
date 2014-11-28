@@ -1,5 +1,7 @@
 package constant;
 
+import common.util.CacheHandler;
+
 import android.app.Application;
 
 /**
@@ -16,4 +18,12 @@ public class MyApplication extends Application{
 	public void onCreate() {
 		super.onCreate();
 	}
+	
+	/**
+	 * 判断是否登录
+	 * */
+	public boolean isLogin(){
+		return !(CacheHandler.readCache(getApplicationContext(), Constant.USER_INFO, Constant.PASSWORD).equals(""));
+	}
+	
 }

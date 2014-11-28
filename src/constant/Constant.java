@@ -20,6 +20,8 @@ public class Constant {
 	public static final String PASSWORD = "password";
 	public static final String USER_ID = "user_id";
 	public static final String USER_INFO = "user_info";
+	public static final String PAGE_COUNT = "pageCount";
+	public static final String PAGE_FROM = "pageFrom";
 	
 	
 	/**

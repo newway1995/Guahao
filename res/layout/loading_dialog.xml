@@ -6,13 +6,13 @@
     android:minHeight="76dp"  
     android:minWidth="76dp"
     android:gravity="center"  
-    android:padding="10dp"
+    android:padding="5dp"
     android:background="@color/gray_light"
     android:orientation="vertical" >
     
 	<RelativeLayout 
 	    style="@style/none_fill_parent"
-	    android:background="@color/white">
+	    android:background="@android:color/transparent">
 	    <ImageView   
 	        android:id="@+id/loading_img"  
 	        android:layout_width="wrap_content"   

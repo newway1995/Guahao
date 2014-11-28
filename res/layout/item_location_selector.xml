@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <View 
+        android:id="@+id/location_icon"
+        android:layout_width="7dp"
+        android:layout_height="12dp"       
+        android:layout_marginLeft="20dp"        
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/area_item_select_icon"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        />
+    
+    <TextView
+        android:id="@+id/location_item"
+        style="@style/none_fill_parent"
+        android:textAppearance="@style/black_18"
+        android:padding="20dp"        
+        />
+
+</LinearLayout>
