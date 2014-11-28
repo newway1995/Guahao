@@ -26,20 +26,16 @@ public class AppNet {
 		return SingletonHolder.instance;
 	}
 	
-	public static String HTTP = "http://";
-	public static String HTTPS = "https://";
+	private static final String HTTP = "http://";
+	public static final String HTTPS = "https://";
+	private static final String DOMIN = "192.168.169.4:8888/";
+	private static final String APIV1 = "SystemDesign/index.php";//接口
+	private static final String URL = HTTP + DOMIN + APIV1;
 	
 	public static class Access{
 		public static final int POST = 0;
 		public static final int GET = 1;
-	}
-	
-	//只允许在内部被访问	
-	public static class UrlPrefixLogin{
-		private static String DOMIN = "";//域
-		private static String APIV1 = "";//接口		
-		private static String prefixLogin = HTTP + DOMIN + APIV1;
-	}
+	}	
 	
 	
 	//控制网络访问
@@ -47,10 +43,20 @@ public class AppNet {
 		/**
 		 * 登录接口
 		 */
-		private static final String login = UrlPrefixLogin.prefixLogin + "";
+		private static final String login = URL;
 		public static String login(ArrayList<NameValuePair> params){
 			String result = login;
-			String[] paramList = new String[] {"username","userpwd"};
+			String[] paramList = new String[] {"username","password","action"};
+			return getUrl(result, params, paramList);
+		}
+		
+		/**
+		 * 修改密码
+		 * */
+		private static final String changePwd = URL;
+		public static String changePwd(ArrayList<NameValuePair> params){
+			String result = changePwd;
+			String[] paramList = new String[] {"old_password","new_password","user_id","action"};
 			return getUrl(result, params, paramList);
 		}
 	}
@@ -72,10 +78,8 @@ public class AppNet {
 			for(int i=0; i<paramList.length; i++){
 				String param = paramList[i];
 				if(map.containsKey(param)){
-					if (result.endsWith("/")) {
-						result = result.substring(0, result.length() - 1);
-						result += "?" + param + "=" + map.get(param);
-					}
+					if (result.endsWith("index.php")) 
+						result += "?" + param + "=" + map.get(param);					
 					else
 						result += "&" + param + "=" + map.get(param);
 				}

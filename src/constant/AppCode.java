@@ -11,8 +11,13 @@ import android.util.Log;
 
 public class AppCode {
 	public static final String TAG = "AppCode";
+	
+	public static final String ACTION_CHANGE_PWD = "API_GH_CHANGE_PWD";
+	public static final String ACTION_LOGIN = "API_GH_LOGIN";
+	
 	public static final int LOGIN = 1;
-	public static final int ISLOGIN = 1;
+	public static final int CHANGE_PWD = 2;
+	public static final int ISLOGIN = -2;
 	
 	/**
 	 * 通过逻辑标签code 来获取 或者 提交数据
@@ -25,14 +30,16 @@ public class AppCode {
 		String result = null;
 		String urlName = null;
 		switch (AppCode) {
-		case LOGIN://登陆
+		case LOGIN://登陆			
 			urlName = AppNet.NetUrl.login(params);
+			Log.d(TAG, "url = " + urlName);
 			break;
-
+		case CHANGE_PWD://修改密码
+			urlName = AppNet.NetUrl.changePwd(params);
 		default:
 			break;
 		}
-		if (urlName != null && urlName.equals("")) 
+		if (urlName != null && !urlName.equals("")) 
 			Log.d(TAG, urlName);
 		if(netCate == AppNet.Access.POST){
 			result = NetHandler.netPost(urlName, params, mContext);

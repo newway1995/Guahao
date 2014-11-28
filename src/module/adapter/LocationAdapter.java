@@ -44,13 +44,15 @@ public class LocationAdapter extends BaseAdapter{
 		if(convertView == null)
 			convertView = inflater.inflate(R.layout.item_location_selector, null);
 		TextView textView = (TextView)convertView.findViewById(R.id.location_item);
+		View imageView = (View)convertView.findViewById(R.id.location_icon);
 		// 设置选中效果    
-	    if(selectedPosition == position){
-	    	textView.setTextColor(Color.BLUE);
+	    if(selectedPosition == position){	    	
 	    	convertView.setBackgroundColor(Color.WHITE);
+	    	imageView.setVisibility(View.VISIBLE);
 			Log.d(TAG, "selectedposition = "+selectedPosition);
-	    }else {
-	    	textView.setTextColor(Color.BLACK);   
+	    }else {	    	
+	    	convertView.setBackgroundColor(context.getResources().getColor(R.color.gray_location));
+	    	imageView.setVisibility(View.GONE);
 		}
 	    textView.setText(provinces[position]);
 		return convertView;

@@ -3,6 +3,7 @@ package common.util;
 
 import module.activity.R;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -19,7 +20,7 @@ public class MyAsyncTask extends AsyncTask<Void, Void, Void> implements Runnable
 	//时间控制线程
 	private Thread thread;
 	//进度条
-	private Dialog dialog;
+	private ProgressDialog dialog;
 	//异步操作
 	private AsyncInter function;
 	//异步操作限时
@@ -41,12 +42,11 @@ public class MyAsyncTask extends AsyncTask<Void, Void, Void> implements Runnable
 
 		Log.d(TAG, "MyAsyncTask construct");
 		
-//		dialog = new ProgressDialog(context);
-//		dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); 
-//        dialog.setMessage(context.getText(R.string.loading));  
-//        dialog.setIndeterminate(false);
-//        dialog.setCanceledOnTouchOutside(false);
-		dialog = createLoadingDialog(context);
+		dialog = new ProgressDialog(context);
+		dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); 
+        dialog.setMessage(context.getText(R.string.loading));  
+        dialog.setIndeterminate(false);
+        dialog.setCanceledOnTouchOutside(false);
         function = func;
         
         thread = new Thread(this);
@@ -135,7 +135,7 @@ public class MyAsyncTask extends AsyncTask<Void, Void, Void> implements Runnable
      * @param msg 
      * @return 
      */ 
-	private Dialog createLoadingDialog(Context context) {
+	public Dialog createLoadingDialog(Context context) {
 		LayoutInflater inflater = LayoutInflater.from(context);  
 		View v = inflater.inflate(R.layout.loading_dialog, null);// 得到加载view  
         LinearLayout layout = (LinearLayout) v.findViewById(R.id.loading_view);// 加载布局

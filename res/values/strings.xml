@@ -17,6 +17,7 @@
 	<string name="my_order">我的预约</string>
 	<string name="cancel">取消</string>
 	<string name="sure">确定</string>
+	<string name="sure_change">确定修改</string>
 	<string name="sex">性别</string>
 	<string name="male">男</string>
 	<string name="female">女</string>
@@ -69,4 +70,10 @@
 	<string name="our_team">\t[挂号网]是背景航空航天大学软件学院系统分析设计小组——团灭发动机共同开发完成,软件包括客户端和网页端,android客户端在实现了完整的功能的基础上尽量在提升用户的使用体验.挂号网APP专为患者量身打造,用户版包括专家咨询、智能分诊、即时挂号、院外候诊、处方查询.\n\t您的支持是我们最大的幸运</string>
 	<string name="contact_you">方便我们联系您</string>
 	<string name="contact_phone">可不填</string>
+	<string name="change_pwd_old">请输入原密码</string>
+	<string name="change_pwd_old_is_empty">原密码不能为空</string>
+	<string name="change_pwd_new">请输入新密码</string>
+	<string name="change_pwd_new_is_empty">新密码不能为空</string>
+	<string name="change_pwd_success">密码修改成功,请记住新密码</string>
+	<string name="change_pwd_error">密码修改失败,请检查错误原因</string>
 </resources>

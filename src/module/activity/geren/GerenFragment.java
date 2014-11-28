@@ -1,5 +1,6 @@
 package module.activity.geren;
 
+import module.activity.LoginActivity;
 import module.activity.R;
 import android.content.Intent;
 import android.os.Bundle;
@@ -63,7 +64,8 @@ public class GerenFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.geren_all:
-			startActivity(new Intent(getActivity(),UserInfoActivity.class));
+			//startActivity(new Intent(getActivity(),UserInfoActivity.class));
+			startActivity(new Intent(getActivity(),LoginActivity.class));
 			break;
 		case R.id.geren_my_order:
 			startActivity(new Intent(getActivity(),OrderActivity.class));

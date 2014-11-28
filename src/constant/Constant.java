@@ -16,6 +16,11 @@ public class Constant {
 	public static final int FENZHEN_SICK_EYE = 7;//耳眼口鼻
 	public static final int FENZHEN_SICK_LEG = 8;//下肢
 	
+	public static final String USERNAME = "username";
+	public static final String PASSWORD = "password";
+	public static final String USER_ID = "user_id";
+	public static final String USER_INFO = "user_info";
+	
 	
 	/**
 	 * 返回所有的疾病列表

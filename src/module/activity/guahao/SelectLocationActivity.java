@@ -87,6 +87,7 @@ public class SelectLocationActivity extends Activity {
 					long arg3) {
 				Log.d(TAG, "position = " + arg2);
 				provinceAdapter.setSelectedPosition(arg2);
+				provinceAdapter.notifyDataSetChanged();
 				currentProvince = arg2;
 				cityAdapter = new LocationSubAdapter(getApplicationContext(), cityes[arg2]);				
 				cityList.setAdapter(cityAdapter);

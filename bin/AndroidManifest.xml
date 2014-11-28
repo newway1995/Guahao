@@ -102,6 +102,25 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/user_info">
         </activity>
+        <!-- change password -->
+        <activity
+            android:name="module.activity.geren.ChangePwdActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/change_pwd">
+        </activity>
+        <!-- register user -->
+        <activity
+            android:name="module.activity.geren.RegisterActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/register">
+        </activity>
+        <!-- forget pwd -->
+        <activity
+            android:name="module.activity.geren.ForgetPasswordActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/forget_pwd">
+        </activity>
+        
         
         <!-- 咨询 -->
         <activity

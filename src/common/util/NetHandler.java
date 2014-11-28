@@ -234,20 +234,14 @@ public class NetHandler {
 			{
 				result = result + line;
 			}
-//	            result = result.substring(0, result.lastIndexOf("}")+1);
 			byte[] b = result.getBytes();
 			result = new String(b, "UTF-8");
-			System.out.println("result = " + result);//输出结果
-			
+			System.out.println("result = " + result);//输出结果			
 		}
 	    catch(Exception e)
 		{
-//		    	String MSG="netGet="+result+"url="+url;
-//				Log.d(TAG, MSG);  
 	    	e.printStackTrace();
 		}
-//			String MSG="netGet="+result+"url="+url;
-//			Log.d(TAG, MSG);
        
 		return result;
 	}
