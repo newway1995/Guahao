@@ -3,6 +3,8 @@ package module.activity.zixun;
 import java.util.ArrayList;
 import java.util.List;
 
+import common.util.LocationUtils;
+
 
 import module.activity.R;
 import module.activity.guahao.SelectLocationActivity;
@@ -99,7 +101,9 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 	}
 	
 	private void initData(){
-		
+		//提示当前位置
+		String locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		zixun_search.setText(locationStr);
 	}
 	
 	public void updataActionBar(){

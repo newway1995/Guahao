@@ -15,6 +15,7 @@
 	    android:drawablePadding="10dp"
 	    android:gravity="center_vertical"
 	    />   
+	    
     <!-- 选择医院 -->
     <RelativeLayout 
         android:id="@+id/guahao_choose_hospital"

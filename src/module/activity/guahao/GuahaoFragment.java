@@ -1,5 +1,7 @@
 package module.activity.guahao;
 
+import common.util.LocationUtils;
+
 import module.activity.R;
 import module.activity.geren.GuanzhuActivity;
 import module.activity.geren.OrderActivity;
@@ -62,7 +64,9 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 	}
 	
 	private void initData(){
-		
+		//提示当前位置
+		String locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		guahao_search.setText(locationStr);
 	}
 	
 	public void updataActionBar(){

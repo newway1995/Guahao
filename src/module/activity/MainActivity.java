@@ -1,6 +1,8 @@
 package module.activity;
 
 
+import common.util.LocationUtils;
+
 import module.activity.faxian.FaxianFragment;
 import module.activity.geren.GerenFragment;
 import module.activity.guahao.GuahaoFragment;
@@ -14,6 +16,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,6 +28,7 @@ import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 
+	private final static String TAG = "MainActivity";
 	private GuahaoFragment guahaoFragment;
 	private ZixunFragment zixunFragment;
 	private FaxianFragment faxianFragment;
@@ -69,6 +73,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
     
     private void initData(){
     	fragmentManager = getSupportFragmentManager();
+    	LocationUtils.getCNBylocation(this);//地理位置判断
+    	Log.d(TAG, "location city = " + LocationUtils.cityName);
 		setTabSelection(0);
     }    
 

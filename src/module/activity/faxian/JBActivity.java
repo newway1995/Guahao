@@ -4,14 +4,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import module.activity.R;
-import module.adapter.MingyiNewsAdapter;
+import module.adapter.JBNewsAdapter;
+import module.model.FaxianModel; 
 
-import org.kymjs.aframe.http.KJHttp;
-import org.kymjs.aframe.http.StringCallBack;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import common.receiver.ResultHandler;
+
+import constant.AppCode;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Menu;
@@ -30,9 +35,8 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 	
 	private SwipeRefreshLayout swipeRefreshLayout;
 	private ListView mListView;
-	private MingyiNewsAdapter mingyiNewsAdapter;
+	private JBNewsAdapter jbNewsAdapter;
 	private ArrayList<HashMap<String, String >> list;	
-	private KJHttp kjHttp; // 异步网络数据的获取
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +51,6 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 		getActionBar().setTitle(getResources().getString(R.string.mingyizaixian));
 		swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.mingyi_list);
 		mListView = (ListView)findViewById(R.id.mingyi_listview);
-		kjHttp = new KJHttp();
 		list = new ArrayList<HashMap<String,String>>();
 	}
 	
@@ -55,31 +58,43 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 		swipeRefreshLayout.setOnRefreshListener(this);
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
 				android.R.color.holo_orange_light, android.R.color.holo_red_light);
+		asyncGetData();
 	}
 	
 	//异步获取数据
-	@SuppressWarnings("unused")
-	private void asyncGetData(String url){
-		kjHttp.urlGet(url, new StringCallBack() {
+	private void asyncGetData(){
+		FaxianModel.getInstance().getNews(this, 0, 1, AppCode.ACTION_HEALTH_NEWS, new ResultHandler() {
 			
 			@Override
-			public void onSuccess(String json) {
-				// TODO Auto-generated method stub
-				try { 					
-														
-				} catch (Exception e) {
-					Log.d(TAG, "----------------------asyncGetData(kjdb)-------------------------");
-				}
-				jsonParser(json);
+			public void parseResult(String result) {
+				Log.d(TAG, "result = "+result);
+				list.clear();
+				JSONObject jObject;
+				try {
+					jObject = new JSONObject(result);
+					JSONArray jArray = jObject.getJSONArray("news");
+					for (int i = 0; i < jArray.length(); i++) {//循环便利
+						JSONObject jsonObject = jArray.getJSONObject(i);
+						HashMap< String, String> map = new HashMap<String, String>();
+						map.put("title", jsonObject.getString("title"));//编码有点问题
+						map.put("id", jsonObject.getString("id"));
+						map.put("content", jsonObject.getString("content"));
+						map.put("time", jsonObject.getString("time"));
+						map.put("img", jsonObject.getString("img"));
+						list.add(map);
+					}		
+					jbNewsAdapter = new JBNewsAdapter(JBActivity.this,list);		
+					mListView.setAdapter(jbNewsAdapter);
+					swipeRefreshLayout.setRefreshing(false);
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}			
 			}
 		});
 	}
 	
-	//解析数据
-	private void jsonParser(String json){
-		mingyiNewsAdapter = new MingyiNewsAdapter(this,list);		
-		mListView.setAdapter(mingyiNewsAdapter);
-	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -105,14 +120,6 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 
 	@Override
 	public void onRefresh() {
-		new Handler().postDelayed(new Runnable() {
-			
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), "刷新加载完毕", Toast.LENGTH_SHORT).show();
-				swipeRefreshLayout.setRefreshing(false);
-			}
-		}, 1000);
+		asyncGetData();
 	}	
 }

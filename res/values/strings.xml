@@ -47,7 +47,7 @@
 	<string name="jibing">疾病与营养</string>
 	<string name="share">分享</string>
 	
-	<string name="zixun_hint">搜索医院,医生,科室,疾病</string>
+	<string name="zixun_hint">当前位置:%s		搜索医院,医生,科室,疾病</string>
 	<string name="zixun_more_zhuanjia">更多专家</string>
 	
 	<string name="guahao_choose_hospital">请选择医院</string>
