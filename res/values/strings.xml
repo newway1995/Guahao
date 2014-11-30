@@ -5,6 +5,8 @@
 	<string name="network_error">当前无网络连接,请检查是否有可用网络</string>
 	<string name="change_wifi">当前WIFI连接</string>
 	<string name="change_3g">当前为3G连接,请注意您的流量哦</string>    
+    <string name="email">邮&#160;&#160;&#160;&#160;箱</string>
+    <string name="telephone">手机号</string>
     
     <string name="guahao">挂号</string>
     <string name="zixun">咨询</string>
@@ -29,6 +31,7 @@
 	<string name="register">注册</string>
 	<string name="register_new">注册新账号</string>
 	<string name="forget_pwd">忘记密码</string>
+	
 	
 	<string name="username">牛威</string>
 	<string name="zhuzhi">主治医师</string>
@@ -66,10 +69,13 @@
 	<string name="hospital_name">全世界最帅医院特别门诊——专治各种不服</string>
 	<string name="loading">正在加载</string>
 	<string name="connect_timeout">连接超时</string>
+	<string name="submit">提交</string>
 	
 	<string name="our_team">\t[挂号网]是背景航空航天大学软件学院系统分析设计小组——团灭发动机共同开发完成,软件包括客户端和网页端,android客户端在实现了完整的功能的基础上尽量在提升用户的使用体验.挂号网APP专为患者量身打造,用户版包括专家咨询、智能分诊、即时挂号、院外候诊、处方查询.\n\t您的支持是我们最大的幸运</string>
 	<string name="contact_you">方便我们联系您</string>
+	<string name="feedback">意见反馈</string>
 	<string name="contact_phone">可不填</string>
+	<string name="contact_write">需要填写您宝贵的信息</string>
 	<string name="change_pwd_old">请输入原密码</string>
 	<string name="change_pwd_old_is_empty">原密码不能为空</string>
 	<string name="change_pwd_new">请输入新密码</string>

@@ -122,6 +122,18 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/forget_pwd">
         </activity>
+        <!-- about us -->
+        <activity
+            android:name="module.activity.geren.AboutUsActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/about_us">
+        </activity>
+        <!-- contact us -->
+        <activity
+            android:name="module.activity.geren.ContactUsActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/feedback">
+        </activity>
         
         
         <!-- 咨询 -->

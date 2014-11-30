@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import org.apache.http.NameValuePair;
 
-
+ 
 /**
  * @author niuwei
  * @email nniuwei@163.com
@@ -28,8 +28,8 @@ public class AppNet {
 	
 	private static final String HTTP = "http://";
 	public static final String HTTPS = "https://";
-	private static final String DOMIN = "192.168.169.4:8888/";
-	private static final String APIV1 = "SystemDesign/index.php";//接口
+	private static final String DOMIN = "1.newway.sinaapp.com/";
+	private static final String APIV1 = "guahao/index.php";//接口
 	private static final String URL = HTTP + DOMIN + APIV1;
 	
 	public static class Access{

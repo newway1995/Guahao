@@ -241,8 +241,7 @@ public class NetHandler {
 	    catch(Exception e)
 		{
 	    	e.printStackTrace();
-		}
-       
+		}       
 		return result;
 	}
 	/**

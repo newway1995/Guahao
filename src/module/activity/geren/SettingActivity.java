@@ -2,7 +2,9 @@ package module.activity.geren;
 
 import module.activity.R;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -66,16 +68,23 @@ public class SettingActivity extends Activity implements OnClickListener{
 			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.setting_about:
-			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(SettingActivity.this,AboutUsActivity.class));
 			break;
 		case R.id.setting_check_update:
-			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			new Handler().postDelayed(new Runnable() {
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					Toast.makeText(SettingActivity.this, "已是当前最新版本", Toast.LENGTH_SHORT).show();
+				}
+			}, 1500);
 			break;
 		case R.id.logout:
 			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.setting_advice:
-			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(SettingActivity.this,ContactUsActivity.class));
 			break;
 
 		default:

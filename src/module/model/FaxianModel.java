@@ -42,6 +42,8 @@ public class FaxianModel {
 	
 	/**
 	 * 获取名医在线消息
+	 * @param pageFrom 第几页开始获取数据
+	 * @param pageCount 页面总数
 	 * */
 	public void getNews(final Context context,final int pageFrom,final int pageCount,final String action,final ResultHandler resultHandler){
 		AsyncInter inter = new AsyncInter() {
@@ -72,9 +74,10 @@ public class FaxianModel {
 				params.add(new BasicNameValuePair(Constant.PAGE_FROM,pageFrom+""));
 				params.add(new BasicNameValuePair("action",action));
 				result = AppCode.getData(context, AppCode.DOCTOR_ONLINE, params, AppNet.Access.GET);
+				
+				Log.d(TAG, "doInBackground result = " + result);
 			}
 		};
 		new MyAsyncTask(inter, true, context).execute();
 	}
-		
 }

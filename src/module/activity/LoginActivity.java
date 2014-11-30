@@ -72,7 +72,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 	}
 	
 	private void initData(){
-		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override

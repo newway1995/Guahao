@@ -23,6 +23,8 @@ public class Constant {
 	public static final String PAGE_COUNT = "pageCount";
 	public static final String PAGE_FROM = "pageFrom";
 	
+	public static final String PROVINCE = "province";
+	public static final String CITY = "city";
 	
 	/**
 	 * 返回所有的疾病列表

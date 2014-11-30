@@ -1,6 +1,8 @@
 package module.activity.guahao;
 
+import common.util.CacheHandler;
 import common.util.LocationUtils;
+import constant.Constant;
 
 import module.activity.R;
 import module.activity.geren.GuanzhuActivity;
@@ -64,8 +66,13 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 	}
 	
 	private void initData(){
-		//提示当前位置
-		String locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		//提示当前位置	
+		String locationStr = "";
+		if (!CacheHandler.readCache(getActivity(), Constant.APP_NAME, Constant.CITY).equals("")) {
+			locationStr = CacheHandler.readCache(getActivity(), Constant.APP_NAME, Constant.CITY);
+		}else {
+			locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		}
 		guahao_search.setText(locationStr);
 	}
 	

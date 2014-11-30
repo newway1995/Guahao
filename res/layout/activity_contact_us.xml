@@ -2,29 +2,84 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray_light"
     android:orientation="vertical" >
     
-	<EditText 
-	    android:id="@+id/contact_email"
-	    style="@style/width_fill_parent"
-	    android:hint="@string/contact_you"
-	    android:inputType="textEmailAddress"
-	    android:textSelectHandleLeft="@string/app_name"
-	    />
-	
-	<EditText 
-	    android:id="@+id/contact_phone"
-	    style="@style/width_fill_parent"
-	    android:hint="@string/contact_phone"
-	    android:inputType="phone"
-	    android:textSelectHandleLeft="@string/app_name"
-	    />
-	
+    <LinearLayout 
+        style="@style/width_fill_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+		<TextView 
+		    style="@style/none_fill_parent"
+		    android:textAppearance="@style/black_18"
+		    android:padding="20dp"
+		    android:text="@string/email"/>                
+        <EditText 
+		    android:id="@+id/contact_email"
+		    style="@style/width_fill_parent"
+		    android:hint="@string/contact_you"
+		    android:textAppearance="@style/gray_18"
+		    android:paddingTop="20dp"
+		    android:paddingBottom="20dp"
+		    android:inputType="textEmailAddress"
+		    android:background="@null"
+		    />
+    </LinearLayout>
+    
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/doct_list_item_divider"
+        />
+    
+    <LinearLayout 
+        style="@style/width_fill_parent"
+        android:divider="@drawable/doct_list_item_divider"
+        android:background="@color/white"
+        android:orientation="horizontal">
+		<TextView 
+		    style="@style/none_fill_parent"
+		    android:textAppearance="@style/black_18"
+		    android:padding="20dp"
+		    android:text="@string/telephone"/>                
+        <EditText 
+		    android:id="@+id/contact_phone"
+		    style="@style/width_fill_parent"
+		    android:hint="@string/contact_phone"
+		    android:inputType="phone"
+		    android:textAppearance="@style/gray_18"
+		    android:paddingTop="20dp"
+		    android:paddingBottom="20dp"
+		    android:background="@null"
+		    />        
+    </LinearLayout>
+    
+	<View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/doct_list_item_divider"
+        />
+		
 	<EditText 
 	    android:id="@+id/contact_content"
 	    style="@style/width_fill_parent"
-	    android:hint="@string/contact_phone"
-	    android:inputType="text"
-	    android:textSelectHandleLeft="@string/app_name"
+	    android:hint="@string/contact_write"
+	    android:layout_marginTop="10dp"
+	    android:padding="5dp"
+	    android:background="@drawable/edittext_multiline_corner"
+	    android:inputType="textMultiLine"
+	    android:minLines="5"
+	    android:gravity="top|left"	    
+	    />
+	<Button 
+	    android:id="@+id/contact_submit"
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/corners_white"
+	    android:text="@string/submit"
+	    android:gravity="center"
+	    android:textColor="@color/actionbar_background"
 	    />
 </LinearLayout>

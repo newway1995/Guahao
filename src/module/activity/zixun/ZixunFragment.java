@@ -3,7 +3,9 @@ package module.activity.zixun;
 import java.util.ArrayList;
 import java.util.List;
 
+import common.util.CacheHandler;
 import common.util.LocationUtils;
+import constant.Constant;
 
 
 import module.activity.R;
@@ -102,7 +104,12 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 	
 	private void initData(){
 		//提示当前位置
-		String locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		String locationStr = "";
+		if (!CacheHandler.readCache(getActivity(), Constant.APP_NAME, Constant.CITY).equals("")) {
+			locationStr = CacheHandler.readCache(getActivity(), Constant.APP_NAME, Constant.CITY);
+		}else {
+			locationStr = String.format(getActivity().getString(R.string.zixun_hint), LocationUtils.cityName);
+		}
 		zixun_search.setText(locationStr);
 	}
 	

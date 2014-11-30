@@ -1,5 +1,8 @@
 package module.activity.guahao;
 
+import common.util.CacheHandler;
+import constant.Constant;
+
 import module.activity.R;
 import module.adapter.LocationAdapter;
 import module.adapter.LocationSubAdapter;
@@ -100,6 +103,8 @@ public class SelectLocationActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				Toast.makeText(getApplicationContext(), "Selection Item = " + cityes[currentProvince][arg2], Toast.LENGTH_SHORT).show();
+				CacheHandler.writeCache(SelectLocationActivity.this, Constant.APP_NAME, Constant.PROVINCE, provinces[currentProvince]);
+				CacheHandler.writeCache(SelectLocationActivity.this, Constant.APP_NAME, Constant.CITY, cityes[currentProvince][arg2]);
 			}
 		});
 	}

@@ -64,7 +64,7 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 	
 	//异步获取数据
 	private void asyncGetData(){
-		FaxianModel.getInstance().getNews(this, 0, 1, AppCode.ACTION_DOCTOR_ONLINE, new ResultHandler() {
+		FaxianModel.getInstance().getNews(MingyiActivity.this, 0, 1, AppCode.ACTION_DOCTOR_ONLINE, new ResultHandler() {
 			
 			@Override
 			public void parseResult(String result) {
@@ -93,6 +93,7 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 				}				
 			}
 		});
+		
 	}
 	
 
