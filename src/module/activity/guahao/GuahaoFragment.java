@@ -110,4 +110,13 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 			break;
 		}
 	}
+	
+	//更新数据
+	@Override
+	public void onResume() {
+		super.onResume();
+		if (guahao_search != null) {
+			initData();
+		}
+	}
 }

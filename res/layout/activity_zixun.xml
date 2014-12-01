@@ -5,36 +5,36 @@
     android:orientation="vertical" >
     <LinearLayout 
         style="@style/width_fill_parent"
-        android:divider="@drawable/doct_list_item_divider"
+        android:padding="10dp"
         android:orientation="horizontal">
         <RadioGroup 
             android:id="@+id/zixun_gnnder"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:contentDescription="@string/sex">
             <RadioButton               
                 android:id="@+id/zixun_male"
                 android:text="@string/male"  
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/submit_patient_info_man_unselect"
-                android:checked="true"/>
+                android:drawableLeft="@drawable/man_selected_bg"
+                android:checked="false"/>
             <RadioButton               
                 android:id="@+id/zixun_female"
                 android:text="@string/female"  
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/submit_patient_info_man_select"
+                android:drawableLeft="@drawable/woman_selected_bg"
                 android:checked="true"/>
         </RadioGroup>
         <EditText
+            android:id="@+id/zixun_age"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/gray"
+            android:background="@drawable/corners_white"
             android:layout_gravity="center_vertical"
             android:padding="10dp"
             android:inputType="number"
@@ -44,9 +44,65 @@
     <!-- 分割线 -->
     <View 
         android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="1dp"
         android:background="@drawable/doct_list_item_divider"
         />
     
-
+    <EditText
+        android:id="@+id/zixun_dept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/corners_white"
+        android:padding="15dp"
+        android:inputType="text"
+        android:hint="@string/zixun_dept"
+        />
+    
+    <!-- 分割线 -->
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp"
+        android:background="@drawable/doct_list_item_divider"
+        />
+    
+	<EditText 
+	    android:id="@+id/zixun_content"
+	    style="@style/width_fill_parent"
+	    android:background="@color/white"
+	    android:hint="@string/contact_write"	    
+	    android:layout_marginTop="20dp"
+	    android:padding="5dp"	    
+	    android:inputType="textMultiLine"
+	    android:minLines="5"
+	    android:gravity="top|left"	    
+	    />
+	
+	<Button 
+	    android:id="@+id/zixun_upload_picture"
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/corners_white"
+	    android:text="@string/upload_picture"
+	    android:gravity="center"
+	    android:textColor="@color/actionbar_background"
+	    />
+	
+	<Button 
+	    android:id="@+id/zixun_submit"
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/corners_white"
+	    android:text="@string/submit"
+	    android:gravity="center"
+	    android:textColor="@color/actionbar_background"
+	    />
 </LinearLayout>

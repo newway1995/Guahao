@@ -18,12 +18,15 @@
 	
 	<RelativeLayout 
 	    android:layout_width="fill_parent"
-	    android:layout_height="250dp"
-	    android:background="@drawable/zixun_bg">
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    >
 	    <ImageView 
-	        style="@style/none_fill_parent"
+	        style="@style/both_fill_parent"
 	        android:src="@drawable/consult_text"
 	        android:contentDescription="@string/app_name"
+	    	android:background="@drawable/zixun_bg"
+	    	android:scaleType="matrix"
 	        />
 	    <ImageView 
 	        android:id="@+id/zixun_consult"
@@ -36,7 +39,9 @@
 	</RelativeLayout>
 	
 	<LinearLayout 
-	    style="@style/width_fill_parent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
 	    android:orientation="vertical"
 	    android:layout_marginTop="5dp"
 	    android:layout_marginRight="10dp"
@@ -46,7 +51,7 @@
 	        style="@style/width_fill_parent"
 	        android:padding="5dp">
 	        <TextView
-	            android:id="@+id/XXX"
+	            android:id="@+id/zixun_to_zhuanjia"
 		        style="@style/none_fill_parent"
 		        android:textAppearance="@style/green_18"
 		        android:text="@string/zixun_doctor"

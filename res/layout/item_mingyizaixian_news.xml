@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="15dp"
     android:orientation="vertical" >
     
 	<TextView 
@@ -18,7 +18,7 @@
 	    android:layout_marginBottom="10dp"
 	    />
 	<RelativeLayout 
-	    style="@style/width_fill_parent"
+	    style="@style/width_fill_parent"	    
 	    android:orientation="horizontal">
 	    <ImageView
 	        android:id="@+id/item_mingyi_image"
@@ -32,7 +32,7 @@
 	        style="@style/none_fill_parent"
 	        android:textAppearance="@style/black_14"
 	        android:text="@string/app_name"
-	        android:layout_marginLeft="10dp"
+	        android:layout_marginLeft="15dp"
 	        android:layout_marginBottom="5dp"
 	        android:layout_toRightOf="@id/item_mingyi_image"
 	        />
@@ -40,7 +40,7 @@
 	        android:id="@+id/item_mingyi_time"
 	        style="@style/none_fill_parent"
 	        android:textAppearance="@style/gray_14"
-	        android:layout_marginLeft="10dp"
+	        android:layout_marginLeft="15dp"
 	        android:text="@string/about_us"
 	        android:layout_below="@id/item_mingyi_description"
 	        android:layout_toRightOf="@id/item_mingyi_image"

@@ -10,6 +10,7 @@ import constant.Constant;
 
 import module.activity.R;
 import module.activity.guahao.SelectLocationActivity;
+import module.view.ZixunDoctor;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -52,14 +53,26 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 		View parentView = inflater.inflate(R.layout.fragment_zixun, null);
 		Log.d(TAG, "onCreateView");
 		
-		mViews = new ArrayList<View>();
-		mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
-		mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
-		mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
+		initViewPager();//调用顺序不能随便改
+		
+		//mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
+		//mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
+		//mViews.add(inflater.inflate(R.layout.item_zixun_scroll_layout, null));
 		
 		initView(parentView);
 		initData();
 		return parentView;
+	}
+	
+	private void initViewPager(){
+		mViews = new ArrayList<View>();			
+		ZixunDoctor sView1 = new ZixunDoctor(getActivity());
+		ZixunDoctor sView2 = new ZixunDoctor(getActivity());
+		ZixunDoctor sView3= new ZixunDoctor(getActivity());
+		mViews.add(sView1.getView());
+		mViews.add(sView2.getView());
+		mViews.add(sView3.getView());
+		//初始化数据
 	}
 	
 	private void initView(View parentView){
@@ -164,7 +177,15 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 		@Override
 		public boolean isViewFromObject(View arg0, Object arg1) {
 			return arg0 == arg1;
+		}	
+	}
+	
+	//更新数据
+	@Override
+	public void onResume() {
+		super.onResume();
+		if (zixun_search != null) {
+			initData();
 		}
-		
 	}
 }

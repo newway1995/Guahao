@@ -47,8 +47,7 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 	}
 	
 	private void initView(){
-		getActionBar().setDisplayHomeAsUpEnabled(true);//设置ActionBar
-		getActionBar().setTitle(getResources().getString(R.string.mingyizaixian));
+		getActionBar().setDisplayHomeAsUpEnabled(true);//设置ActionBar		
 		swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.mingyi_list);
 		mListView = (ListView)findViewById(R.id.mingyi_listview);
 		list = new ArrayList<HashMap<String,String>>();

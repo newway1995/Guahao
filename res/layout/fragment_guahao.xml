@@ -20,11 +20,12 @@
     <RelativeLayout 
         android:id="@+id/guahao_choose_hospital"
         android:layout_width="fill_parent"        
-        android:layout_height="140dp"
+        android:layout_height="0dp"
+		android:layout_weight="1"
     	android:background="@drawable/list_item_click"
         >
         <TextView
-            style="@style/none_fill_parent"
+            style="@style/height_fill_parent"
             android:drawableLeft="@drawable/gh_ic_hospital_dark"
             android:text="@string/guahao_choose_hospital"
             android:textAppearance="@style/gray_14"
@@ -44,11 +45,12 @@
     <RelativeLayout 
         android:id="@+id/guahao_choose_dept"
         android:layout_width="fill_parent"        
-        android:layout_height="140dp"
+		android:layout_height="0dp"
+		android:layout_weight="1"        
     	android:background="@drawable/list_item_click"
         >
         <TextView
-            style="@style/none_fill_parent"
+            style="@style/height_fill_parent"
             android:drawableLeft="@drawable/gh_ic_dept_dark"
             android:text="@string/guahao_choose_dept"
             android:textAppearance="@style/gray_14"
@@ -83,6 +85,7 @@
     
     <LinearLayout 
      	style="@style/width_fill_parent"
+     	android:padding="5dp"
      	android:orientation="horizontal"               
 	     >
 	     <TextView
