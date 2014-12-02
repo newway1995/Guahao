@@ -1,5 +1,5 @@
 package common.receiver;
 
-public interface ResultHandler {
+public interface NetResultInterface {
 	public void parseResult(String result);
 }

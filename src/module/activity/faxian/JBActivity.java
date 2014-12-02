@@ -6,12 +6,14 @@ import java.util.HashMap;
 import module.activity.R;
 import module.adapter.JBNewsAdapter;
 import module.model.FaxianModel; 
+import module.view.RefreshLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import common.receiver.ResultHandler;
+import common.receiver.NetResultInterface;
+import common.receiver.RefreshLoadInterface;
 
 import constant.AppCode;
 
@@ -33,10 +35,11 @@ import android.widget.Toast;
 public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener{
 	private final static String TAG = "JBActivity";
 	
-	private SwipeRefreshLayout swipeRefreshLayout;
+	private RefreshLayout swipeRefreshLayout;
 	private ListView mListView;
 	private JBNewsAdapter jbNewsAdapter;
 	private ArrayList<HashMap<String, String >> list;	
+	private int pageCount;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,21 +51,31 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 	
 	private void initView(){
 		getActionBar().setDisplayHomeAsUpEnabled(true);//设置ActionBar		
-		swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.mingyi_list);
+		swipeRefreshLayout = (RefreshLayout)findViewById(R.id.mingyi_list);
 		mListView = (ListView)findViewById(R.id.mingyi_listview);
 		list = new ArrayList<HashMap<String,String>>();
 	}
 	
 	private void initData(){
+		pageCount = 0;
 		swipeRefreshLayout.setOnRefreshListener(this);
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
 				android.R.color.holo_orange_light, android.R.color.holo_red_light);
-		asyncGetData();
+		swipeRefreshLayout.setOnLoadListener(new RefreshLoadInterface() {
+			
+			@Override
+			public void onLoad() {
+				// TODO Auto-generated method stub
+				asyncGetData(pageCount,++pageCount,false);
+				swipeRefreshLayout.setLoading(false);
+			}
+		});
+		asyncGetData(pageCount,++pageCount,true);
 	}
 	
 	//异步获取数据
-	private void asyncGetData(){
-		FaxianModel.getInstance().getNews(this, 0, 1, AppCode.ACTION_HEALTH_NEWS, new ResultHandler() {
+	private void asyncGetData(int pageFrom,int pageCount,final boolean isClear){
+		FaxianModel.getInstance().getNews(JBActivity.this, pageFrom, pageCount, AppCode.ACTION_HEALTH_NEWS, new NetResultInterface() {
 			
 			@Override
 			public void parseResult(String result) {
@@ -83,12 +96,13 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 						list.add(map);
 					}		
 					jbNewsAdapter = new JBNewsAdapter(JBActivity.this,list);		
-					mListView.setAdapter(jbNewsAdapter);
-					swipeRefreshLayout.setRefreshing(false);
+					mListView.setAdapter(jbNewsAdapter);					
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}			
+				} finally{
+					swipeRefreshLayout.setRefreshing(false);
+				}
 			}
 		});
 	}
@@ -119,6 +133,6 @@ public class JBActivity extends Activity implements SwipeRefreshLayout.OnRefresh
 
 	@Override
 	public void onRefresh() {
-		asyncGetData();
+		asyncGetData(pageCount,++pageCount,false);
 	}	
 }

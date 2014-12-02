@@ -1,7 +1,7 @@
 package module.activity.geren;
 
 import module.activity.R;
-import android.app.Activity;
+import module.activity.SwipeBackActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -13,7 +13,7 @@ import android.view.MenuItem;
  * @time:上午10:09:47 2014-11-30
  * @useage:关于我们
  */
-public class AboutUsActivity extends Activity{
+public class AboutUsActivity extends SwipeBackActivity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class AboutUsActivity extends Activity{
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			finish();
+			overridePendingTransition(0, R.anim.base_slide_right_out);
 			break;
 
 		default:

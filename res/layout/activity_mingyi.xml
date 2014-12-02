@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <android.support.v4.widget.SwipeRefreshLayout
+    <module.view.RefreshLayout
         android:id="@+id/mingyi_list"
         style="@style/both_fill_parent"  >
 		
@@ -14,7 +14,7 @@
             android:divider="@null"
             android:background="@android:color/transparent" >            
         </ListView>
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </module.view.RefreshLayout>
 	
     <Button 
 	    android:id="@+id/news_click_more"

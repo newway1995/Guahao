@@ -1,7 +1,7 @@
 package module.activity.geren;
 
 import module.activity.R;
-import android.app.Activity;
+import module.activity.SwipeBackActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -20,7 +20,7 @@ import android.widget.Toast;
  * @time:下午3:04:41 2014-11-30
  * @useage:意见反馈
  */
-public class ContactUsActivity extends Activity implements OnClickListener{
+public class ContactUsActivity extends SwipeBackActivity implements OnClickListener{
 
 	private EditText emailText;
 	private EditText phoneText;

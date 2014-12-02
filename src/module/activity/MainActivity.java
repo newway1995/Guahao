@@ -271,7 +271,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 				
 				@Override
 				public void onClick(View arg0) {
-					finish();
+					MainActivity.this.finish();
 				}
 			});
             ((Button)view.findViewById(R.id.exist_cancel)).setOnClickListener(new OnClickListener() {

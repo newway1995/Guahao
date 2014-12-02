@@ -1,7 +1,10 @@
 package module.activity.geren;
 
+import common.util.ViewUtils;
+
 import module.activity.R;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -71,11 +74,14 @@ public class SettingActivity extends Activity implements OnClickListener{
 			startActivity(new Intent(SettingActivity.this,AboutUsActivity.class));
 			break;
 		case R.id.setting_check_update:
+			final Dialog dialog = ViewUtils.getInstance().createLoadingDialog(this);
+			dialog.show();
 			new Handler().postDelayed(new Runnable() {
 				
 				@Override
 				public void run() {
 					// TODO Auto-generated method stub
+					dialog.dismiss();
 					Toast.makeText(SettingActivity.this, "已是当前最新版本", Toast.LENGTH_SHORT).show();
 				}
 			}, 1500);

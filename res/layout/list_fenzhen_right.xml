@@ -8,7 +8,7 @@
     <ListView 
         android:id="@+id/list_fenzhen_right_list"
         style="@style/both_fill_parent"
-        android:background="@drawable/corners_white"
+        android:background="@drawable/corners_white_listview"
         android:divider="@drawable/doct_list_item_divider"
         android:scrollbars="none"        
         />

@@ -7,7 +7,7 @@ import org.apache.http.message.BasicNameValuePair;
 
 import android.content.Context;
 import android.util.Log;
-import common.receiver.ResultHandler;
+import common.receiver.NetResultInterface;
 import common.util.AsyncInter;
 import common.util.MyAsyncTask;
 import constant.AppCode;
@@ -45,7 +45,7 @@ public class FaxianModel {
 	 * @param pageFrom 第几页开始获取数据
 	 * @param pageCount 页面总数
 	 * */
-	public void getNews(final Context context,final int pageFrom,final int pageCount,final String action,final ResultHandler resultHandler){
+	public void getNews(final Context context,final int pageFrom,final int pageCount,final String action,final NetResultInterface resultHandler){
 		AsyncInter inter = new AsyncInter() {
 			String result = "";
 			@Override

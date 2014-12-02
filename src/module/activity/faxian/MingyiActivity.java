@@ -7,7 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import common.receiver.ResultHandler;
+import common.receiver.NetResultInterface;
+import common.receiver.RefreshLoadInterface;
 
 import constant.AppCode;
 
@@ -15,6 +16,7 @@ import constant.AppCode;
 import module.activity.R;
 import module.adapter.MingyiNewsAdapter;
 import module.model.FaxianModel;
+import module.view.RefreshLayout;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -33,10 +35,11 @@ import android.widget.Toast;
 public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener{
 	private final static String TAG = "MingyiActivity";
 	
-	private SwipeRefreshLayout swipeRefreshLayout;
+	private RefreshLayout swipeRefreshLayout;
 	private ListView mListView;
 	private MingyiNewsAdapter mingyiNewsAdapter;
 	private ArrayList<HashMap<String, String >> list;	
+	private int pageCount;
 	
 	
 	@Override
@@ -50,25 +53,37 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 	private void initView(){
 		getActionBar().setDisplayHomeAsUpEnabled(true);//设置ActionBar
 		getActionBar().setTitle(getResources().getString(R.string.mingyizaixian));
-		swipeRefreshLayout = (SwipeRefreshLayout)findViewById(R.id.mingyi_list);
+		swipeRefreshLayout = (RefreshLayout)findViewById(R.id.mingyi_list);
 		mListView = (ListView)findViewById(R.id.mingyi_listview);
 		list = new ArrayList<HashMap<String,String>>();
 	}
 	
 	private void initData(){
+		pageCount = 0;
 		swipeRefreshLayout.setOnRefreshListener(this);
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
 				android.R.color.holo_orange_light, android.R.color.holo_red_light);		
-		asyncGetData();
+		swipeRefreshLayout.setOnLoadListener(new RefreshLoadInterface() {
+			
+			@Override
+			public void onLoad() {
+				// TODO Auto-generated method stub
+				asyncGetData(pageCount,++pageCount,false);
+				swipeRefreshLayout.setLoading(false);
+			}
+		});
+		asyncGetData(pageCount,++pageCount,true);
 	}
 	
 	//异步获取数据
-	private void asyncGetData(){
-		FaxianModel.getInstance().getNews(MingyiActivity.this, 0, 1, AppCode.ACTION_DOCTOR_ONLINE, new ResultHandler() {
+	private void asyncGetData(int pageFrom,int pageCount,final boolean isClear){
+		FaxianModel.getInstance().getNews(MingyiActivity.this, pageFrom, pageCount, AppCode.ACTION_DOCTOR_ONLINE, new NetResultInterface() {
 			
 			@Override
 			public void parseResult(String result) {
-				list.clear();//先清空
+				if (isClear) {
+					list.clear();//先清空
+				}
 				Log.d(TAG, "result = "+result);
 				JSONObject jObject;
 				try {
@@ -86,11 +101,11 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 					}		
 					mingyiNewsAdapter = new MingyiNewsAdapter(MingyiActivity.this,list);		
 					mListView.setAdapter(mingyiNewsAdapter);
-					swipeRefreshLayout.setRefreshing(false);
-				} catch (JSONException e) {
-					// TODO Auto-generated catch block
+				} catch (JSONException e) {					
 					e.printStackTrace();
-				}				
+				} finally{
+					swipeRefreshLayout.setRefreshing(false);
+				}
 			}
 		});
 		
@@ -120,8 +135,8 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 	}
 
 	@Override
-	public void onRefresh() {	
-		asyncGetData();
+	public void onRefresh() {
+		asyncGetData(pageCount,++pageCount,false);
 	}	
 		
 }

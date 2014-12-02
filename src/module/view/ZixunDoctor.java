@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+@SuppressWarnings("unused")
 public class ZixunDoctor{
 	
 	private View view;

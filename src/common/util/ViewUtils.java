@@ -69,6 +69,7 @@ public class ViewUtils {
         Dialog loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog  
         
         loadingDialog.setCancelable(true);// 不可以用“返回键”取消  
+        loadingDialog.setCanceledOnTouchOutside(false);
         loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(  
                 LinearLayout.LayoutParams.MATCH_PARENT,  
                 LinearLayout.LayoutParams.MATCH_PARENT));// 设置布局  
