@@ -42,7 +42,7 @@ public class LocationAdapter extends BaseAdapter{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {		
 		if(convertView == null)
-			convertView = inflater.inflate(R.layout.item_location_selector, null);
+			convertView = inflater.inflate(R.layout.item_selecte_location, null);
 		TextView textView = (TextView)convertView.findViewById(R.id.location_item);
 		View imageView = (View)convertView.findViewById(R.id.location_icon);
 		// 设置选中效果    

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_focused="true" android:drawable="@drawable/common_blue_long_btn_pressed" />
-    <item android:state_pressed="true" android:drawable="@drawable/common_blue_long_btn_pressed" />
-    <item android:state_selected="true" android:drawable="@drawable/common_blue_long_btn_pressed" />
-    <item android:drawable="@drawable/common_blue_long_btn"/>
+    
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">   
+    		<corners android:topLeftRadius="10dp"  
+                android:topRightRadius="10dp"   
+             	android:bottomRightRadius="10dp"  
+             	android:bottomLeftRadius="10dp"/>  
+           	<gradient    
+                android:startColor="#43CD80"   
+                android:endColor="#43CD80"   
+                android:angle="270" />  
+		</shape>
+    </item>
+    
+    <item >
+    	<shape xmlns:android="http://schemas.android.com/apk/res/android">  
+    	    <gradient    
+                android:startColor="#66CDAA"   
+                android:endColor="#66CDAA"   
+                android:angle="270" />    
+    		<corners android:topLeftRadius="10dp"  
+                android:topRightRadius="10dp"   
+             	android:bottomRightRadius="10dp"  
+             	android:bottomLeftRadius="10dp"/>   
+		</shape>
+    </item>
 </selector>

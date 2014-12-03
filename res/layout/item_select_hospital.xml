@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp" >
+    
+	<ImageView 
+	    style="@style/none_fill_parent"
+	    android:id="@+id/select_hospital_image"
+	    android:contentDescription="@string/app_name"
+	    android:layout_marginRight="20dp"
+	    />
+	<TextView
+	    style="@style/none_fill_parent"
+	    android:id="@+id/select_hospital_name"
+	    android:textAppearance="@style/black_18"
+	    android:text="@string/app_name"
+	    android:layout_toRightOf="@id/select_hospital_image"
+	    android:layout_alignTop="@id/select_hospital_image"
+	    />
+	<TextView
+	    style="@style/none_fill_parent"
+	    android:id="@+id/select_hospital_level"
+	    android:textAppearance="@style/gray_14"
+	    android:text="@string/app_name"
+	    android:layout_toRightOf="@id/select_hospital_image"
+	    android:layout_below="@id/select_hospital_name"
+	    />
+	<ImageView
+	    style="@style/none_fill_parent"
+	    android:background="@drawable/right_arrow"
+	    android:contentDescription="@string/app_name"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    />
+</RelativeLayout>

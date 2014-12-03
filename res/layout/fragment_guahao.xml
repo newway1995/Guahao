@@ -26,6 +26,7 @@
         >
         <TextView
             style="@style/height_fill_parent"
+            android:id="@+id/guahao_choose_hospital_text"
             android:drawableLeft="@drawable/gh_ic_hospital_dark"
             android:text="@string/guahao_choose_hospital"
             android:textAppearance="@style/gray_14"
@@ -51,6 +52,7 @@
         >
         <TextView
             style="@style/height_fill_parent"
+            android:id="@+id/guahao_choose_dept_text"
             android:drawableLeft="@drawable/gh_ic_dept_dark"
             android:text="@string/guahao_choose_dept"
             android:textAppearance="@style/gray_14"

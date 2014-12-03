@@ -16,6 +16,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> 
     
     <application
         android:allowBackup="true"
@@ -42,8 +44,20 @@
         <activity
             android:name="module.activity.guahao.SelectLocationActivity"
             android:logo="@drawable/abs__ic_ab_back_holo_light"
-            android:label="@string/cancel">            
+            android:label="@string/cancel">                        
         </activity> 
+        <!-- 选择医院 -->
+        <activity
+            android:name="module.activity.guahao.SelectHospitalActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/select_hospital"> 
+        </activity>
+        <!-- 选择科室 -->
+        <activity
+            android:name="module.activity.guahao.SelectSectionActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/select_section"> 
+        </activity>
         <!-- 登陆 -->
         <activity 
             android:name="module.activity.LoginActivity"

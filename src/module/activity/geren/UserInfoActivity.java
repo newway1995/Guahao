@@ -53,6 +53,7 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			finish();
+			overridePendingTransition(0, R.anim.base_slide_right_out);
 			break;
 		default:
 			break;

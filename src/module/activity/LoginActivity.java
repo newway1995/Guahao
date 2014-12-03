@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import module.activity.geren.ForgetPasswordActivity;
 import module.activity.geren.RegisterActivity;
+import module.activity.geren.UserInfoActivity;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -114,6 +115,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 					if (success == 1) {
 						saveUser(username,password,jObject.getString("user_id"));
 						Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_LONG).show();
+						startActivity(new Intent(LoginActivity.this,UserInfoActivity.class));
+						overridePendingTransition(R.anim.base_slide_right_in, 0);
 					}else {
 						Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_LONG).show();
 					}
@@ -132,8 +135,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 				// TODO Auto-generated method stub
 				Log.d(TAG, "doInBackground");
 				ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
-				params.add(new BasicNameValuePair("username", Constant.USERNAME));
-				params.add(new BasicNameValuePair("password", Constant.PASSWORD));
+				params.add(new BasicNameValuePair(Constant.USERNAME, username));
+				params.add(new BasicNameValuePair(Constant.PASSWORD, password));
 				params.add(new BasicNameValuePair("action", AppCode.ACTION_LOGIN));
 				result = AppCode.getData(LoginActivity.this, AppCode.LOGIN, params, AppNet.Access.GET);
 			}

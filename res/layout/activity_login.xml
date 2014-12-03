@@ -47,7 +47,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_width="0dp"
 	        android:text="@string/register_new"
-	        android:textAppearance="@style/black_12"
+	        android:textAppearance="@style/black_14"
 	        android:layout_weight="1"
 	        android:gravity="right"
 	        />
@@ -63,7 +63,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_width="0dp"
 	        android:text="@string/forget_pwd"
-	        android:textAppearance="@style/black_12"
+	        android:textAppearance="@style/black_14"
 	        android:layout_weight="1"
 	        />
 	</LinearLayout>

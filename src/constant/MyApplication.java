@@ -14,6 +14,9 @@ import android.app.Application;
  */
 public class MyApplication extends Application{	
 	
+	public static String selected_hospital = "";
+	public static String selected_section = "";
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();

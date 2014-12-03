@@ -2,7 +2,77 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray_light"
     android:orientation="vertical" >
     
+    <TextView
+        style="@style/none_fill_parent"
+        android:textAppearance="@style/black_light_14"
+        android:text="@string/login_hint"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/register_telephone"
+        style="@style/width_fill_parent"
+        android:inputType="phone"
+ 		android:hint="@string/telephone"
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginRight="20dp" 		
+ 		android:padding="10dp"
+        android:background="@drawable/rect_white" />
+    <EditText
+        android:id="@+id/register_username"
+        style="@style/width_fill_parent"
+        android:inputType="text"
+ 		android:hint="@string/login_name" 		
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginRight="20dp"
+ 		android:layout_marginTop="15dp"
+ 		android:padding="10dp"
+        android:background="@drawable/rect_white" />
+    <EditText
+        android:id="@+id/register_password"
+        style="@style/width_fill_parent"
+        android:inputType="textPassword"
+ 		android:hint="@string/login_hint_password" 		
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginRight="20dp"
+ 		android:layout_marginTop="15dp"
+ 		android:padding="10dp"
+        android:background="@drawable/rect_white" />
+    
+    <EditText
+        android:id="@+id/register_password_confirm"
+        style="@style/width_fill_parent"
+        android:inputType="textPassword"
+ 		android:hint="@string/login_hint_password_confirm" 		
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginRight="20dp"
+ 		android:layout_marginTop="15dp"
+ 		android:padding="10dp"
+        android:background="@drawable/rect_white" />
+    
+    <EditText
+        android:id="@+id/register_identifying"
+        style="@style/width_fill_parent"
+        android:inputType="number"
+ 		android:hint="@string/register_identifying" 		
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginRight="20dp"
+ 		android:layout_marginTop="15dp"
+ 		android:padding="10dp"
+        android:background="@drawable/rect_white" />
+    
+    <Button
+	    android:id="@+id/register_btn"
+	    style="@style/width_fill_parent"
+	    android:background="@drawable/login_btn_bg"
+	    android:gravity="center"
+	    android:text="@string/get_identify"
+	    android:layout_margin="20dp"
+	    android:clickable="true"
+	    android:onClick="register"	    
+	    android:textAppearance="@style/white_18" />
 
 </LinearLayout>

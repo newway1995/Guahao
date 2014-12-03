@@ -36,7 +36,7 @@ public class LocationSubAdapter extends BaseAdapter{
 	@Override
 	public View getView(int arg0, View arg1, ViewGroup arg2) {
 		if (arg1 == null) {
-			arg1 = layoutInflater.inflate(R.layout.item_location_selector, null);
+			arg1 = layoutInflater.inflate(R.layout.item_selecte_location, null);
 		}
 		TextView textView = (TextView)arg1.findViewById(R.id.location_item);
 		textView.setTextColor(Color.BLACK);
