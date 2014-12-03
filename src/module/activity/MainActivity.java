@@ -8,7 +8,6 @@ import module.activity.geren.GerenFragment;
 import module.activity.guahao.GuahaoFragment;
 import module.activity.guahao.MessageActivity;
 import module.activity.zixun.ZixunFragment;
-import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -18,13 +17,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 
@@ -33,7 +31,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	private ZixunFragment zixunFragment;
 	private FaxianFragment faxianFragment;
 	private GerenFragment gerenFragment;
-	
+	private long exitTime = 0;//第一次点击退出的时间
 	
 	/**
 	 * 用于对Fragment进行管理
@@ -260,28 +258,47 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	@Override
 	public boolean onKeyDown(int keyCode,KeyEvent event){
 		if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME) {//弹出确认
-			final Dialog dialog = new Dialog(MainActivity.this,R.style.ExistDialog);
-			            
-            LayoutInflater inflater = getLayoutInflater();
-            View view = inflater.inflate(R.layout.exist_dialog, null);  
-            //设置它的ContentView
-            dialog.setContentView(view); 
-            dialog.show();
-            ((Button)view.findViewById(R.id.exist_sure)).setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View arg0) {
-					MainActivity.this.finish();
-				}
-			});
-            ((Button)view.findViewById(R.id.exist_cancel)).setOnClickListener(new OnClickListener() {
-				
-				@Override
-				public void onClick(View arg0) {
-					dialog.dismiss();
-				}
-			});               
+//			final Dialog dialog = new Dialog(MainActivity.this,R.style.ExistDialog);
+//			            
+//            LayoutInflater inflater = getLayoutInflater();
+//            View view = inflater.inflate(R.layout.exist_dialog, null);  
+//            //设置它的ContentView
+//            dialog.setContentView(view); 
+//            dialog.show();
+//            ((Button)view.findViewById(R.id.exist_sure)).setOnClickListener(new OnClickListener() {
+//				
+//				@Override
+//				public void onClick(View arg0) {
+//					MainActivity.this.finish();
+//				}
+//			});
+//            ((Button)view.findViewById(R.id.exist_cancel)).setOnClickListener(new OnClickListener() {
+//				
+//				@Override
+//				public void onClick(View arg0) {
+//					dialog.dismiss();
+//				}
+//			});        
+			
+			/**
+			 * 第二种方式 
+			 * 1000ms 内连续点击退出
+			 * */
+			if (System.currentTimeMillis() - exitTime > 1000) {
+				Toast.makeText(this, "再按一次退出应用程序", Toast.LENGTH_SHORT).show();
+				exitTime = System.currentTimeMillis();
+			}else {
+				exit();
+			}
 		}
 		return true;
 	}	
+	
+	private void exit(){
+		Intent intent = new Intent(Intent.ACTION_MAIN);  
+        intent.addCategory(Intent.CATEGORY_HOME);  
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);  
+        startActivity(intent);  
+        android.os.Process.killProcess(android.os.Process.myPid());
+	}
 }

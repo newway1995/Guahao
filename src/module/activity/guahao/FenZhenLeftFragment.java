@@ -1,5 +1,6 @@
 package module.activity.guahao;
 
+
 import constant.Constant;
 import module.activity.R;
 import android.os.Bundle;
@@ -79,10 +80,12 @@ public class FenZhenLeftFragment extends Fragment implements OnClickListener,OnT
 		case R.id.fenzhen_swipe_face:			
 			Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.image_rotate);
 			if (manImageView.getVisibility() == View.VISIBLE) {
-				if (manFace) 
+				if (manFace){ 
 					manImageView.setImageResource(R.drawable.man_back);
-				else
-					manImageView.setImageResource(R.drawable.man_face);
+				}
+				else{
+					manImageView.setImageResource(R.drawable.man_face);					
+				}
 				manImageView.startAnimation(animation);
 				manFace = !manFace;
 			}else {

@@ -10,7 +10,7 @@ import constant.Constant;
 
 import module.activity.R;
 import module.activity.guahao.SelectLocationActivity;
-import module.view.ZixunDoctor;
+import module.view.ZixunDoctorLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -66,9 +66,9 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 	
 	private void initViewPager(){
 		mViews = new ArrayList<View>();			
-		ZixunDoctor sView1 = new ZixunDoctor(getActivity());
-		ZixunDoctor sView2 = new ZixunDoctor(getActivity());
-		ZixunDoctor sView3= new ZixunDoctor(getActivity());
+		ZixunDoctorLayout sView1 = new ZixunDoctorLayout(getActivity());
+		ZixunDoctorLayout sView2 = new ZixunDoctorLayout(getActivity());
+		ZixunDoctorLayout sView3= new ZixunDoctorLayout(getActivity());
 		mViews.add(sView1.getView());
 		mViews.add(sView2.getView());
 		mViews.add(sView3.getView());

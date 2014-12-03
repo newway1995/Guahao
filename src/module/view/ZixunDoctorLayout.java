@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 @SuppressWarnings("unused")
-public class ZixunDoctor{
+public class ZixunDoctorLayout{
 	
 	private View view;
 	private Context context;
@@ -43,7 +43,7 @@ public class ZixunDoctor{
 	private TextView zixun_doctor_dept4;
 	private TextView zixun_which_hospital4;
 	
-	public ZixunDoctor(Context context) {
+	public ZixunDoctorLayout(Context context) {
 		this.context = context;
 		inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		view = inflater.inflate(R.layout.item_zixun_scroll_layout, null);	

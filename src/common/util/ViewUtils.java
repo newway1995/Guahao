@@ -1,11 +1,16 @@
 package common.util;
 
 import module.activity.R;
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -35,9 +40,32 @@ public class ViewUtils {
     	return ClassHolder.instance;
     }
     
-    public void createDialog(){
-    	
+    /**
+     * 获取屏幕的大小
+     * */
+    public DisplayMetrics getScreenSize(Context context){
+    	DisplayMetrics dm = new DisplayMetrics();
+    	WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+    	wm.getDefaultDisplay().getMetrics(dm);
+    	return dm;
     }
+    
+    /**
+     * 获取action bar的高度
+     * */
+    public int getActionBarHeight(ActionBar actionBar){
+    	return actionBar.getHeight();
+    }
+    
+    /**
+     * 获取状态栏的高度
+     * */
+    public int getStateBarHeight(Activity activity){
+    	Rect rect = new Rect();
+    	activity.getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
+    	return rect.top;
+    }
+      
     
     /**
      * 用于创建PopupWindow封装一些公用属性
