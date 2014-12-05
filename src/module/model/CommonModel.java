@@ -1,8 +1,16 @@
 package module.model;
 
+
+
+import java.util.ArrayList;
+
+import org.apache.http.NameValuePair;
+
 import common.receiver.NetResultInterface;
 import common.util.AsyncInter;
 import common.util.MyAsyncTask;
+import constant.AppCode;
+import constant.AppNet;
 
 import android.content.Context;
 import android.util.Log;
@@ -28,7 +36,7 @@ public class CommonModel {
 	/**
 	 * 获取省份信息
 	 * */
-	public void getProvince(Context context,final NetResultInterface resultInterface){
+	public void getProvince(final Context context,final NetResultInterface resultInterface){
 		Log.d(TAG, "getProvince");
 		AsyncInter inter = new AsyncInter() {
 			String result = "";
@@ -40,7 +48,7 @@ public class CommonModel {
 			
 			@Override
 			public void onPostExecute() {
-				Log.d(TAG, "province and city = " + result);
+				Log.d(TAG, "province " + result);
 				resultInterface.parseResult(result);
 			}
 			
@@ -52,17 +60,17 @@ public class CommonModel {
 			
 			@Override
 			public void doInBackground() {
-				// TODO Auto-generated method stub
-				
+				result = AppCode.getData(context, AppCode.GET_PROVINCE, null, AppNet.Access.GET);				
 			}
 		};
 		new MyAsyncTask(inter, true, context).execute();
 	}
 	
+	
 	/**
 	 * 获取城市消息
 	 * */
-	public void getCityByProID(Context context,final int id,final NetResultInterface resultInterface){
+	public void getCityByProID(final Context context,final int id,final NetResultInterface resultInterface){
 		Log.d(TAG, "getCityByProID");
 		AsyncInter inter = new AsyncInter() {
 			String result = "";
@@ -86,8 +94,8 @@ public class CommonModel {
 			
 			@Override
 			public void doInBackground() {
-				// TODO Auto-generated method stub
-				
+				ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
+				result = AppCode.getData(context, AppCode.GET_CITY_BY_PRO_ID, params, AppNet.Access.GET);
 			}
 		};
 		new MyAsyncTask(inter, true, context).execute();

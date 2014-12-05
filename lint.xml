@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="UseSparseArrays">
+        <ignore path="src/module/activity/guahao/SelectLocationActivity.java" />
+    </issue>
+</lint>
