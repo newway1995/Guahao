@@ -15,6 +15,7 @@
 	<string name="message">消息</string>
 	<string name="message_empty">暂无消息提醒</string>
 	<string name="fenzhen">智能导诊</string>
+	<string name="solution">智能推荐</string>
 	<string name="my_attention">我的关注</string>
 	<string name="my_order">我的预约</string>
 	<string name="cancel">取消</string>
@@ -82,6 +83,7 @@
 	<string name="our_team">\t[挂号网]是背景航空航天大学软件学院系统分析设计小组——团灭发动机共同开发完成,软件包括客户端和网页端,android客户端在实现了完整的功能的基础上尽量在提升用户的使用体验.挂号网APP专为患者量身打造,用户版包括专家咨询、智能分诊、即时挂号、院外候诊、处方查询.\n\t您的支持是我们最大的幸运</string>
 	<string name="contact_you">方便我们联系您</string>
 	<string name="feedback">意见反馈</string>
+	<string name="doctor_info">医生微站</string>
 	<string name="contact_phone">可不填</string>
 	<string name="contact_write">需要填写您宝贵的信息</string>
 	<string name="zixun_write">请详细描述您的病情,症状,治疗过程以及想要的帮助</string>
@@ -92,4 +94,9 @@
 	<string name="change_pwd_success">密码修改成功,请记住新密码</string>
 	<string name="change_pwd_error">密码修改失败,请检查错误原因</string>
 	<string name="upload_picture">上传照片</string>
+	<string name="doctor_info_detail">医生简介</string>
+	<string name="doctor_info_yuyue">预约挂号</string>
+	
+	<string name="rule">预约规则:班次每天八点更新</string>
+	<string name="yiyuan_rule">1、 预约成功的患者必须携带工农中建银行四大银行卡到自动取号机取号\n2、预约周期为7天/n3、放号时间:08:30</string>
 </resources>

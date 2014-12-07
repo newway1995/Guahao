@@ -166,6 +166,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 //	});
 
 	private void saveUser(String username,String password,String user_id){
+		CacheHandler.writeCache(this, Constant.USER_INFO, Constant.IS_LOGIN, Constant.LOGGED);
 		CacheHandler.writeCache(this, Constant.USER_INFO, Constant.USERNAME, username);
 		CacheHandler.writeCache(this, Constant.USER_INFO, Constant.PASSWORD, password);
 		CacheHandler.writeCache(this, Constant.USER_INFO, Constant.USER_ID, user_id);
@@ -183,4 +184,10 @@ public class LoginActivity extends Activity implements OnClickListener{
 		}
 		return super.onOptionsItemSelected(item);
 	}	
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		finish();
+	}
 }

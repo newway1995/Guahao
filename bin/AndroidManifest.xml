@@ -148,6 +148,12 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/feedback">
         </activity>
+        <!-- doctor info -->
+        <activity
+            android:name="module.activity.guahao.DoctorInfoActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/doctor_info">
+        </activity>
         
         
         <!-- 咨询 -->
@@ -162,6 +168,13 @@
             android:name="module.activity.guahao.FenZhenActivity"
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/fenzhen">
+        </activity>
+        
+        <!-- 分诊详细信息 -->
+        <activity
+            android:name="module.activity.guahao.JBSolutionActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/solution">
         </activity>
         
         <receiver

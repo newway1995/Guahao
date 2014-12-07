@@ -1,7 +1,10 @@
 package module.activity.geren;
 
+import common.util.CacheHandler;
 import common.util.ViewUtils;
+import constant.Constant;
 
+import module.activity.MainActivity;
 import module.activity.R;
 import android.app.Activity;
 import android.app.Dialog;
@@ -15,19 +18,22 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+
 /**
  * @author niuwei
  * @email nniuwei@163.com
- * 下午6:03:55
- * 设置
+ * @ClassName:SettingActivity.java
+ * @Package:module.activity.geren
+ * @time:下午4:57:40 2014-12-5
+ * @useage:设置
  */
 public class SettingActivity extends Activity implements OnClickListener{
 	
-	RelativeLayout setting_navigate;
-	RelativeLayout setting_about;
-	RelativeLayout setting_advice;
-	RelativeLayout setting_check_update;
-	Button logout;
+	private RelativeLayout setting_navigate;
+	private RelativeLayout setting_about;
+	private RelativeLayout setting_advice;
+	private RelativeLayout setting_check_update;
+	private Button logout;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +93,12 @@ public class SettingActivity extends Activity implements OnClickListener{
 			}, 1500);
 			break;
 		case R.id.logout:
-			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			if (CacheHandler.readCache(this, Constant.USER_INFO, Constant.IS_LOGIN).equals(Constant.LOGGED)) {
+				CacheHandler.writeCache(this, Constant.USER_INFO, Constant.IS_LOGIN, Constant.UNLOGGED);
+				startActivity(new Intent(SettingActivity.this,MainActivity.class));				
+			}else {//当前没有登录
+				Toast.makeText(this, "尼玛没登陆你退出个毛线啊", Toast.LENGTH_SHORT).show();							
+			}
 			break;
 		case R.id.setting_advice:
 			startActivity(new Intent(SettingActivity.this,ContactUsActivity.class));

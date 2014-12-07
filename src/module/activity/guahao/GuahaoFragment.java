@@ -18,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 /**
@@ -123,7 +122,7 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 			startActivity(new Intent(getActivity(),SelectSectionActivity.class));
 			break;
 		case R.id.guahao_go_guahao:
-			Toast.makeText(getActivity(), "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),DoctorInfoActivity.class));
 			break;
 		case R.id.guahao_search:
 			startActivity(new Intent(getActivity(),SelectLocationActivity.class));

@@ -1,5 +1,8 @@
 package module.activity.geren;
 
+import common.util.CacheHandler;
+
+import constant.Constant;
 import module.activity.LoginActivity;
 import module.activity.R;
 import android.content.Intent;
@@ -19,22 +22,26 @@ import android.widget.LinearLayout;
  */
 public class GerenFragment extends Fragment implements OnClickListener{
 
+	
 	private LinearLayout geren_all;
 	private LinearLayout geren_my_order;
 	private LinearLayout geren_my_zixun;
 	private LinearLayout geren_my_bingli;
 	private LinearLayout geren_guanzhu;
-	private LinearLayout geren_setting;
+	private LinearLayout geren_setting;	
+	
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View parentView = inflater.inflate(R.layout.fragment_geren, null);
-		initView(parentView);
-		initData();
+		isLogin(parentView);
 		return parentView;
 	}
 	
+	/**
+	 * 初始化数据 
+	 * */
 	private void initView(View parentView){
 		updataActionBar();
 		geren_all = (LinearLayout)parentView.findViewById(R.id.geren_all);
@@ -52,8 +59,22 @@ public class GerenFragment extends Fragment implements OnClickListener{
 		geren_setting.setOnClickListener(this);
 	}
 	
-	private void initData(){
-		
+	/**
+	 * 初始化视图
+	 * */
+	private void initData(){}
+	
+	/**
+	 * 判断是否登录,若是：则不变;若否：则跳转到Login
+	 * 
+	 * */
+	private void isLogin(View parentView){
+		if (CacheHandler.readCache(getActivity().getApplicationContext(), Constant.USER_INFO, Constant.IS_LOGIN).equals(Constant.LOGGED)) {//如果是已经登录,则不处理
+			initView(parentView);
+			initData();	
+		}else {
+			startActivity(new Intent(getActivity(),LoginActivity.class));
+		}
 	}
 	
 	public void updataActionBar(){

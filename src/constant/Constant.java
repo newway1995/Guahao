@@ -16,13 +16,18 @@ public class Constant {
 	public static final int FENZHEN_SICK_EYE = 7;//耳眼口鼻
 	public static final int FENZHEN_SICK_LEG = 8;//下肢
 	
-	public static final String USERNAME = "username";
-	public static final String PASSWORD = "password";
-	public static final String USER_ID = "user_id";
-	public static final String USER_INFO = "user_info";
-	public static final String PAGE_COUNT = "pageCount";
-	public static final String PAGE_FROM = "pageFrom";
+	//保存字段
+	public static final String IS_LOGIN = "isLogin";//是否登录
+	public static final String LOGGED = "yes";//已经登录
+	public static final String UNLOGGED = "no";//没有登录
+	public static final String USERNAME = "username";//当前用户名
+	public static final String PASSWORD = "password";//当前用户的密码
+	public static final String USER_ID = "user_id";//当前用户的ID
+	public static final String USER_INFO = "user_info";//当前用户的其他信息	
 	
+	//net参数常量
+	public static final String PAGE_COUNT = "pageCount";//从服务器获取多少页面
+	public static final String PAGE_FROM = "pageFrom";	//从第几页开始获取
 	public static final String PROVINCE = "province";
 	public static final String CITY = "city";
 	
@@ -71,7 +76,7 @@ public class Constant {
 	 * @param Resources resources
 	 * */
 	public static String[][] getMaleSickSolution(Resources resources){
-		String []headList = resources.getStringArray(R.array.male_advice_toubu);
+		String []headList = resources.getStringArray(R.array.male_solution_toubu);
 		String []jingbuList = resources.getStringArray(R.array.male_advice_jingbu);
 		String []xiongbuList = resources.getStringArray(R.array.male_advice_xiongbu);
 		String []fubuList = resources.getStringArray(R.array.male_advice_fubu);
@@ -134,7 +139,7 @@ public class Constant {
 	 * @param Resources resources
 	 * */
 	public static String[][] getFemaleSickSolution(Resources resources){
-		String []headList = resources.getStringArray(R.array.female_advice_toubu);
+		String []headList = resources.getStringArray(R.array.male_solution_toubu);//男女这一项都是一样的
 		String []jingbuList = resources.getStringArray(R.array.female_advice_jingbu);
 		String []xiongbuList = resources.getStringArray(R.array.female_advice_xiongbu);
 		String []fubuList = resources.getStringArray(R.array.female_advice_fubu);
@@ -159,4 +164,19 @@ public class Constant {
 		String all[][] = getFemaleSickSolution(resources);
 		return all[first][second];
 	}
+	
+	/**
+	 * 返回所有的省份名
+	 * */
+	public static String[] getProvinceList(Resources res){
+		return res.getStringArray(R.array.province);
+	}
+	
+	/**
+	 * 返回省份下面的城市名
+	 * */
+	public static String[][] getCitiesList(Resources res){
+		return null;
+	}
+	
 }

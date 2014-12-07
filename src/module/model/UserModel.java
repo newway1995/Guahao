@@ -5,7 +5,7 @@ import android.util.Log;
 public class UserModel {
 	private static final String TAG = "UserModel";
 	
-	private static boolean isLogin = false;
+	private static boolean isLogin = true;//测试模式默认为true
 	private static UserModel instance;
 	/**
 	 * 单例模式

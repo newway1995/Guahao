@@ -13,4 +13,6 @@
     <color name="actionbar_text">#ffffff</color>
     <color name="red_dark">#CD3333</color>
     <color name="green">#32CD32</color>
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
 </resources>

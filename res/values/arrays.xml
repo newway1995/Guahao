@@ -14,8 +14,7 @@
     </string-array>
     <!-- 男性 -->
     <!-- 头部 -->
-    <string-array name="male_body_toubu">
-        <item>male</item>
+    <string-array name="male_body_toubu">        
         <item>腮腺肿大</item>
         <item>语言障碍</item>
         <item>头疼</item>
@@ -33,12 +32,11 @@
         <item>可能为急性化脓腮腺炎，如果症状持续或者加重，且原因不明建议立即医院口腔科就诊</item>
     </string-array>
     
-    
+    <!-- 颈部 -->
     <string-array name="male_body_jingbu">
         <item>颈部疼痛或僵硬</item>
         <item>咽喉疼痛</item>
         <item>吞咽困难</item>
-        <item>面部疼痛</item>
         <item>甲状腺肿大</item>
     </string-array>
     
@@ -48,9 +46,9 @@
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
         <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
-        <item>可能为落枕，多是由于睡姿不正确或枕头太高引起，注意纠正，若症状加重，建议去医院骨科或康复科就诊</item>
     </string-array>
     
+    <!-- 胸部 -->
     <string-array name="male_body_xiongbu">
         <item>咯血</item>
         <item>肩部疼痛</item>
@@ -59,9 +57,11 @@
         <item>胸痛</item>
         <item>哮喘</item>
         <item>心悸</item>
+        <item>咳痰</item>
     </string-array>
     <!-- male_advice_xiongbu -->
     <string-array name="male_advice_xiongbu">
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
@@ -74,10 +74,10 @@
     
     <string-array name="male_body_fubu">
         <item>反酸</item>
-        <item>痛经</item>
-        <item>腹痛</item>
+        <item>呃逆</item>
+        <item>呕血与黑便</item>
+        <item>恶心呕吐</item>
         <item>腹泻</item>
-        <item>恶心吐吐</item>
     </string-array>
     <!-- male_advice_fubu -->
     <string-array name="male_advice_fubu">
@@ -103,7 +103,6 @@
         <item>肛门瘙痒</item>
         <item>尿频</item>
         <item>便血</item>
-        <item>血尿</item>
     </string-array>
     <!-- male_advice_paixiebu -->
     <string-array name="male_advice_paixiebu">
@@ -111,11 +110,10 @@
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
         <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
-        <item>有大便应该及时大便，如果效果不理想建议改变饮食习惯，建议去消化内科或中医科就诊</item>
     </string-array>
     
     <string-array name="male_body_yaobu">
-        <item>腰部</item>
+        <item>腰痛</item>
     </string-array>
     <!-- male_advice_yaobu -->
     <string-array name="male_advice_yaobu">
@@ -128,13 +126,9 @@
         <item>眼痛</item>
         <item>牙痛</item>
         <item>牙齿异常</item>
-        <item>眼球突出</item>
-        <item>鼻塞涕流</item>
     </string-array>
     <!-- male_advice_yeyankoubi -->
     <string-array name="male_advice_eryankoubi">
-        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
-        <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
         <item>这个没啥好说的，平常多运动，不能长期坐着，长期坐得时候每个一个小时就应该起立运动5—7分钟，还有就是少*(已屏蔽)</item>
@@ -159,11 +153,9 @@
         <item>婴儿夜惊</item>
         <item>失眠</item>
         <item>焦虑</item>
-        <item>低血压</item>
     </string-array>
     <!-- male_advice_qita -->
     <string-array name="male_advice_qita">
-        <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
         <item>某些药物可以引起震惊和抽搐，建议咨询普通内科医生</item>
@@ -174,7 +166,6 @@
     <!-- 女性 -->
     <!-- 头部 -->
     <string-array name="female_body_toubu">
-        <item>female</item>
         <item>腮腺肿大</item>
         <item>语言障碍</item>
         <item>头疼</item>
@@ -218,9 +209,13 @@
         <item>胸痛</item>
         <item>哮喘</item>
         <item>心悸</item>
+        <item>乳房肿块</item>
+        <item>乳房疼痛</item>
     </string-array>
     <!-- female_advice_xiongbu -->
     <string-array name="female_advice_xiongbu">
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
+        <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
         <item>可能为肺炎，建议尽快到医院呼吸内科就诊</item>
@@ -248,8 +243,11 @@
     </string-array>
     
     <string-array name="female_body_shengzhiqi">
-        <item>阳痿</item>
-        <item>早泄</item>        
+        <item>白带异常</item>
+        <item>阴道出血</item>
+        <item>月经过多</item>
+        <item>闭经</item>
+        <item>月经不调</item>
     </string-array>
     <!-- female_advice_shengzhiqi -->
     <string-array name="female_advice_shengzhiqi">

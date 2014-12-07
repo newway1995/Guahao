@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/doctor_bg">
+        <ImageView
+            style="@style/none_fill_parent"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/doctor_info_portrait"
+            android:layout_centerInParent="true"
+            android:src="@drawable/doctor_empty_image_light"
+            />
+        <TextView 
+            style="@style/none_fill_parent"
+            android:id="@+id/doctor_info_name"
+            android:textAppearance="@style/white_18"
+            android:layout_centerHorizontal="true"
+            android:text="黄龙"
+            android:layout_below="@id/doctor_info_portrait"/>
+        
+        <TextView 
+            style="@style/none_fill_parent"
+            android:id="@+id/doctor_info_job"
+            android:textAppearance="@style/white_14"
+            android:layout_centerHorizontal="true"
+            android:text="专治神经80年,不反弹"
+            android:layout_below="@id/doctor_info_name"/>
+        <LinearLayout 
+            style="@style/width_fill_parent"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/doctor_info_concern"
+                android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:textAppearance="@style/white_14"
+				android:gravity="center"
+                />
+            <View
+                android:layout_height="18dp"
+				android:layout_width="1dp"
+				android:background="@drawable/divider_blue_vertical"
+                />
+            <TextView
+                android:id="@+id/doctor_info_jiuzhen"
+                android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:textAppearance="@style/white_14"
+				android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    
+	<module.view.SegmentedGroup 
+	    android:id="@+id/doctor_info_segment"
+	    android:layout_marginTop="10dp"
+	    style="@style/none_fill_parent"
+	    android:layout_gravity="center"
+	    android:orientation="horizontal">
+	    <RadioButton
+	        android:id="@+id/doctor_info_doctor_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/doctor_info_detail"
+	        style="@style/RadioButton" />
+
+	    <RadioButton
+	        android:id="@+id/doctor_info_doctor_remain"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/doctor_info_yuyue"
+	        style="@style/RadioButton" />
+	</module.view.SegmentedGroup>
+	
+	<LinearLayout 
+	    style="@style/none_fill_parent"
+	    android:id="@+id/doctor_info_container"
+	    android:orientation="vertical"
+	    android:background="@color/white"/>
+</LinearLayout>

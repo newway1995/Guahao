@@ -7,6 +7,7 @@ import java.util.List;
 import constant.Constant;
 
 import module.activity.R;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,7 +19,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -71,11 +71,18 @@ public class FenZhenRightFragment extends Fragment{
 					Log.d(TAG, "第一次跳转之后的列表");
 				}else {//第二次跳转之后
 					Log.d(TAG, "isMaleShowing = " + FenZhenActivity.isMaleShowing);
+					Intent intent = new Intent(getActivity().getApplicationContext(),JBSolutionActivity.class);
+					intent.putExtra("first", first);//传递第几项
+					intent.putExtra("position", position);//传递第几项的第几条
 					//跳出一个弹出提示框
-					if (FenZhenActivity.isMaleShowing) {//male
-						Toast.makeText(getActivity(), Constant.getMaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
+					if (FenZhenActivity.isMaleShowing) {//male						
+						intent.putExtra("isMale", true);//传递性别
+						startActivity(intent);
+						//Toast.makeText(getActivity(), Constant.getMaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
 					}else {//female
-						Toast.makeText(getActivity(), Constant.getFemaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
+						intent.putExtra("isMale", false);
+						startActivity(intent);
+						//Toast.makeText(getActivity(), Constant.getFemaleSickSolution(first, position, res), Toast.LENGTH_LONG).show();
 					}
 					
 				}

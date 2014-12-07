@@ -235,7 +235,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -246,7 +245,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		case R.id.actionbar_message:
 			Intent intent = new Intent(MainActivity.this,MessageActivity.class);
 			startActivity(intent);
-			//overridePendingTransition(R.anim.activity_exist_in, R.anim.activity_exist_out);
 			break;
 
 		default:

@@ -1,10 +1,11 @@
-package module.activity;
+package common.core;
 
 import module.model.UserModel;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -33,9 +34,12 @@ public abstract class BaseLoginActivity extends Activity implements OnClickListe
         widgetClick(v);
     }
 	
+	protected void setRootView(){}
 	
 	protected void isLogin(){//判断是否登录并针对结果不同进行处理
 		if (UserModel.getInstance().getIsLogin()) {//如果是已经登录,则不处理
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+			setRootView();
 			initView();
 			initData();	
 		}else {
@@ -43,6 +47,20 @@ public abstract class BaseLoginActivity extends Activity implements OnClickListe
 		}
 	}
 	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getItemId() == android.R.id.home) 
+			finish();
+		return super.onOptionsItemSelected(item);
+	}
+	
+	
+	@Override
+	protected void onPause() {
+		finish();
+		super.onPause();
+	}
+
 	/**
 	 * Activity 跳转
 	 * */

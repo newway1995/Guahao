@@ -59,7 +59,18 @@
     	<item name="android:activityCloseEnterAnimation">@anim/activity_exist_bottom_in</item>
     	<item name="android:activityCloseExitAnimation">@anim/activity_exist_bottom_out</item>
     </style>
-        
+    
+    <!-- android 仿iOS segment 控件的样式 -->
+    <style name="RadioButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
     
     <style name="dot_style">
         <item name="android:layout_width">10dip</item>

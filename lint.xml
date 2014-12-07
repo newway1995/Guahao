@@ -3,4 +3,7 @@
     <issue id="UseSparseArrays">
         <ignore path="src/module/activity/guahao/SelectLocationActivity.java" />
     </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/module/activity/geren/GerenFragment.java" />
+    </issue>
 </lint>

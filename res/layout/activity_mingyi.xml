@@ -15,12 +15,5 @@
             android:background="@android:color/transparent" >            
         </ListView>
     </module.view.RefreshLayout>
-	
-    <Button 
-	    android:id="@+id/news_click_more"
-	    style="@style/none_fill_parent"
-	    android:text="@string/news_click_more"
-	    android:textAppearance="@style/blue_18"
-	    android:layout_gravity="center"
-	    />
+	    
 </LinearLayout>
