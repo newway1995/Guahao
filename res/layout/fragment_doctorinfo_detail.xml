@@ -4,9 +4,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     <TextView 
-        style="@style/none_fill_parent"
-        android:text="医生简介"
-        android:textAppearance="@style/blue_18"
+        android:id="@+id/doctorinfo_detail_job"
+        style="@style/width_fill_parent"
+        android:drawableLeft="@drawable/icon_doctor_info_job"
+        android:padding="15dp"
+        android:drawablePadding="20dp"
+        android:background="@color/white"
+        android:textAppearance="@style/black_light_18"
+        android:layout_marginTop="6dp"
+        />
+    <TextView 
+        android:id="@+id/doctorinfo_detail_desc"
+        style="@style/width_fill_parent"
+        android:drawableLeft="@drawable/icon_doctor_info_desc"
+        android:padding="15dp"
+        android:drawablePadding="20dp"
+        android:background="@color/white"
+        android:textAppearance="@style/black_light_18"
+        android:layout_marginTop="10dp"
         />
 
 </LinearLayout>

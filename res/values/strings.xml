@@ -44,6 +44,7 @@
 	<string name="zhuzhi">主治医师</string>
 	<string name="phone">登录名:15652953455</string>
 	<string name="my_order_list">我的预约单</string>
+	<string name="order">预约</string>
 	<string name="change_pwd">修改密码</string>
 	<string name="login_name">用户名</string>
 	<string name="my_zixun">我的咨询</string>
@@ -96,7 +97,7 @@
 	<string name="upload_picture">上传照片</string>
 	<string name="doctor_info_detail">医生简介</string>
 	<string name="doctor_info_yuyue">预约挂号</string>
-	
+	<string name="hospital_desc">简介</string>
 	<string name="rule">预约规则:班次每天八点更新</string>
-	<string name="yiyuan_rule">1、 预约成功的患者必须携带工农中建银行四大银行卡到自动取号机取号\n2、预约周期为7天/n3、放号时间:08:30</string>
+	<string name="yiyuan_rule">\n1、预约成功的患者必须携带工农中建四大银行卡到自动取号机取号（必须为磁条银行卡），银行卡的卡主身份证号码必须与患者身份证号一致且为第二代身份证，并保证卡内有金额，在各楼层自助机取号和交费（医保患者在医保专用自助机取号，军人可凭借军官证在挂号窗口排队取号)\n2、预约周期：7天\n3、放号时间：08:30（开放新一天号源）\n4、停止预约时间： 16:00（停止预约次日号源）\n5、取消预约时间：就诊前一日16:00前可办理取消\n6、取号时间：上午号：就诊当日09:30前\n7、预约时请准确录入患者本人身份信息，无身份证儿童可填写户口本的身份证编号，凭户口本取号就诊。凭儿童出生证明编号、军人证件及护照预约的患者，可通过95169电话预约\n8、18岁以下儿童、80岁以上的老人或军官证患者无法提供银行卡取号，需携带患者有效证件和预约短信到挂号窗口取号。\n9、小儿科只限小于14周岁的患者办理预约</string>
 </resources>

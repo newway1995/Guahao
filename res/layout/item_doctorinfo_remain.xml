@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    
+    <View 
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/doct_list_item_divider"
+	    android:layout_height="1dp"
+	    />
+    
+	<RelativeLayout
+	    android:padding="20dp" 
+	    style="@style/width_fill_parent">
+	    <TextView
+	        android:id="@+id/item_doctorinfo_remain_time"
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/blue_18"
+	        />
+	    <TextView
+	        android:id="@+id/item_doctorinfo_remain_fee"
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_light_14"
+	        android:layout_below="@id/item_doctorinfo_remain_time"
+	        android:paddingTop="5dp"
+	        />
+	    <Button
+	        android:id="@+id/item_doctorinfo_remain_submit"
+	        style="@style/none_fill_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/order"
+	        android:background="@drawable/corners_green"
+	        android:textAppearance="@style/white_18"
+	        />
+	</RelativeLayout>	
+</LinearLayout>

@@ -6,7 +6,7 @@
     android:orientation="vertical" >
     <RelativeLayout 
         android:layout_width="fill_parent"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         android:background="@drawable/doctor_bg">
         <ImageView
             style="@style/none_fill_parent"
@@ -20,7 +20,6 @@
             android:id="@+id/doctor_info_name"
             android:textAppearance="@style/white_18"
             android:layout_centerHorizontal="true"
-            android:text="黄龙"
             android:layout_below="@id/doctor_info_portrait"/>
         
         <TextView 
@@ -28,7 +27,6 @@
             android:id="@+id/doctor_info_job"
             android:textAppearance="@style/white_14"
             android:layout_centerHorizontal="true"
-            android:text="专治神经80年,不反弹"
             android:layout_below="@id/doctor_info_name"/>
         <LinearLayout 
             style="@style/width_fill_parent"
@@ -63,6 +61,7 @@
 	    android:layout_marginTop="10dp"
 	    style="@style/none_fill_parent"
 	    android:layout_gravity="center"
+	    android:background="@color/gray_light"
 	    android:orientation="horizontal">
 	    <RadioButton
 	        android:id="@+id/doctor_info_doctor_detail"
@@ -80,8 +79,9 @@
 	</module.view.SegmentedGroup>
 	
 	<LinearLayout 
-	    style="@style/none_fill_parent"
+	    style="@style/width_fill_parent"
 	    android:id="@+id/doctor_info_container"
 	    android:orientation="vertical"
-	    android:background="@color/white"/>
+	    android:background="@color/gray_light"
+	    />
 </LinearLayout>

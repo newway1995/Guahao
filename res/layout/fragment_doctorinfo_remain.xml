@@ -3,10 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <TextView 
-        style="@style/none_fill_parent"
-        android:text="余票"
-        android:textAppearance="@style/blue_18"
-        />
+    
+    <ScrollView
+        style="@style/width_fill_parent">
+        <TextView 
+	        android:id="@+id/doctorinfo_rule"
+	        android:background="@color/white"
+	        android:layout_marginTop="10dp"
+	        android:padding="15dp"
+	        style="@style/width_fill_parent"  
+	        android:text="@string/rule"      
+	        android:textAppearance="@style/blue_18"
+	        />
+    </ScrollView>
+    
+    <include 
+        android:layout_marginTop="5dp"
+        layout="@layout/activity_mingyi"/>
+    
 
 </LinearLayout>

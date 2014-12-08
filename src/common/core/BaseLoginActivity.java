@@ -56,8 +56,7 @@ public abstract class BaseLoginActivity extends Activity implements OnClickListe
 	
 	
 	@Override
-	protected void onPause() {
-		finish();
+	protected void onPause() {		
 		super.onPause();
 	}
 

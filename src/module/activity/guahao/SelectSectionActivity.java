@@ -22,6 +22,11 @@ public class SelectSectionActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		Log.d(TAG, "onCreate");
 		setContentView(R.layout.activity_location_select);
+		initView();
+	}
+	
+	private void initView(){
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
