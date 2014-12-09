@@ -48,8 +48,12 @@ public class SelectLocationActivity extends Activity implements OnScrollListener
 	private LocationAdapter provinceAdapter;
 	private LocationSubAdapter cityAdapter;
 	private boolean topIsShowing = false;
-	private int statusBarHeight;
-	private int actionBarHeight;
+	private int statusBarHeight;//状态栏高度
+	private int actionBarHeight;//actionbar高度
+	/**
+	 * 手机屏幕高度
+	 * */
+	private int screenHeight;
 	/** 
      * 手机屏幕宽度 
      */  
@@ -107,6 +111,7 @@ public class SelectLocationActivity extends Activity implements OnScrollListener
 		super.onCreate(savedInstanceState);	
 		mWindowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);  
         screenWidth = mWindowManager.getDefaultDisplay().getWidth(); 
+        screenHeight = mWindowManager.getDefaultDisplay().getHeight();
         //asyncGetPro();//获取省份信息
 		initView();
 		initData();
@@ -228,19 +233,21 @@ public class SelectLocationActivity extends Activity implements OnScrollListener
 	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem,
 			int visibleItemCount, int totalItemCount) {
-		
-		//Log.d(TAG, "----------firstVisibleItem = " + firstVisibleItem);
-		//Log.d(TAG, "----------currentProvince = " + currentProvince);
 
 		if (firstVisibleItem >= currentProvince) {
 			if (!topIsShowing) {
 				Log.d(TAG, "----------addTopView");
 				addTopView();
 			}
-		}else {
+		}else if(firstVisibleItem < currentProvince && currentProvince < firstVisibleItem + visibleItemCount - 1) {
 			if (topIsShowing) {
 				Log.d(TAG, "----------clearTopView");
 				clearTopView();
+			}
+		}else {
+			if (!topIsShowing) {
+				Log.d(TAG, "----------addBottomView");
+				addBottomView();
 			}
 		}
 	}
@@ -276,13 +283,45 @@ public class SelectLocationActivity extends Activity implements OnScrollListener
 	}
 	
 	/**
+	 * 在listView上面添加bottom view
+	 * */
+	private void addBottomView(){     
+		if (topView == null && actionBarHeight != 0) {
+			topView = LayoutInflater.from(this).inflate(R.layout.item_selecte_location, null);
+			topView.setBackgroundColor(Color.WHITE);
+			view = (View)topView.findViewById(R.id.location_icon);
+			textView = (TextView)topView.findViewById(R.id.location_item);
+			textView.setText(provinces[currentProvince]);
+			view.setVisibility(View.VISIBLE);
+			if(suspendLayoutParams == null){  
+				suspendLayoutParams = new LayoutParams();  
+	            suspendLayoutParams.type = LayoutParams.TYPE_PHONE; //悬浮窗的类型，一般设为2002，表示在所有应用程序之上，但在状态栏之下   
+	            suspendLayoutParams.format = PixelFormat.RGBA_8888;   
+	            suspendLayoutParams.flags = LayoutParams.FLAG_NOT_TOUCH_MODAL    
+	                     | LayoutParams.FLAG_NOT_FOCUSABLE;  //悬浮窗的行为，比如说不可聚焦，非模态对话框等等   
+	            suspendLayoutParams.gravity = Gravity.TOP | Gravity.LEFT;  //悬浮窗的对齐方式  
+	            suspendLayoutParams.width = screenWidth / 2;  
+	            suspendLayoutParams.height = LayoutParams.WRAP_CONTENT;    
+	            suspendLayoutParams.x = 0;  //悬浮窗X的位置  
+	            suspendLayoutParams.y = screenHeight - topView.getHeight(); //设置位置
+			}
+			mWindowManager.addView(topView, suspendLayoutParams);
+			topIsShowing = true;
+		}else {
+			clearTopView();
+		}
+	}
+	
+	/**
 	 * 在listView上面移除view
 	 * */
 	private void clearTopView(){
-		if(topView != null){  
+		if(topView != null){  			
             mWindowManager.removeView(topView);  
             topView = null;
+            suspendLayoutParams = null;
             topIsShowing = false;
         }  
 	}
+		
 }

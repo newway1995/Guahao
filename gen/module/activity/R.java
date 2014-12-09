@@ -488,6 +488,7 @@ public final class R {
         public static final int advice_to_us=0x7f08003f;
         public static final int age=0x7f080019;
         public static final int app_name=0x7f080000;
+        public static final int badNetwork=0x7f08005d;
         public static final int cancel=0x7f080011;
         public static final int change_3g=0x7f080004;
         public static final int change_pwd=0x7f08002a;
@@ -554,6 +555,8 @@ public final class R {
         public static final int rule=0x7f08005a;
         public static final int select_hospital=0x7f080012;
         public static final int select_section=0x7f080013;
+        public static final int sendFailed=0x7f080060;
+        public static final int sendSucceed=0x7f08005c;
         public static final int sex=0x7f080016;
         public static final int share=0x7f080034;
         public static final int shezhi=0x7f08002f;
@@ -565,6 +568,8 @@ public final class R {
         public static final int upload_picture=0x7f080056;
         public static final int user_info=0x7f080030;
         public static final int username=0x7f080025;
+        public static final int verifyFailed=0x7f08005e;
+        public static final int verifySucceed=0x7f08005f;
         public static final int version=0x7f080041;
         public static final int yishengdongtai=0x7f080032;
         public static final int yiyuan_rule=0x7f08005b;

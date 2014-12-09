@@ -188,6 +188,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 	@Override
 	public void onStop(){
 		super.onStop();
+		Log.d(TAG, "Login ----- onStop");
 		finish();
 	}
 }

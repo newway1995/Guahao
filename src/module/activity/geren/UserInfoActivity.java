@@ -26,12 +26,19 @@ public class UserInfoActivity extends Activity implements OnClickListener{
 	private LinearLayout user_info_changpwd;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d(TAG, "onCreate");
+		Log.d(TAG, "UserInfoActivity ----- onCreate");
 		setContentView(R.layout.activity_userinfo);
 		super.onCreate(savedInstanceState);
 		initView();
 		initData();
 	}	
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		Log.d(TAG, "UserInfoActivity ----- onStop");
+		finish();
+	}
 	
 	private void initView(){
 		getActionBar().setDisplayHomeAsUpEnabled(true);

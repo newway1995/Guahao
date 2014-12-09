@@ -1,5 +1,7 @@
 package constant;
 
+import com.avos.avoscloud.AVOSCloud;
+
 import common.util.CacheHandler;
 
 import android.app.Application;
@@ -20,6 +22,8 @@ public class MyApplication extends Application{
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		AVOSCloud.initialize(this, "d34hzchjjp9zsnxt4q0mhncpwzmnxthcrff9eeaspf53v0nh",
+		        "mdpmpk308z2baf3x4mjf725hbr5acscggh5d34jx56as2dcm");
 	}
 	
 	/**

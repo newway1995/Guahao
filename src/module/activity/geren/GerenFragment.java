@@ -8,6 +8,7 @@ import module.activity.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,22 +22,44 @@ import android.widget.LinearLayout;
  * 个人
  */
 public class GerenFragment extends Fragment implements OnClickListener{
-
+	private final String TAG = "GerenFragment"; 
 	
 	private LinearLayout geren_all;
 	private LinearLayout geren_my_order;
 	private LinearLayout geren_my_zixun;
 	private LinearLayout geren_my_bingli;
 	private LinearLayout geren_guanzhu;
-	private LinearLayout geren_setting;	
+	private LinearLayout geren_setting;
+	
+	/**
+	 * 父视图
+	 * */
+	private View parentView;
 	
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View parentView = inflater.inflate(R.layout.fragment_geren, null);
+		parentView = inflater.inflate(R.layout.fragment_geren, null);
+		Log.d(TAG, "GerenFragment ----- onCreateView");
 		isLogin(parentView);
 		return parentView;
+	}
+	
+	
+	
+	@Override
+	public void onResume() {
+		super.onResume();
+		Log.d(TAG, "GerenFragment ----- onResume");
+		initView(parentView);
+		initData();
+	}
+
+	@Override
+	public void onStop(){
+		super.onStop();
+		Log.d(TAG, "GerenFragment ----- onStop");
 	}
 	
 	/**

@@ -28,6 +28,7 @@ public class AppCode {
 	public static final String ACTION_HEALTH_NEWS = "API_GH_GET_HEALTHY_NEWS";
 	public static final String ACTION_GET_PROVINCE = "API_GH_GET_PROVINCE";
 	public static final String ACTION_GET_CITY_BY_PROID = "API_GH_GET_CITY_BY_PRO_ID";
+	public static final String ACTION_REGISTER = "API_GH_REGISTER";
 	
 	public static final int LOGIN = 1;
 	public static final int CHANGE_PWD = 2;
