@@ -65,7 +65,7 @@ public class HospitalAdapter extends BaseAdapter{
 		KJBitmap kjBitmap = KJBitmap.create();
 		kjBitmap.display(imageView, list.get(position).get("img"));
 		titleText.setText(list.get(position).get("name"));
-		dscptText.setText(list.get(position).get("level"));
+		dscptText.setText("等级 : " + list.get(position).get("level"));
 		return convertView;
 	}
 }

@@ -8,12 +8,13 @@
 	    style="@style/none_fill_parent"
 	    android:id="@+id/select_hospital_image"
 	    android:contentDescription="@string/app_name"
+	    android:background="@drawable/doctor_empty_image_light"
 	    android:layout_marginRight="20dp"
 	    />
 	<TextView
 	    style="@style/none_fill_parent"
 	    android:id="@+id/select_hospital_name"
-	    android:textAppearance="@style/black_18"
+	    android:textAppearance="@style/black_light_20"
 	    android:text="@string/app_name"
 	    android:layout_toRightOf="@id/select_hospital_image"
 	    android:layout_alignTop="@id/select_hospital_image"
@@ -21,7 +22,7 @@
 	<TextView
 	    style="@style/none_fill_parent"
 	    android:id="@+id/select_hospital_level"
-	    android:textAppearance="@style/gray_14"
+	    android:textAppearance="@style/gray_18"
 	    android:text="@string/app_name"
 	    android:layout_toRightOf="@id/select_hospital_image"
 	    android:layout_below="@id/select_hospital_name"
@@ -33,5 +34,5 @@
 	    android:layout_centerVertical="true"
 	    android:layout_alignParentRight="true"
 	    android:layout_marginRight="10dp"
-	    />
+	    />	
 </RelativeLayout>

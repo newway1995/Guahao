@@ -64,7 +64,7 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
 				android.R.color.holo_orange_light, android.R.color.holo_red_light);		
 		swipeRefreshLayout.setOnLoadListener(new RefreshLoadInterface() {
-			
+			//上拉监听器
 			@Override
 			public void onLoad() {
 				// TODO Auto-generated method stub

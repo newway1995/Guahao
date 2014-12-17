@@ -71,6 +71,16 @@
         <item name="android:paddingRight">20dp</item>
         <item name="android:textSize">16sp</item>
     </style>
+    <style name="BigRadioButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
     
     <style name="dot_style">
         <item name="android:layout_width">10dip</item>
@@ -215,6 +225,11 @@
 	<style name="gray_dark_8">
 	    <item name="android:textColor">@color/gray_dark</item>
         <item name="android:textSize">8sp</item>
+	</style>
+	<!-- 浅黑色20 -->
+	<style name="black_light_20">
+	    <item name="android:textColor">@color/black_light</item>
+        <item name="android:textSize">20sp</item>
 	</style>
 	<!-- 浅黑色18 -->
 	<style name="black_light_18">

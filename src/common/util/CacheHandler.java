@@ -68,7 +68,7 @@ public class CacheHandler {
 	 * @param context 上下文
 	 * @param cacheName 缓存文件名称
 	 * @param fieldName 缓存字段名称
-	 * @return 是否读成功
+	 * @return 是否读成功 默认返回""
 	 */
 	public static String readCache(Context context, String cacheName, String fieldName){
 		Log.d(TAG, "readCache");

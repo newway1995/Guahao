@@ -4,6 +4,7 @@ import module.activity.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -25,6 +26,12 @@ public class GuanzhuActivity extends Activity{
 	private void initData(){
 		
 	}
+	
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.guanzhu, menu);
+        return true;
+    }
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

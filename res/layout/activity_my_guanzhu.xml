@@ -4,5 +4,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <!-- segment -->
+	<module.view.SegmentedGroup 
+	    android:id="@+id/doctor_info_segment"
+	    android:layout_margin="10dp"
+	    style="@style/none_fill_parent"
+	    android:layout_gravity="center"
+	    android:background="@color/gray_light"
+	    android:orientation="horizontal">
+	    <RadioButton
+	        android:id="@+id/doctor_info_doctor_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/guanzhu_doctor"
+	        style="@style/BigRadioButton" />
 
+	    <RadioButton
+	        android:id="@+id/doctor_info_doctor_remain"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/guanzhu_hospital"
+	        style="@style/BigRadioButton" />
+	</module.view.SegmentedGroup>
+    
+    <ImageView
+        style="@style/none_fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/woman_face"
+        android:contentDescription="@string/app_name"
+        />
+	
 </LinearLayout>

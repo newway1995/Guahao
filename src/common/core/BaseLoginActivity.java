@@ -1,6 +1,5 @@
 package common.core;
 
-import common.util.CacheHandler;
 import constant.Constant;
 
 import android.app.Activity;
@@ -39,7 +38,7 @@ public abstract class BaseLoginActivity extends Activity implements OnClickListe
 	protected void setRootView(){}
 	
 	protected void isLogin(){//判断是否登录并针对结果不同进行处理
-		if (CacheHandler.readCache(this, Constant.USER_INFO, Constant.IS_LOGIN).equals(Constant.LOGGED)) {//如果是已经登录,则不处理
+		if (Constant.isLogin(this)) {//如果是已经登录,则不处理
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 			setRootView();
 			initView();

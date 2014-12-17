@@ -138,7 +138,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 				params.add(new BasicNameValuePair(Constant.USERNAME, username));
 				params.add(new BasicNameValuePair(Constant.PASSWORD, password));
 				params.add(new BasicNameValuePair("action", AppCode.ACTION_LOGIN));
-				result = AppCode.getData(LoginActivity.this, AppCode.LOGIN, params, AppNet.Access.GET);
+				result = AppCode.getData(LoginActivity.this, params, AppNet.Access.GET);
 			}
 		};
 		new MyAsyncTask(inter, true, LoginActivity.this).execute();

@@ -141,6 +141,300 @@ public final class R {
         public static final int green=0x7f06000c;
         public static final int green_dark=0x7f06000d;
         public static final int green_light=0x7f06000e;
+        public static final int md_amber_100=0x7f0600c8;
+        public static final int md_amber_200=0x7f0600c9;
+        public static final int md_amber_300=0x7f0600ca;
+        public static final int md_amber_400=0x7f0600cb;
+        /** amber
+         */
+        public static final int md_amber_50=0x7f0600c7;
+        public static final int md_amber_500=0x7f0600cc;
+        public static final int md_amber_600=0x7f0600cd;
+        public static final int md_amber_700=0x7f0600ce;
+        public static final int md_amber_800=0x7f0600cf;
+        public static final int md_amber_900=0x7f0600d0;
+        public static final int md_amber_A100=0x7f0600d1;
+        public static final int md_amber_A200=0x7f0600d2;
+        public static final int md_amber_A400=0x7f0600d3;
+        public static final int md_amber_A700=0x7f0600d4;
+        public static final int md_black_1000=0x7f060105;
+        public static final int md_blue_100=0x7f060058;
+        public static final int md_blue_200=0x7f060059;
+        public static final int md_blue_300=0x7f06005a;
+        public static final int md_blue_400=0x7f06005b;
+        /** blue
+         */
+        public static final int md_blue_50=0x7f060057;
+        public static final int md_blue_500=0x7f06005c;
+        public static final int md_blue_600=0x7f06005d;
+        public static final int md_blue_700=0x7f06005e;
+        public static final int md_blue_800=0x7f06005f;
+        public static final int md_blue_900=0x7f060060;
+        public static final int md_blue_A100=0x7f060061;
+        public static final int md_blue_A200=0x7f060062;
+        public static final int md_blue_A400=0x7f060063;
+        public static final int md_blue_A700=0x7f060064;
+        public static final int md_blue_grey_100=0x7f060108;
+        public static final int md_blue_grey_200=0x7f060109;
+        public static final int md_blue_grey_300=0x7f06010a;
+        public static final int md_blue_grey_400=0x7f06010b;
+        /** blue grey
+         */
+        public static final int md_blue_grey_50=0x7f060107;
+        public static final int md_blue_grey_500=0x7f06010c;
+        public static final int md_blue_grey_600=0x7f06010d;
+        public static final int md_blue_grey_700=0x7f06010e;
+        public static final int md_blue_grey_800=0x7f06010f;
+        public static final int md_blue_grey_900=0x7f060110;
+        public static final int md_brown_100=0x7f0600f2;
+        public static final int md_brown_200=0x7f0600f3;
+        public static final int md_brown_300=0x7f0600f4;
+        public static final int md_brown_400=0x7f0600f5;
+        /** brown 
+         */
+        public static final int md_brown_50=0x7f0600f1;
+        public static final int md_brown_500=0x7f0600f6;
+        public static final int md_brown_600=0x7f0600f7;
+        public static final int md_brown_700=0x7f0600f8;
+        public static final int md_brown_800=0x7f0600f9;
+        public static final int md_brown_900=0x7f0600fa;
+        public static final int md_cyan_100=0x7f060074;
+        public static final int md_cyan_200=0x7f060075;
+        public static final int md_cyan_300=0x7f060076;
+        public static final int md_cyan_400=0x7f060077;
+        /**  cyan 
+         */
+        public static final int md_cyan_50=0x7f060073;
+        public static final int md_cyan_500=0x7f060078;
+        public static final int md_cyan_600=0x7f060079;
+        public static final int md_cyan_700=0x7f06007a;
+        public static final int md_cyan_800=0x7f06007b;
+        public static final int md_cyan_900=0x7f06007c;
+        public static final int md_cyan_A100=0x7f06007d;
+        public static final int md_cyan_A200=0x7f06007e;
+        public static final int md_cyan_A400=0x7f06007f;
+        public static final int md_cyan_A700=0x7f060080;
+        public static final int md_deep_orange_100=0x7f0600e4;
+        public static final int md_deep_orange_200=0x7f0600e5;
+        public static final int md_deep_orange_300=0x7f0600e6;
+        public static final int md_deep_orange_400=0x7f0600e7;
+        /** deep orange
+         */
+        public static final int md_deep_orange_50=0x7f0600e3;
+        public static final int md_deep_orange_500=0x7f0600e8;
+        public static final int md_deep_orange_600=0x7f0600e9;
+        public static final int md_deep_orange_700=0x7f0600ea;
+        public static final int md_deep_orange_800=0x7f0600eb;
+        public static final int md_deep_orange_900=0x7f0600ec;
+        public static final int md_deep_orange_A100=0x7f0600ed;
+        public static final int md_deep_orange_A200=0x7f0600ee;
+        public static final int md_deep_orange_A400=0x7f0600ef;
+        public static final int md_deep_orange_A700=0x7f0600f0;
+        public static final int md_deep_purple_100=0x7f06003c;
+        public static final int md_deep_purple_200=0x7f06003d;
+        public static final int md_deep_purple_300=0x7f06003e;
+        public static final int md_deep_purple_400=0x7f06003f;
+        /**  deep purples 
+         */
+        public static final int md_deep_purple_50=0x7f06003b;
+        public static final int md_deep_purple_500=0x7f060040;
+        public static final int md_deep_purple_600=0x7f060041;
+        public static final int md_deep_purple_700=0x7f060042;
+        public static final int md_deep_purple_800=0x7f060043;
+        public static final int md_deep_purple_900=0x7f060044;
+        public static final int md_deep_purple_A100=0x7f060045;
+        public static final int md_deep_purple_A200=0x7f060046;
+        public static final int md_deep_purple_A400=0x7f060047;
+        public static final int md_deep_purple_A700=0x7f060048;
+        public static final int md_green_100=0x7f060090;
+        public static final int md_green_200=0x7f060091;
+        public static final int md_green_300=0x7f060092;
+        public static final int md_green_400=0x7f060093;
+        /**  green 
+         */
+        public static final int md_green_50=0x7f06008f;
+        public static final int md_green_500=0x7f060094;
+        public static final int md_green_600=0x7f060095;
+        public static final int md_green_700=0x7f060096;
+        public static final int md_green_800=0x7f060097;
+        public static final int md_green_900=0x7f060098;
+        public static final int md_green_A100=0x7f060099;
+        public static final int md_green_A200=0x7f06009a;
+        public static final int md_green_A400=0x7f06009b;
+        public static final int md_green_A700=0x7f06009c;
+        public static final int md_grey_100=0x7f0600fc;
+        public static final int md_grey_200=0x7f0600fd;
+        public static final int md_grey_300=0x7f0600fe;
+        public static final int md_grey_400=0x7f0600ff;
+        /** grey
+         */
+        public static final int md_grey_50=0x7f0600fb;
+        public static final int md_grey_500=0x7f060100;
+        public static final int md_grey_600=0x7f060101;
+        public static final int md_grey_700=0x7f060102;
+        public static final int md_grey_800=0x7f060103;
+        public static final int md_grey_900=0x7f060104;
+        public static final int md_indigo_100=0x7f06004a;
+        public static final int md_indigo_200=0x7f06004b;
+        public static final int md_indigo_300=0x7f06004c;
+        public static final int md_indigo_400=0x7f06004d;
+        /**  indigo 
+         */
+        public static final int md_indigo_50=0x7f060049;
+        public static final int md_indigo_500=0x7f06004e;
+        public static final int md_indigo_600=0x7f06004f;
+        public static final int md_indigo_700=0x7f060050;
+        public static final int md_indigo_800=0x7f060051;
+        public static final int md_indigo_900=0x7f060052;
+        public static final int md_indigo_A100=0x7f060053;
+        public static final int md_indigo_A200=0x7f060054;
+        public static final int md_indigo_A400=0x7f060055;
+        public static final int md_indigo_A700=0x7f060056;
+        public static final int md_light_blue_100=0x7f060066;
+        public static final int md_light_blue_200=0x7f060067;
+        public static final int md_light_blue_300=0x7f060068;
+        public static final int md_light_blue_400=0x7f060069;
+        /**  light blue
+         */
+        public static final int md_light_blue_50=0x7f060065;
+        public static final int md_light_blue_500=0x7f06006a;
+        public static final int md_light_blue_600=0x7f06006b;
+        public static final int md_light_blue_700=0x7f06006c;
+        public static final int md_light_blue_800=0x7f06006d;
+        public static final int md_light_blue_900=0x7f06006e;
+        public static final int md_light_blue_A100=0x7f06006f;
+        public static final int md_light_blue_A200=0x7f060070;
+        public static final int md_light_blue_A400=0x7f060071;
+        public static final int md_light_blue_A700=0x7f060072;
+        public static final int md_light_green_100=0x7f06009e;
+        public static final int md_light_green_200=0x7f06009f;
+        public static final int md_light_green_300=0x7f0600a0;
+        public static final int md_light_green_400=0x7f0600a1;
+        /** light green
+         */
+        public static final int md_light_green_50=0x7f06009d;
+        public static final int md_light_green_500=0x7f0600a2;
+        public static final int md_light_green_600=0x7f0600a3;
+        public static final int md_light_green_700=0x7f0600a4;
+        public static final int md_light_green_800=0x7f0600a5;
+        public static final int md_light_green_900=0x7f0600a6;
+        public static final int md_light_green_A100=0x7f0600a7;
+        public static final int md_light_green_A200=0x7f0600a8;
+        public static final int md_light_green_A400=0x7f0600a9;
+        public static final int md_light_green_A700=0x7f0600aa;
+        public static final int md_lime_100=0x7f0600ac;
+        public static final int md_lime_200=0x7f0600ad;
+        public static final int md_lime_300=0x7f0600ae;
+        public static final int md_lime_400=0x7f0600af;
+        /**  lime
+         */
+        public static final int md_lime_50=0x7f0600ab;
+        public static final int md_lime_500=0x7f0600b0;
+        public static final int md_lime_600=0x7f0600b1;
+        public static final int md_lime_700=0x7f0600b2;
+        public static final int md_lime_800=0x7f0600b3;
+        public static final int md_lime_900=0x7f0600b4;
+        public static final int md_lime_A100=0x7f0600b5;
+        public static final int md_lime_A200=0x7f0600b6;
+        public static final int md_lime_A400=0x7f0600b7;
+        public static final int md_lime_A700=0x7f0600b8;
+        public static final int md_orange_100=0x7f0600d6;
+        public static final int md_orange_200=0x7f0600d7;
+        public static final int md_orange_300=0x7f0600d8;
+        public static final int md_orange_400=0x7f0600d9;
+        /** orange
+         */
+        public static final int md_orange_50=0x7f0600d5;
+        public static final int md_orange_500=0x7f0600da;
+        public static final int md_orange_600=0x7f0600db;
+        public static final int md_orange_700=0x7f0600dc;
+        public static final int md_orange_800=0x7f0600dd;
+        public static final int md_orange_900=0x7f0600de;
+        public static final int md_orange_A100=0x7f0600df;
+        public static final int md_orange_A200=0x7f0600e0;
+        public static final int md_orange_A400=0x7f0600e1;
+        public static final int md_orange_A700=0x7f0600e2;
+        public static final int md_pink_100=0x7f060020;
+        public static final int md_pink_200=0x7f060021;
+        public static final int md_pink_300=0x7f060022;
+        public static final int md_pink_400=0x7f060023;
+        /**  pinks 
+         */
+        public static final int md_pink_50=0x7f06001f;
+        public static final int md_pink_500=0x7f060024;
+        public static final int md_pink_600=0x7f060025;
+        public static final int md_pink_700=0x7f060026;
+        public static final int md_pink_800=0x7f060027;
+        public static final int md_pink_900=0x7f060028;
+        public static final int md_pink_A100=0x7f060029;
+        public static final int md_pink_A200=0x7f06002a;
+        public static final int md_pink_A400=0x7f06002b;
+        public static final int md_pink_A700=0x7f06002c;
+        public static final int md_purple_100=0x7f06002e;
+        public static final int md_purple_200=0x7f06002f;
+        public static final int md_purple_300=0x7f060030;
+        public static final int md_purple_400=0x7f060031;
+        /**  purples 
+         */
+        public static final int md_purple_50=0x7f06002d;
+        public static final int md_purple_500=0x7f060032;
+        public static final int md_purple_600=0x7f060033;
+        public static final int md_purple_700=0x7f060034;
+        public static final int md_purple_800=0x7f060035;
+        public static final int md_purple_900=0x7f060036;
+        public static final int md_purple_A100=0x7f060037;
+        public static final int md_purple_A200=0x7f060038;
+        public static final int md_purple_A400=0x7f060039;
+        public static final int md_purple_A700=0x7f06003a;
+        public static final int md_red_100=0x7f060012;
+        public static final int md_red_200=0x7f060013;
+        public static final int md_red_300=0x7f060014;
+        public static final int md_red_400=0x7f060015;
+        /** reds
+         */
+        public static final int md_red_50=0x7f060011;
+        public static final int md_red_500=0x7f060016;
+        public static final int md_red_600=0x7f060017;
+        public static final int md_red_700=0x7f060018;
+        public static final int md_red_800=0x7f060019;
+        public static final int md_red_900=0x7f06001a;
+        public static final int md_red_A100=0x7f06001b;
+        public static final int md_red_A200=0x7f06001c;
+        public static final int md_red_A400=0x7f06001d;
+        public static final int md_red_A700=0x7f06001e;
+        public static final int md_teal_100=0x7f060082;
+        public static final int md_teal_200=0x7f060083;
+        public static final int md_teal_300=0x7f060084;
+        public static final int md_teal_400=0x7f060085;
+        /**  teal 
+         */
+        public static final int md_teal_50=0x7f060081;
+        public static final int md_teal_500=0x7f060086;
+        public static final int md_teal_600=0x7f060087;
+        public static final int md_teal_700=0x7f060088;
+        public static final int md_teal_800=0x7f060089;
+        public static final int md_teal_900=0x7f06008a;
+        public static final int md_teal_A100=0x7f06008b;
+        public static final int md_teal_A200=0x7f06008c;
+        public static final int md_teal_A400=0x7f06008d;
+        public static final int md_teal_A700=0x7f06008e;
+        public static final int md_white_1000=0x7f060106;
+        public static final int md_yellow_100=0x7f0600ba;
+        public static final int md_yellow_200=0x7f0600bb;
+        public static final int md_yellow_300=0x7f0600bc;
+        public static final int md_yellow_400=0x7f0600bd;
+        /** yellow 
+         */
+        public static final int md_yellow_50=0x7f0600b9;
+        public static final int md_yellow_500=0x7f0600be;
+        public static final int md_yellow_600=0x7f0600bf;
+        public static final int md_yellow_700=0x7f0600c0;
+        public static final int md_yellow_800=0x7f0600c1;
+        public static final int md_yellow_900=0x7f0600c2;
+        public static final int md_yellow_A100=0x7f0600c3;
+        public static final int md_yellow_A200=0x7f0600c4;
+        public static final int md_yellow_A400=0x7f0600c5;
+        public static final int md_yellow_A700=0x7f0600c6;
         public static final int radio_button_selected_color=0x7f06000f;
         public static final int radio_button_unselected_color=0x7f060010;
         public static final int red_dark=0x7f06000b;
@@ -177,113 +471,120 @@ public final class R {
         public static final int consult_bg=0x7f02000f;
         public static final int consult_text=0x7f020010;
         public static final int corners=0x7f020011;
-        public static final int corners_green=0x7f020012;
-        public static final int corners_portrait=0x7f020013;
-        public static final int corners_white=0x7f020014;
-        public static final int corners_white_listview=0x7f020015;
-        public static final int cornors_gray_light=0x7f020016;
-        public static final int discovery_dynamic=0x7f020017;
-        public static final int discovery_health_lecture=0x7f020018;
-        public static final int discovery_jibing=0x7f020019;
-        public static final int divider_blue_vertical=0x7f02001a;
-        public static final int doct_intro_divider=0x7f02001b;
-        public static final int doct_list_item_divider=0x7f02001c;
-        public static final int doctor_bg=0x7f02001d;
-        public static final int doctor_empty_image_light=0x7f02001e;
-        public static final int dot_focused=0x7f02001f;
-        public static final int dot_normal=0x7f020020;
-        public static final int edittext_multiline_corner=0x7f020021;
-        public static final int examine_btn_n=0x7f020022;
-        public static final int examine_btn_y=0x7f020023;
-        public static final int examine_check_icon_n=0x7f020024;
-        public static final int examine_check_icon_y=0x7f020025;
-        public static final int examing_check_icon=0x7f020026;
-        public static final int exist_btn=0x7f020027;
-        public static final int gh_ic_dept_dark=0x7f020028;
-        public static final int gh_ic_dept_light=0x7f020029;
-        public static final int gh_ic_hospital_dark=0x7f02002a;
-        public static final int gh_ic_hospital_light=0x7f02002b;
-        public static final int gh_sex_man=0x7f02002c;
-        public static final int gh_sex_woman=0x7f02002d;
-        public static final int head_pic_mask_small=0x7f02002e;
-        public static final int home_consult_button_normal=0x7f02002f;
-        public static final int home_consult_button_press=0x7f020030;
-        public static final int ic_home_search=0x7f020031;
-        public static final int ic_launcher=0x7f020032;
-        public static final int ic_tab_consult_checked=0x7f020033;
-        public static final int ic_tab_consult_unchecked=0x7f020034;
-        public static final int ic_tab_discovery_checked=0x7f020035;
-        public static final int ic_tab_discovery_unchecked=0x7f020036;
-        public static final int ic_tab_doctor_checked=0x7f020037;
-        public static final int ic_tab_guahao_checked=0x7f020038;
-        public static final int ic_tab_guahao_unchecked=0x7f020039;
-        public static final int ic_tab_me_checked=0x7f02003a;
-        public static final int ic_tab_me_unchecked=0x7f02003b;
-        public static final int icon_account=0x7f02003c;
-        public static final int icon_attention_normal=0x7f02003d;
-        public static final int icon_attention_press=0x7f02003e;
-        public static final int icon_doctor_info_desc=0x7f02003f;
-        public static final int icon_doctor_info_job=0x7f020040;
-        public static final int icon_empty_order=0x7f020041;
-        public static final int icon_fenzhen_normal=0x7f020042;
-        public static final int icon_fenzhen_press=0x7f020043;
-        public static final int icon_find_doctor_search=0x7f020044;
-        public static final int icon_me_no1=0x7f020045;
-        public static final int icon_me_no2=0x7f020046;
-        public static final int icon_me_no3=0x7f020047;
-        public static final int icon_me_no4=0x7f020048;
-        public static final int icon_me_no5=0x7f020049;
-        public static final int icon_me_no6=0x7f02004a;
-        public static final int icon_me_no7=0x7f02004b;
-        public static final int icon_me_portrait=0x7f02004c;
-        public static final int icon_order_normal=0x7f02004d;
-        public static final int icon_order_press=0x7f02004e;
-        public static final int icon_pwd=0x7f02004f;
-        public static final int icon_search_blue=0x7f020050;
-        public static final int icon_search_img=0x7f020051;
-        public static final int imge_me_icon_dark=0x7f020052;
-        public static final int list_item_click=0x7f020053;
-        public static final int login_btn_bg=0x7f020054;
-        public static final int man_back=0x7f020055;
-        public static final int man_face=0x7f020056;
-        public static final int man_selected_bg=0x7f020057;
-        public static final int radio_checked_bottom=0x7f020058;
-        public static final int radio_checked_default=0x7f020059;
-        public static final int radio_checked_left=0x7f02005a;
-        public static final int radio_checked_middle=0x7f02005b;
-        public static final int radio_checked_right=0x7f02005c;
-        public static final int radio_checked_top=0x7f02005d;
-        public static final int radio_unchecked_bottom=0x7f02005e;
-        public static final int radio_unchecked_default=0x7f02005f;
-        public static final int radio_unchecked_left=0x7f020060;
-        public static final int radio_unchecked_middle=0x7f020061;
-        public static final int radio_unchecked_middle_vertical=0x7f020062;
-        public static final int radio_unchecked_right=0x7f020063;
-        public static final int radio_unchecked_top=0x7f020064;
-        public static final int rect_white=0x7f020065;
-        public static final int refresh=0x7f020066;
-        public static final int right_arrow=0x7f020067;
-        public static final int rotate=0x7f020068;
-        public static final int shadow_left=0x7f020069;
-        public static final int spider=0x7f02006a;
-        public static final int submit_patient_info_man_select=0x7f02006b;
-        public static final int submit_patient_info_man_unselect=0x7f02006c;
-        public static final int submit_patient_info_woman_select=0x7f02006d;
-        public static final int submit_patient_info_woman_unselect=0x7f02006e;
-        public static final int three_attention_bg=0x7f02006f;
-        public static final int three_fenzhen_bg=0x7f020070;
-        public static final int three_order_bg=0x7f020071;
-        public static final int user_no_image=0x7f020072;
-        public static final int woman_back=0x7f020073;
-        public static final int woman_face=0x7f020074;
-        public static final int woman_selected_bg=0x7f020075;
-        public static final int zixun_bg=0x7f020076;
-        public static final int zixun_consult_bg=0x7f020077;
+        public static final int corners_blue=0x7f020012;
+        public static final int corners_green=0x7f020013;
+        public static final int corners_portrait=0x7f020014;
+        public static final int corners_white=0x7f020015;
+        public static final int corners_white_listview=0x7f020016;
+        public static final int cornors_gray_light=0x7f020017;
+        public static final int discovery_dynamic=0x7f020018;
+        public static final int discovery_health_lecture=0x7f020019;
+        public static final int discovery_jibing=0x7f02001a;
+        public static final int divider_blue_vertical=0x7f02001b;
+        public static final int doct_intro_divider=0x7f02001c;
+        public static final int doct_list_item_divider=0x7f02001d;
+        public static final int doctor_bg=0x7f02001e;
+        public static final int doctor_empty_image_light=0x7f02001f;
+        public static final int dot_focused=0x7f020020;
+        public static final int dot_normal=0x7f020021;
+        public static final int down_arrow=0x7f020022;
+        public static final int edittext_multiline_corner=0x7f020023;
+        public static final int examine_btn_n=0x7f020024;
+        public static final int examine_btn_y=0x7f020025;
+        public static final int examine_check_icon_n=0x7f020026;
+        public static final int examine_check_icon_y=0x7f020027;
+        public static final int examing_check_icon=0x7f020028;
+        public static final int exist_btn=0x7f020029;
+        public static final int gh_ic_dept_dark=0x7f02002a;
+        public static final int gh_ic_dept_light=0x7f02002b;
+        public static final int gh_ic_hospital_dark=0x7f02002c;
+        public static final int gh_ic_hospital_light=0x7f02002d;
+        public static final int gh_sex_man=0x7f02002e;
+        public static final int gh_sex_woman=0x7f02002f;
+        public static final int head_pic_mask_small=0x7f020030;
+        public static final int home_consult_button_normal=0x7f020031;
+        public static final int home_consult_button_press=0x7f020032;
+        public static final int ic_home_search=0x7f020033;
+        public static final int ic_launcher=0x7f020034;
+        public static final int ic_tab_consult_checked=0x7f020035;
+        public static final int ic_tab_consult_unchecked=0x7f020036;
+        public static final int ic_tab_discovery_checked=0x7f020037;
+        public static final int ic_tab_discovery_unchecked=0x7f020038;
+        public static final int ic_tab_doctor_checked=0x7f020039;
+        public static final int ic_tab_guahao_checked=0x7f02003a;
+        public static final int ic_tab_guahao_unchecked=0x7f02003b;
+        public static final int ic_tab_me_checked=0x7f02003c;
+        public static final int ic_tab_me_unchecked=0x7f02003d;
+        public static final int icon_account=0x7f02003e;
+        public static final int icon_add_menu_pressed=0x7f02003f;
+        public static final int icon_attention_normal=0x7f020040;
+        public static final int icon_attention_press=0x7f020041;
+        public static final int icon_doctor_info_desc=0x7f020042;
+        public static final int icon_doctor_info_job=0x7f020043;
+        public static final int icon_empty_order=0x7f020044;
+        public static final int icon_fenzhen_normal=0x7f020045;
+        public static final int icon_fenzhen_press=0x7f020046;
+        public static final int icon_find_doctor_search=0x7f020047;
+        public static final int icon_me_no1=0x7f020048;
+        public static final int icon_me_no2=0x7f020049;
+        public static final int icon_me_no3=0x7f02004a;
+        public static final int icon_me_no4=0x7f02004b;
+        public static final int icon_me_no5=0x7f02004c;
+        public static final int icon_me_no6=0x7f02004d;
+        public static final int icon_me_no7=0x7f02004e;
+        public static final int icon_me_portrait=0x7f02004f;
+        public static final int icon_order_normal=0x7f020050;
+        public static final int icon_order_press=0x7f020051;
+        public static final int icon_pwd=0x7f020052;
+        public static final int icon_search_blue=0x7f020053;
+        public static final int icon_search_img=0x7f020054;
+        public static final int imge_me_icon_dark=0x7f020055;
+        public static final int list_item_click=0x7f020056;
+        public static final int login_btn_bg=0x7f020057;
+        public static final int man_back=0x7f020058;
+        public static final int man_face=0x7f020059;
+        public static final int man_selected_bg=0x7f02005a;
+        public static final int one_step_green=0x7f02005b;
+        public static final int radio_checked_bottom=0x7f02005c;
+        public static final int radio_checked_default=0x7f02005d;
+        public static final int radio_checked_left=0x7f02005e;
+        public static final int radio_checked_middle=0x7f02005f;
+        public static final int radio_checked_right=0x7f020060;
+        public static final int radio_checked_top=0x7f020061;
+        public static final int radio_unchecked_bottom=0x7f020062;
+        public static final int radio_unchecked_default=0x7f020063;
+        public static final int radio_unchecked_left=0x7f020064;
+        public static final int radio_unchecked_middle=0x7f020065;
+        public static final int radio_unchecked_middle_vertical=0x7f020066;
+        public static final int radio_unchecked_right=0x7f020067;
+        public static final int radio_unchecked_top=0x7f020068;
+        public static final int rect_white=0x7f020069;
+        public static final int refresh=0x7f02006a;
+        public static final int right_arrow=0x7f02006b;
+        public static final int rotate=0x7f02006c;
+        public static final int shadow_left=0x7f02006d;
+        public static final int spider=0x7f02006e;
+        public static final int submit_patient_info_man_select=0x7f02006f;
+        public static final int submit_patient_info_man_unselect=0x7f020070;
+        public static final int submit_patient_info_woman_select=0x7f020071;
+        public static final int submit_patient_info_woman_unselect=0x7f020072;
+        public static final int three_attention_bg=0x7f020073;
+        public static final int three_fenzhen_bg=0x7f020074;
+        public static final int three_order_bg=0x7f020075;
+        public static final int two_step_green=0x7f020076;
+        public static final int up_arrow=0x7f020077;
+        public static final int user_no_image=0x7f020078;
+        public static final int woman_back=0x7f020079;
+        public static final int woman_face=0x7f02007a;
+        public static final int woman_selected_bg=0x7f02007b;
+        public static final int zixun_bg=0x7f02007c;
+        public static final int zixun_consult_bg=0x7f02007d;
     }
     public static final class id {
-        public static final int XXXXX=0x7f0b0061;
-        public static final int actionbar_message=0x7f0b0098;
-        public static final int actionbar_share=0x7f0b0099;
+        public static final int XXXXX=0x7f0b0064;
+        public static final int actionbar_guanzhu=0x7f0b009c;
+        public static final int actionbar_message=0x7f0b009d;
+        public static final int actionbar_share=0x7f0b009e;
         public static final int change_pwd_new=0x7f0b0001;
         public static final int change_pwd_old=0x7f0b0000;
         public static final int change_pwd_submit=0x7f0b0002;
@@ -300,59 +601,59 @@ public final class R {
         public static final int doctor_info_name=0x7f0b0008;
         public static final int doctor_info_portrait=0x7f0b0007;
         public static final int doctor_info_segment=0x7f0b000c;
-        public static final int doctorinfo_detail_desc=0x7f0b0040;
-        public static final int doctorinfo_detail_job=0x7f0b003f;
-        public static final int doctorinfo_rule=0x7f0b0041;
-        public static final int exist_cancel=0x7f0b003e;
-        public static final int exist_sure=0x7f0b003d;
-        public static final int faxian_jibing=0x7f0b0044;
-        public static final int faxian_mingyizaixian=0x7f0b0042;
-        public static final int faxian_yisheng_dynamic=0x7f0b0043;
+        public static final int doctorinfo_detail_desc=0x7f0b0043;
+        public static final int doctorinfo_detail_job=0x7f0b0042;
+        public static final int doctorinfo_rule=0x7f0b0044;
+        public static final int exist_cancel=0x7f0b0041;
+        public static final int exist_sure=0x7f0b0040;
+        public static final int faxian_jibing=0x7f0b0047;
+        public static final int faxian_mingyizaixian=0x7f0b0045;
+        public static final int faxian_yisheng_dynamic=0x7f0b0046;
         public static final int fenzhen_dot0=0x7f0b0011;
         public static final int fenzhen_dot1=0x7f0b0012;
-        public static final int fenzhen_female_ll=0x7f0b0045;
-        public static final int fenzhen_swipe_face=0x7f0b004a;
+        public static final int fenzhen_female_ll=0x7f0b0048;
+        public static final int fenzhen_swipe_face=0x7f0b004d;
         public static final int fenzhen_vp=0x7f0b0010;
-        public static final int fragment_fenzhen_female_body=0x7f0b0048;
-        public static final int fragment_fenzhen_female_icon=0x7f0b0046;
-        public static final int fragment_fenzhen_male_body=0x7f0b0049;
-        public static final int fragment_fenzhen_male_icon=0x7f0b0047;
-        public static final int geren_all=0x7f0b004b;
-        public static final int geren_guanzhu=0x7f0b0052;
-        public static final int geren_my_bingli=0x7f0b0051;
-        public static final int geren_my_order=0x7f0b004f;
-        public static final int geren_my_zixun=0x7f0b0050;
-        public static final int geren_phone=0x7f0b004e;
-        public static final int geren_portrait=0x7f0b004c;
-        public static final int geren_setting=0x7f0b0053;
-        public static final int geren_username=0x7f0b004d;
-        public static final int guahao_choose_dept=0x7f0b0057;
-        public static final int guahao_choose_dept_text=0x7f0b0058;
-        public static final int guahao_choose_hospital=0x7f0b0055;
-        public static final int guahao_choose_hospital_text=0x7f0b0056;
-        public static final int guahao_go_guahao=0x7f0b0059;
-        public static final int guahao_search=0x7f0b0054;
-        public static final int item_doctorinfo_remain_fee=0x7f0b0067;
-        public static final int item_doctorinfo_remain_submit=0x7f0b0068;
-        public static final int item_doctorinfo_remain_time=0x7f0b0066;
-        public static final int item_fenzhen_right_text=0x7f0b0069;
-        public static final int item_jibing_description=0x7f0b006c;
-        public static final int item_jibing_image=0x7f0b006a;
-        public static final int item_jibing_title=0x7f0b006b;
-        public static final int item_mingyi_description=0x7f0b006f;
-        public static final int item_mingyi_image=0x7f0b006e;
-        public static final int item_mingyi_time=0x7f0b0070;
-        public static final int item_mingyi_title=0x7f0b006d;
-        public static final int item_yishengdynamic_content=0x7f0b007c;
-        public static final int item_yishengdynamic_image=0x7f0b007a;
-        public static final int item_yishengdynamic_name=0x7f0b007b;
-        public static final int item_yishengdynamic_time=0x7f0b007d;
-        public static final int list_fenzhen_right_list=0x7f0b0092;
-        public static final int loading_img=0x7f0b0097;
-        public static final int loading_view=0x7f0b0096;
+        public static final int fragment_fenzhen_female_body=0x7f0b004b;
+        public static final int fragment_fenzhen_female_icon=0x7f0b0049;
+        public static final int fragment_fenzhen_male_body=0x7f0b004c;
+        public static final int fragment_fenzhen_male_icon=0x7f0b004a;
+        public static final int geren_all=0x7f0b004e;
+        public static final int geren_guanzhu=0x7f0b0055;
+        public static final int geren_my_bingli=0x7f0b0054;
+        public static final int geren_my_order=0x7f0b0052;
+        public static final int geren_my_zixun=0x7f0b0053;
+        public static final int geren_phone=0x7f0b0051;
+        public static final int geren_portrait=0x7f0b004f;
+        public static final int geren_setting=0x7f0b0056;
+        public static final int geren_username=0x7f0b0050;
+        public static final int guahao_choose_dept=0x7f0b005a;
+        public static final int guahao_choose_dept_text=0x7f0b005b;
+        public static final int guahao_choose_hospital=0x7f0b0058;
+        public static final int guahao_choose_hospital_text=0x7f0b0059;
+        public static final int guahao_go_guahao=0x7f0b005c;
+        public static final int guahao_search=0x7f0b0057;
+        public static final int item_doctorinfo_remain_fee=0x7f0b006a;
+        public static final int item_doctorinfo_remain_submit=0x7f0b006b;
+        public static final int item_doctorinfo_remain_time=0x7f0b0069;
+        public static final int item_fenzhen_right_text=0x7f0b006c;
+        public static final int item_jibing_description=0x7f0b006f;
+        public static final int item_jibing_image=0x7f0b006d;
+        public static final int item_jibing_title=0x7f0b006e;
+        public static final int item_mingyi_description=0x7f0b0072;
+        public static final int item_mingyi_image=0x7f0b0071;
+        public static final int item_mingyi_time=0x7f0b0073;
+        public static final int item_mingyi_title=0x7f0b0070;
+        public static final int item_yishengdynamic_content=0x7f0b0080;
+        public static final int item_yishengdynamic_image=0x7f0b007e;
+        public static final int item_yishengdynamic_name=0x7f0b007f;
+        public static final int item_yishengdynamic_time=0x7f0b0081;
+        public static final int list_fenzhen_right_list=0x7f0b0096;
+        public static final int loading_img=0x7f0b009b;
+        public static final int loading_view=0x7f0b009a;
         public static final int location_city_listView=0x7f0b0016;
-        public static final int location_icon=0x7f0b0078;
-        public static final int location_item=0x7f0b0079;
+        public static final int location_icon=0x7f0b007c;
+        public static final int location_item=0x7f0b007d;
         public static final int location_province_listView=0x7f0b0015;
         public static final int location_province_ll=0x7f0b0014;
         public static final int login_btn=0x7f0b0019;
@@ -360,81 +661,85 @@ public final class R {
         public static final int login_password=0x7f0b0018;
         public static final int login_register=0x7f0b001a;
         public static final int login_username=0x7f0b0017;
-        public static final int logout=0x7f0b0030;
-        public static final int main_attention=0x7f0b005b;
+        public static final int logout=0x7f0b0033;
+        public static final int main_attention=0x7f0b005e;
         public static final int main_content=0x7f0b001c;
         public static final int main_faxian=0x7f0b001f;
-        public static final int main_fenzhen=0x7f0b005a;
+        public static final int main_fenzhen=0x7f0b005d;
         public static final int main_geren_center=0x7f0b0020;
         public static final int main_guahao=0x7f0b001d;
-        public static final int main_order=0x7f0b005c;
+        public static final int main_order=0x7f0b005f;
         public static final int main_zixun=0x7f0b001e;
         public static final int message_empty_image=0x7f0b0021;
         public static final int message_empty_text=0x7f0b0022;
         public static final int mingyi_list=0x7f0b0023;
         public static final int mingyi_listview=0x7f0b0024;
-        public static final int pull_to_refresh_load_progress=0x7f0b0093;
-        public static final int pull_to_refresh_loadmore_text=0x7f0b0094;
-        public static final int pull_to_refresh_toload=0x7f0b0095;
-        public static final int register_btn=0x7f0b002a;
-        public static final int register_identifying=0x7f0b0029;
-        public static final int register_password=0x7f0b0027;
-        public static final int register_password_confirm=0x7f0b0028;
-        public static final int register_telephone=0x7f0b0025;
-        public static final int register_username=0x7f0b0026;
-        public static final int select_hospital_image=0x7f0b0075;
-        public static final int select_hospital_level=0x7f0b0077;
-        public static final int select_hospital_name=0x7f0b0076;
-        public static final int setting_about=0x7f0b002c;
-        public static final int setting_advice=0x7f0b002d;
-        public static final int setting_check_update=0x7f0b002e;
-        public static final int setting_navigate=0x7f0b002b;
-        public static final int setting_version=0x7f0b002f;
+        public static final int order_guahao=0x7f0b0027;
+        public static final int order_hint=0x7f0b0026;
+        public static final int order_no_order=0x7f0b0025;
+        public static final int pull_to_refresh_load_progress=0x7f0b0097;
+        public static final int pull_to_refresh_loadmore_text=0x7f0b0098;
+        public static final int pull_to_refresh_toload=0x7f0b0099;
+        public static final int register_btn=0x7f0b002d;
+        public static final int register_identifying=0x7f0b002c;
+        public static final int register_password=0x7f0b002a;
+        public static final int register_password_confirm=0x7f0b002b;
+        public static final int register_telephone=0x7f0b0028;
+        public static final int register_username=0x7f0b0029;
+        public static final int select_hospital_image=0x7f0b0078;
+        public static final int select_hospital_level=0x7f0b007a;
+        public static final int select_hospital_name=0x7f0b0079;
+        public static final int select_section_name=0x7f0b007b;
+        public static final int setting_about=0x7f0b002f;
+        public static final int setting_advice=0x7f0b0030;
+        public static final int setting_check_update=0x7f0b0031;
+        public static final int setting_navigate=0x7f0b002e;
+        public static final int setting_version=0x7f0b0032;
         public static final int solution_text=0x7f0b0013;
-        public static final int tv_title=0x7f0b0072;
-        public static final int user_info_changpwd=0x7f0b0034;
-        public static final int user_info_portrait=0x7f0b0031;
-        public static final int user_info_portrait_image=0x7f0b0032;
-        public static final int user_info_username=0x7f0b0033;
-        public static final int v_dot0=0x7f0b0062;
-        public static final int v_dot1=0x7f0b0063;
-        public static final int v_dot2=0x7f0b0064;
-        public static final int v_dot3=0x7f0b0073;
-        public static final int v_dot4=0x7f0b0074;
-        public static final int vp=0x7f0b0071;
-        public static final int zixun_age=0x7f0b0038;
-        public static final int zixun_consult=0x7f0b005e;
-        public static final int zixun_content=0x7f0b003a;
-        public static final int zixun_dept=0x7f0b0039;
-        public static final int zixun_doctor_dept1=0x7f0b0081;
-        public static final int zixun_doctor_dept2=0x7f0b0086;
-        public static final int zixun_doctor_dept3=0x7f0b008b;
-        public static final int zixun_doctor_dept4=0x7f0b0090;
-        public static final int zixun_doctor_name1=0x7f0b007f;
-        public static final int zixun_doctor_name2=0x7f0b0084;
-        public static final int zixun_doctor_name3=0x7f0b0089;
-        public static final int zixun_doctor_name4=0x7f0b008e;
-        public static final int zixun_doctor_portrait1=0x7f0b007e;
-        public static final int zixun_doctor_portrait2=0x7f0b0083;
-        public static final int zixun_doctor_portrait3=0x7f0b0088;
-        public static final int zixun_doctor_portrait4=0x7f0b008d;
-        public static final int zixun_doctor_zhuzhi1=0x7f0b0080;
-        public static final int zixun_doctor_zhuzhi2=0x7f0b0085;
-        public static final int zixun_doctor_zhuzhi3=0x7f0b008a;
-        public static final int zixun_doctor_zhuzhi4=0x7f0b008f;
-        public static final int zixun_female=0x7f0b0037;
-        public static final int zixun_gnnder=0x7f0b0035;
-        public static final int zixun_male=0x7f0b0036;
-        public static final int zixun_more_zhuanjia=0x7f0b0060;
-        public static final int zixun_search=0x7f0b005d;
-        public static final int zixun_submit=0x7f0b003c;
-        public static final int zixun_to_zhuanjia=0x7f0b005f;
-        public static final int zixun_upload_picture=0x7f0b003b;
-        public static final int zixun_vp=0x7f0b0065;
-        public static final int zixun_which_hospital1=0x7f0b0082;
-        public static final int zixun_which_hospital2=0x7f0b0087;
-        public static final int zixun_which_hospital3=0x7f0b008c;
-        public static final int zixun_which_hospital4=0x7f0b0091;
+        public static final int tv_title=0x7f0b0075;
+        public static final int user_info_changpwd=0x7f0b0037;
+        public static final int user_info_portrait=0x7f0b0034;
+        public static final int user_info_portrait_image=0x7f0b0035;
+        public static final int user_info_username=0x7f0b0036;
+        public static final int v_dot0=0x7f0b0065;
+        public static final int v_dot1=0x7f0b0066;
+        public static final int v_dot2=0x7f0b0067;
+        public static final int v_dot3=0x7f0b0076;
+        public static final int v_dot4=0x7f0b0077;
+        public static final int vp=0x7f0b0074;
+        public static final int zixun_age=0x7f0b003b;
+        public static final int zixun_consult=0x7f0b0061;
+        public static final int zixun_content=0x7f0b003d;
+        public static final int zixun_dept=0x7f0b003c;
+        public static final int zixun_doctor_dept1=0x7f0b0085;
+        public static final int zixun_doctor_dept2=0x7f0b008a;
+        public static final int zixun_doctor_dept3=0x7f0b008f;
+        public static final int zixun_doctor_dept4=0x7f0b0094;
+        public static final int zixun_doctor_name1=0x7f0b0083;
+        public static final int zixun_doctor_name2=0x7f0b0088;
+        public static final int zixun_doctor_name3=0x7f0b008d;
+        public static final int zixun_doctor_name4=0x7f0b0092;
+        public static final int zixun_doctor_portrait1=0x7f0b0082;
+        public static final int zixun_doctor_portrait2=0x7f0b0087;
+        public static final int zixun_doctor_portrait3=0x7f0b008c;
+        public static final int zixun_doctor_portrait4=0x7f0b0091;
+        public static final int zixun_doctor_zhuzhi1=0x7f0b0084;
+        public static final int zixun_doctor_zhuzhi2=0x7f0b0089;
+        public static final int zixun_doctor_zhuzhi3=0x7f0b008e;
+        public static final int zixun_doctor_zhuzhi4=0x7f0b0093;
+        public static final int zixun_female=0x7f0b003a;
+        public static final int zixun_gnnder=0x7f0b0038;
+        public static final int zixun_male=0x7f0b0039;
+        public static final int zixun_more_zhuanjia=0x7f0b0063;
+        public static final int zixun_search=0x7f0b0060;
+        public static final int zixun_submit=0x7f0b003f;
+        public static final int zixun_to_zhuanjia=0x7f0b0062;
+        public static final int zixun_upload_picture=0x7f0b003e;
+        public static final int zixun_vp=0x7f0b0068;
+        public static final int zixun_which_hospital1=0x7f0b0086;
+        public static final int zixun_which_hospital2=0x7f0b008b;
+        public static final int zixun_which_hospital3=0x7f0b0090;
+        public static final int zixun_which_hospital4=0x7f0b0095;
     }
     public static final class layout {
         public static final int activity_about_us=0x7f030000;
@@ -471,115 +776,126 @@ public final class R {
         public static final int item_mingyizaixian_news=0x7f03001f;
         public static final int item_scroll_image=0x7f030020;
         public static final int item_select_hospital=0x7f030021;
-        public static final int item_selecte_location=0x7f030022;
-        public static final int item_yishengdynamic_news=0x7f030023;
-        public static final int item_zixun_scroll_layout=0x7f030024;
-        public static final int list_fenzhen_right=0x7f030025;
-        public static final int listview_footer=0x7f030026;
-        public static final int loading_dialog=0x7f030027;
+        public static final int item_select_section=0x7f030022;
+        public static final int item_selecte_location=0x7f030023;
+        public static final int item_yishengdynamic_news=0x7f030024;
+        public static final int item_zixun_scroll_layout=0x7f030025;
+        public static final int list_fenzhen_right=0x7f030026;
+        public static final int listview_footer=0x7f030027;
+        public static final int loading_dialog=0x7f030028;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
-        public static final int share=0x7f0a0001;
+        public static final int guanzhu=0x7f0a0000;
+        public static final int main=0x7f0a0001;
+        public static final int share=0x7f0a0002;
     }
     public static final class string {
-        public static final int about_us=0x7f08003e;
+        public static final int about_us=0x7f08003f;
         public static final int action_settings=0x7f080001;
-        public static final int advice_to_us=0x7f08003f;
-        public static final int age=0x7f080019;
+        public static final int advice_to_us=0x7f080040;
+        public static final int age=0x7f08001a;
         public static final int app_name=0x7f080000;
-        public static final int badNetwork=0x7f08005d;
-        public static final int cancel=0x7f080011;
+        public static final int attention=0x7f080010;
+        public static final int badNetwork=0x7f080060;
+        public static final int cancel=0x7f080012;
         public static final int change_3g=0x7f080004;
-        public static final int change_pwd=0x7f08002a;
-        public static final int change_pwd_error=0x7f080055;
-        public static final int change_pwd_new=0x7f080052;
-        public static final int change_pwd_new_is_empty=0x7f080053;
-        public static final int change_pwd_old=0x7f080050;
-        public static final int change_pwd_old_is_empty=0x7f080051;
-        public static final int change_pwd_success=0x7f080054;
+        public static final int change_pwd=0x7f08002b;
+        public static final int change_pwd_error=0x7f080056;
+        public static final int change_pwd_new=0x7f080053;
+        public static final int change_pwd_new_is_empty=0x7f080054;
+        public static final int change_pwd_old=0x7f080051;
+        public static final int change_pwd_old_is_empty=0x7f080052;
+        public static final int change_pwd_success=0x7f080055;
         public static final int change_wifi=0x7f080003;
-        public static final int check_update=0x7f080040;
-        public static final int click_loading=0x7f080046;
-        public static final int connect_timeout=0x7f080047;
-        public static final int contact_phone=0x7f08004d;
-        public static final int contact_write=0x7f08004e;
-        public static final int contact_you=0x7f08004a;
-        public static final int dept=0x7f08003a;
-        public static final int doctor_info=0x7f08004c;
-        public static final int doctor_info_detail=0x7f080057;
-        public static final int doctor_info_yuyue=0x7f080058;
+        public static final int check_update=0x7f080041;
+        public static final int click_loading=0x7f080047;
+        public static final int connect_timeout=0x7f080048;
+        public static final int contact_phone=0x7f08004e;
+        public static final int contact_write=0x7f08004f;
+        public static final int contact_you=0x7f08004b;
+        public static final int dept=0x7f08003b;
+        public static final int doctor_info=0x7f08004d;
+        public static final int doctor_info_detail=0x7f080058;
+        public static final int doctor_info_yuyue=0x7f08005b;
         public static final int email=0x7f080005;
-        public static final int exist_query=0x7f080043;
+        public static final int exist_query=0x7f080044;
         public static final int faxian=0x7f080009;
-        public static final int feedback=0x7f08004b;
-        public static final int female=0x7f080018;
+        public static final int feedback=0x7f08004c;
+        public static final int female=0x7f080019;
         public static final int fenzhen=0x7f08000d;
-        public static final int forget_pwd=0x7f080024;
+        public static final int forget_pwd=0x7f080025;
         public static final int geren_center=0x7f08000a;
-        public static final int get_identify=0x7f080022;
-        public static final int go_guahao=0x7f08003b;
+        public static final int get_identify=0x7f080023;
+        public static final int go_guahao=0x7f08003c;
         public static final int guahao=0x7f080007;
-        public static final int guahao_choose_dept=0x7f080039;
-        public static final int guahao_choose_hospital=0x7f080038;
-        public static final int hospital_desc=0x7f080059;
-        public static final int hospital_name=0x7f080044;
-        public static final int jibing=0x7f080033;
-        public static final int loading=0x7f080045;
-        public static final int login=0x7f08001b;
-        public static final int login_hint=0x7f08001c;
-        public static final int login_hint_password=0x7f08001e;
-        public static final int login_hint_password_confirm=0x7f08001f;
-        public static final int login_hint_username=0x7f08001d;
-        public static final int login_name=0x7f08002b;
-        public static final int logout=0x7f080042;
-        public static final int male=0x7f080017;
+        public static final int guahao_choose_dept=0x7f08003a;
+        public static final int guahao_choose_hospital=0x7f080039;
+        public static final int guanzhu_doctor=0x7f080059;
+        public static final int guanzhu_hospital=0x7f08005a;
+        public static final int hospital_desc=0x7f08005c;
+        public static final int hospital_name=0x7f080045;
+        public static final int how_to_guahao=0x7f080065;
+        public static final int jibing=0x7f080034;
+        public static final int loading=0x7f080046;
+        public static final int login=0x7f08001c;
+        public static final int login_hint=0x7f08001d;
+        public static final int login_hint_password=0x7f08001f;
+        public static final int login_hint_password_confirm=0x7f080020;
+        public static final int login_hint_username=0x7f08001e;
+        public static final int login_name=0x7f08002c;
+        public static final int logout=0x7f080043;
+        public static final int male=0x7f080018;
         public static final int message=0x7f08000b;
         public static final int message_empty=0x7f08000c;
-        public static final int mingyizaixian=0x7f080031;
+        public static final int mingyizaixian=0x7f080032;
         public static final int my_attention=0x7f08000f;
-        public static final int my_bingli=0x7f08002d;
-        public static final int my_guanzhu=0x7f08002e;
-        public static final int my_order=0x7f080010;
-        public static final int my_order_list=0x7f080028;
-        public static final int my_zixun=0x7f08002c;
-        public static final int navigate=0x7f08003d;
+        public static final int my_bingli=0x7f08002e;
+        public static final int my_guanzhu=0x7f08002f;
+        public static final int my_order=0x7f080011;
+        public static final int my_order_list=0x7f080029;
+        public static final int my_zixun=0x7f08002d;
+        public static final int navigate=0x7f08003e;
         public static final int network_error=0x7f080002;
-        public static final int news_click_more=0x7f080037;
-        public static final int order=0x7f080029;
-        public static final int our_team=0x7f080049;
-        public static final int phone=0x7f080027;
-        public static final int register=0x7f080021;
-        public static final int register_identifying=0x7f080020;
-        public static final int register_new=0x7f080023;
-        public static final int rule=0x7f08005a;
-        public static final int select_hospital=0x7f080012;
-        public static final int select_section=0x7f080013;
-        public static final int sendFailed=0x7f080060;
-        public static final int sendSucceed=0x7f08005c;
-        public static final int sex=0x7f080016;
-        public static final int share=0x7f080034;
-        public static final int shezhi=0x7f08002f;
+        public static final int news_click_more=0x7f080038;
+        public static final int no_order=0x7f080064;
+        public static final int order=0x7f08002a;
+        public static final int order_step_one=0x7f080066;
+        public static final int order_step_three=0x7f080068;
+        public static final int order_step_two=0x7f080067;
+        public static final int our_team=0x7f08004a;
+        public static final int phone=0x7f080028;
+        public static final int register=0x7f080022;
+        public static final int register_identifying=0x7f080021;
+        public static final int register_new=0x7f080024;
+        public static final int rule=0x7f08005d;
+        public static final int select_doctor=0x7f080069;
+        public static final int select_hospital=0x7f080013;
+        public static final int select_section=0x7f080014;
+        public static final int sendFailed=0x7f080063;
+        public static final int sendSucceed=0x7f08005f;
+        public static final int sex=0x7f080017;
+        public static final int share=0x7f080035;
+        public static final int shezhi=0x7f080030;
         public static final int solution=0x7f08000e;
-        public static final int submit=0x7f080048;
-        public static final int sure=0x7f080014;
-        public static final int sure_change=0x7f080015;
+        public static final int submit=0x7f080049;
+        public static final int sure=0x7f080015;
+        public static final int sure_change=0x7f080016;
         public static final int telephone=0x7f080006;
-        public static final int upload_picture=0x7f080056;
-        public static final int user_info=0x7f080030;
-        public static final int username=0x7f080025;
-        public static final int verifyFailed=0x7f08005e;
-        public static final int verifySucceed=0x7f08005f;
-        public static final int version=0x7f080041;
-        public static final int yishengdongtai=0x7f080032;
-        public static final int yiyuan_rule=0x7f08005b;
-        public static final int zhuzhi=0x7f080026;
+        public static final int upload_picture=0x7f080057;
+        public static final int user_info=0x7f080031;
+        public static final int username=0x7f080026;
+        public static final int verifyFailed=0x7f080061;
+        public static final int verifySucceed=0x7f080062;
+        public static final int version=0x7f080042;
+        public static final int yishengdongtai=0x7f080033;
+        public static final int yiyuan_rule=0x7f08005e;
+        public static final int zhuzhi=0x7f080027;
         public static final int zixun=0x7f080008;
-        public static final int zixun_dept=0x7f08001a;
-        public static final int zixun_doctor=0x7f08003c;
-        public static final int zixun_hint=0x7f080035;
-        public static final int zixun_more_zhuanjia=0x7f080036;
-        public static final int zixun_write=0x7f08004f;
+        public static final int zixun_dept=0x7f08001b;
+        public static final int zixun_doctor=0x7f08003d;
+        public static final int zixun_hint=0x7f080036;
+        public static final int zixun_more_zhuanjia=0x7f080037;
+        public static final int zixun_write=0x7f080050;
     }
     public static final class style {
         /** 
@@ -608,13 +924,14 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f090001;
+        public static final int BigRadioButton=0x7f090009;
         /**  上边不动 下边滑动 
          */
         public static final int BottomAnimationActivity=0x7f090007;
         /**  设置ActionBar的样式 
          */
         public static final int CustomActionBarTheme=0x7f090002;
-        public static final int ExistDialog=0x7f09000a;
+        public static final int ExistDialog=0x7f09000b;
         /**  ActionBar styles 
          */
         public static final int MyActionBar=0x7f090003;
@@ -632,83 +949,86 @@ public final class R {
         public static final int SwipeAnimationActivity=0x7f090006;
         /**  黑色 12sp 
          */
-        public static final int black_12=0x7f090017;
+        public static final int black_12=0x7f090018;
         /**  黑色 14sp 
          */
-        public static final int black_14=0x7f090016;
+        public static final int black_14=0x7f090017;
         /**  黑色 18sp 
          */
-        public static final int black_18=0x7f090015;
+        public static final int black_18=0x7f090016;
         /**  浅黑色14 
          */
-        public static final int black_light_14=0x7f090023;
+        public static final int black_light_14=0x7f090025;
         /**  浅黑色18 
          */
-        public static final int black_light_18=0x7f090022;
+        public static final int black_light_18=0x7f090024;
+        /**  浅黑色20 
+         */
+        public static final int black_light_20=0x7f090023;
         /**  蓝色14 
          */
-        public static final int blue_14=0x7f090026;
+        public static final int blue_14=0x7f090028;
         /**  蓝色18 
          */
-        public static final int blue_18=0x7f090024;
+        public static final int blue_18=0x7f090026;
         /**  蓝色24 
          */
-        public static final int blue_24=0x7f090025;
-        public static final int both_fill_parent=0x7f09000c;
-        public static final int dot_style=0x7f090009;
+        public static final int blue_24=0x7f090027;
+        public static final int both_fill_parent=0x7f09000d;
+        public static final int dot_style=0x7f09000a;
         /**  灰色 10sp 
          */
-        public static final int gray_10=0x7f09001b;
+        public static final int gray_10=0x7f09001c;
         /**  灰色 12sp 
          */
-        public static final int gray_12=0x7f09001a;
+        public static final int gray_12=0x7f09001b;
         /**  灰色 14sp 
          */
-        public static final int gray_14=0x7f090019;
+        public static final int gray_14=0x7f09001a;
         /**  灰色 18sp 
          */
-        public static final int gray_18=0x7f090018;
+        public static final int gray_18=0x7f090019;
         /**  灰色 8sp 
          */
-        public static final int gray_8=0x7f09001c;
+        public static final int gray_8=0x7f09001d;
         /**  深灰色 10sp 
          */
-        public static final int gray_dark_10=0x7f090020;
+        public static final int gray_dark_10=0x7f090021;
         /**  深灰色 12sp 
          */
-        public static final int gray_dark_12=0x7f09001f;
+        public static final int gray_dark_12=0x7f090020;
         /**  深灰色 14sp 
          */
-        public static final int gray_dark_14=0x7f09001e;
+        public static final int gray_dark_14=0x7f09001f;
         /**  深灰色 18sp 
          */
-        public static final int gray_dark_18=0x7f09001d;
+        public static final int gray_dark_18=0x7f09001e;
         /**  深灰色 8sp 
          */
-        public static final int gray_dark_8=0x7f090021;
+        public static final int gray_dark_8=0x7f090022;
         /**  绿色14 
          */
-        public static final int green_14=0x7f090028;
+        public static final int green_14=0x7f09002a;
         /**  绿色18 
          */
-        public static final int green_18=0x7f090027;
-        public static final int height_fill_parent=0x7f09000f;
+        public static final int green_18=0x7f090029;
+        public static final int height_fill_parent=0x7f090010;
         /**  加载dialog样式 
 半透明
          */
-        public static final int loading_dialog=0x7f09000b;
-        public static final int main_choose_three=0x7f090011;
-        public static final int main_tab=0x7f090010;
-        public static final int none_fill_parent=0x7f09000d;
+        public static final int loading_dialog=0x7f09000c;
+        public static final int main_choose_three=0x7f090012;
+        public static final int main_tab=0x7f090011;
+        public static final int none_fill_parent=0x7f09000e;
         /**  白色 12sp 
          */
-        public static final int white_12=0x7f090014;
+        public static final int white_12=0x7f090015;
         /**  白色 14sp 
          */
-        public static final int white_14=0x7f090013;
+        public static final int white_14=0x7f090014;
         /**  白色 18sp 
          */
-        public static final int white_18=0x7f090012;
-        public static final int width_fill_parent=0x7f09000e;
+        public static final int white_18=0x7f090013;
+        public static final int width_fill_parent=0x7f09000f;
     }
 }

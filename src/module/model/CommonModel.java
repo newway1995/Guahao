@@ -60,7 +60,7 @@ public class CommonModel {
 			
 			@Override
 			public void doInBackground() {
-				result = AppCode.getData(context, AppCode.GET_PROVINCE, null, AppNet.Access.GET);				
+				result = AppCode.getData(context,null, AppNet.Access.GET);				
 			}
 		};
 		new MyAsyncTask(inter, true, context).execute();
@@ -95,7 +95,7 @@ public class CommonModel {
 			@Override
 			public void doInBackground() {
 				ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
-				result = AppCode.getData(context, AppCode.GET_CITY_BY_PRO_ID, params, AppNet.Access.GET);
+				result = AppCode.getData(context, params, AppNet.Access.GET);
 			}
 		};
 		new MyAsyncTask(inter, true, context).execute();

@@ -151,7 +151,7 @@ public class RegisterActivity extends Activity{
 				params.add(new BasicNameValuePair(Constant.USERNAME, username));
 				params.add(new BasicNameValuePair(Constant.PASSWORD, password));
 				params.add(new BasicNameValuePair("action", AppCode.ACTION_REGISTER));
-				result = AppCode.getData(RegisterActivity.this, AppCode.LOGIN, params, AppNet.Access.POST);
+				result = AppCode.getData(RegisterActivity.this, params, AppNet.Access.POST);
 			}
 		};
 		new MyAsyncTask(inter, true, RegisterActivity.this).execute();

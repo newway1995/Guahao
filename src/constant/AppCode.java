@@ -29,6 +29,9 @@ public class AppCode {
 	public static final String ACTION_GET_PROVINCE = "API_GH_GET_PROVINCE";
 	public static final String ACTION_GET_CITY_BY_PROID = "API_GH_GET_CITY_BY_PRO_ID";
 	public static final String ACTION_REGISTER = "API_GH_REGISTER";
+	public static final String ACTION_GET_HOSPITAL = "API_GH_GET_HOSPITAL_BY_CITY_ID";
+	public static final String ACTION_GET_SECTION = "API_GH_GET_SECTION_BY_HID";
+	public static final String ACTION_GET_DOCTOR = "API_GH_GET_DOCTOR_BY_ID";
 	
 	public static final int LOGIN = 1;
 	public static final int CHANGE_PWD = 2;
@@ -44,7 +47,7 @@ public class AppCode {
 	 * @param netCate  get方法/post方法 AppNet.Access.GET/POST
 	 * @return
 	 */
-	public static String getData(Context mContext, int AppCode, ArrayList<NameValuePair> params, int netCate){
+	public static String getData(Context mContext,ArrayList<NameValuePair> params, int netCate){
 		String result = null;
 		String urlName = null;
 		urlName = getUrl(AppNet.URL, params);

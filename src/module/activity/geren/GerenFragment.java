@@ -108,8 +108,8 @@ public class GerenFragment extends Fragment implements OnClickListener{
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.geren_all:
-			//startActivity(new Intent(getActivity(),UserInfoActivity.class));
-			startActivity(new Intent(getActivity(),LoginActivity.class));
+			startActivity(new Intent(getActivity(),UserInfoActivity.class));
+			//startActivity(new Intent(getActivity(),LoginActivity.class));
 			break;
 		case R.id.geren_my_order:
 			startActivity(new Intent(getActivity(),OrderActivity.class));

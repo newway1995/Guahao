@@ -1,6 +1,9 @@
 package constant;
 
+import common.util.CacheHandler;
+
 import module.activity.R;
+import android.content.Context;
 import android.content.res.Resources;
 
 public class Constant {
@@ -24,12 +27,19 @@ public class Constant {
 	public static final String PASSWORD = "password";//当前用户的密码
 	public static final String USER_ID = "user_id";//当前用户的ID
 	public static final String USER_INFO = "user_info";//当前用户的其他信息	
+	public static final String USER_HOSPITAL_ID = "hid";//当前用户选择的医院id
+	public static final String USER_HOSPITAL_NAME = "hname";//当前用户选择的医院name
+	public static final String USER_SECTION_ID = "sid";//当前用户选择的科室id
+	public static final String USER_SECTION_NAME = "sname";//当前用户选择的科室name
 	
 	//net参数常量
 	public static final String PAGE_COUNT = "pageCount";//从服务器获取多少页面
 	public static final String PAGE_FROM = "pageFrom";	//从第几页开始获取
 	public static final String PROVINCE = "province";
 	public static final String CITY = "city";
+	public static final String CITY_ID = "city_id";
+	public static final String HID = "hid";
+	public static final String SID = "sid";
 	
 	/**
 	 * 返回所有的疾病列表
@@ -179,4 +189,18 @@ public class Constant {
 		return null;
 	}
 	
+	/**
+	 * 是否登录
+	 * */
+	public static boolean isLogin(Context context){
+		return CacheHandler.readCache(context, Constant.USER_INFO, Constant.IS_LOGIN).equals(Constant.LOGGED);
+	}
+	/**
+	 * 设置登录
+	 * @param context 上下文
+	 * @param isLogin 只能取值为Constant.Logged or Constant.UnLogged
+	 * */
+	public static void setLogin(Context context,String isLogin){
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.IS_LOGIN, isLogin);
+	}		
 }

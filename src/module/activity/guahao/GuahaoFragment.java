@@ -3,7 +3,6 @@ package module.activity.guahao;
 import common.util.CacheHandler;
 import common.util.LocationUtils;
 import constant.Constant;
-import constant.MyApplication;
 
 import module.activity.R;
 import module.activity.geren.GuanzhuActivity;
@@ -18,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -87,20 +87,25 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 	/**
 	 * 当用户选择完医院和科室之后需要更新界面
 	 * */
-	public void updateHospitalAndSection(String hospitalString,String sectionString){
-		guahao_choose_dept_text.setText(sectionString);
-		guahao_choose_hospital_text.setText(hospitalString);
+	public void updateHospitalAndSection(){
+		String h_name = CacheHandler.readCache(getActivity(), Constant.USER_INFO, Constant.USER_HOSPITAL_NAME);
+		String s_name = CacheHandler.readCache(getActivity(), Constant.USER_INFO, Constant.USER_SECTION_NAME);
+		
+		if (!h_name.equals("")) {
+			guahao_choose_hospital_text.setTextColor(getResources().getColor(R.color.red_dark));
+			guahao_choose_hospital_text.setText(h_name);
+			if (!s_name.equals("")) {
+				guahao_choose_dept_text.setTextColor(getResources().getColor(R.color.red_dark));
+				guahao_choose_dept_text.setText(s_name);
+			}
+		}				
 	} 
 	
 
 	@Override
 	public void onStart() {
 		super.onStart();
-		if ( !MyApplication.selected_hospital.equals("") && !MyApplication.selected_section.equals("")){
-			updateHospitalAndSection(MyApplication.selected_hospital, MyApplication.selected_section);
-		}else if ( !MyApplication.selected_hospital.equals("") ) {
-			guahao_choose_hospital_text.setText(MyApplication.selected_hospital);
-		}
+		updateHospitalAndSection();
 	}
 
 	@Override
@@ -119,7 +124,11 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 			startActivity(new Intent(getActivity(),SelectHospitalActivity.class));
 			break;
 		case R.id.guahao_choose_dept:
-			startActivity(new Intent(getActivity(),SelectSectionActivity.class));
+			if (!CacheHandler.readCache(getActivity(), Constant.USER_INFO, Constant.USER_HOSPITAL_NAME).equals("")) {
+				startActivity(new Intent(getActivity(),SelectSectionActivity.class));
+			}else {
+				Toast.makeText(getActivity(), "请先选择医院", Toast.LENGTH_SHORT).show();
+			}
 			break;
 		case R.id.guahao_go_guahao:
 			startActivity(new Intent(getActivity(),DoctorInfoActivity.class));

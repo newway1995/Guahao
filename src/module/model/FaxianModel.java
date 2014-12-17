@@ -73,7 +73,7 @@ public class FaxianModel {
 				params.add(new BasicNameValuePair(Constant.PAGE_COUNT,pageCount+""));
 				params.add(new BasicNameValuePair(Constant.PAGE_FROM,pageFrom+""));
 				params.add(new BasicNameValuePair("action",action));
-				result = AppCode.getData(context, AppCode.DOCTOR_ONLINE, params, AppNet.Access.GET);
+				result = AppCode.getData(context, params, AppNet.Access.GET);
 				
 				Log.d(TAG, "doInBackground result = " + result);
 			}

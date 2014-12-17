@@ -12,11 +12,12 @@
     <string name="zixun">咨询</string>
     <string name="faxian">发现</string>
     <string name="geren_center">个人中心</string>
-	<string name="message">消息</string>
+	<string name="message">消息</string>	
 	<string name="message_empty">暂无消息提醒</string>
 	<string name="fenzhen">智能导诊</string>
 	<string name="solution">智能推荐</string>
 	<string name="my_attention">我的关注</string>
+	<string name="attention">关注</string>
 	<string name="my_order">我的预约</string>
 	<string name="cancel">取消</string>
 	<string name="select_hospital">选择医院</string>
@@ -96,6 +97,8 @@
 	<string name="change_pwd_error">密码修改失败,请检查错误原因</string>
 	<string name="upload_picture">上传照片</string>
 	<string name="doctor_info_detail">医生简介</string>
+	<string name="guanzhu_doctor">关注的医生</string>
+	<string name="guanzhu_hospital">关注的医院</string>
 	<string name="doctor_info_yuyue">预约挂号</string>
 	<string name="hospital_desc">简介</string>
 	<string name="rule">预约规则:班次每天八点更新</string>
@@ -106,4 +109,11 @@
     <string name="verifyFailed">验证2失败</string>
     <string name="verifySucceed">验证1成功</string>
     <string name="sendFailed">发送失败</string>
+    <string name="no_order">您还没有预约过任何医生</string>
+    <string name="how_to_guahao">如何快速预约挂号</string>
+    <string name="order_step_one">选择医院科室医生</string>
+    <string name="order_step_two">填写预约信息</string>
+    <string name="order_step_three">然后就可以凭身份证和短信去医院就诊</string>
+    
+    <string name="select_doctor">选择医生</string>
 </resources>

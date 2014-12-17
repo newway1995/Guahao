@@ -11,7 +11,6 @@
         <ListView
             android:id="@+id/mingyi_listview"
             style="@style/width_fill_parent"
-            android:divider="@null"
             android:background="@android:color/transparent" >            
         </ListView>
     </module.view.RefreshLayout>

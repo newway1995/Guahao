@@ -120,7 +120,7 @@ public class ChangePwdActivity extends Activity implements OnClickListener{
 					params.add(new BasicNameValuePair("user_id",CacheHandler.
 							readCache(ChangePwdActivity.this, Constant.USER_INFO, Constant.USER_ID)));//用户的id
 					params.add(new BasicNameValuePair("action", AppCode.ACTION_CHANGE_PWD));
-					result = AppCode.getData(ChangePwdActivity.this, AppCode.CHANGE_PWD, params, AppNet.Access.GET);
+					result = AppCode.getData(ChangePwdActivity.this, params, AppNet.Access.GET);
 				}
 			};
 			new MyAsyncTask(inter, true, ChangePwdActivity.this).execute();

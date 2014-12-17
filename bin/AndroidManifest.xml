@@ -176,6 +176,12 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/solution">
         </activity>
+        <!-- 分诊详细信息 -->
+        <activity
+            android:name="module.activity.guahao.SelectDoctorActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/select_doctor">
+        </activity>
         
         <receiver
             android:name="common.receiver.NetWorkReceiver">

@@ -4,5 +4,60 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-
+	<TextView 
+	    android:id="@+id/order_no_order"
+	    style="@style/none_fill_parent"
+	    android:text="@string/no_order"
+	    android:textAppearance="@style/gray_18"
+	    android:layout_gravity="center"
+	    android:layout_margin="40dp"
+	    />
+	<LinearLayout 
+	    android:id="@+id/order_hint"
+	    style="@style/width_fill_parent"
+	    android:orientation="vertical"
+	    android:paddingLeft="30dp" >
+	    <TextView 
+		    style="@style/none_fill_parent"
+		    android:text="@string/how_to_guahao"
+		    android:textAppearance="@style/gray_18"
+		    android:layout_marginBottom="10dp"
+		    />
+	    <TextView 
+		    style="@style/none_fill_parent"
+		    android:text="@string/order_step_one"
+		    android:textAppearance="@style/gray_18"
+		    android:drawableLeft="@drawable/one_step_green"
+		    android:drawablePadding="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:gravity="center"
+		    />
+	    <TextView 
+		    style="@style/none_fill_parent"
+		    android:text="@string/order_step_two"
+		    android:textAppearance="@style/gray_18"
+		    android:gravity="center"
+		    android:drawableLeft="@drawable/two_step_green"
+		    android:drawablePadding="10dp"
+		    android:layout_marginBottom="10dp"
+		    />
+	    <TextView 
+		    style="@style/none_fill_parent"
+		    android:text="@string/order_step_three"
+		    android:textAppearance="@style/gray_18"
+		    android:layout_marginBottom="10dp"
+		    />
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/order_guahao"
+	    style="@style/width_fill_parent"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:background="@drawable/corners_blue"
+	    android:text="@string/guahao"
+	    android:gravity="center"
+	    android:textColor="@color/black_light"
+	    />
 </LinearLayout>
