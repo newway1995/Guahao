@@ -34,13 +34,7 @@
 	        style="@style/none_fill_parent"
 	        android:textAppearance="@style/gray_dark_12"
 	        android:text="@string/app_name"
-	        />
-         <View 
-		     android:layout_width="fill_parent"
-		     android:layout_height="1dp"
-		     android:background="@drawable/doct_list_item_divider"
-		     android:layout_marginTop="10dp"
-		    />
+	        />         
      </LinearLayout>
 
 </LinearLayout>

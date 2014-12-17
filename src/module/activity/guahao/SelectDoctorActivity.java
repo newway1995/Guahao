@@ -8,12 +8,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import common.receiver.NetResultInterface;
+import common.util.CacheHandler;
+import constant.Constant;
 
 import module.activity.R;
-import module.adapter.HospitalAdapter;
+import module.adapter.DoctorAdapter;
 import module.entity.Department;
 import module.model.HospitalModel;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -33,10 +36,11 @@ import android.widget.ListView;
 public class SelectDoctorActivity extends Activity{
 
 	private final String TAG = "SelectDoctorActivity"; 
+	@SuppressWarnings("unused")
 	private Department clickDepartment;
 	private ArrayList<HashMap<String, String >> list;
 	private ListView mListView;
-	private HospitalAdapter hospitalAdapter;
+	private DoctorAdapter hospitalAdapter;
 	
 
 	@Override
@@ -45,7 +49,8 @@ public class SelectDoctorActivity extends Activity{
 		setContentView(R.layout.activity_mingyi);
 		initView();
 		initData();
-		asyncGet("2",clickDepartment.getId() + "");
+		asyncGet(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_HOSPITAL_ID),
+				CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_SECTION_ID));
 	}
 	
 	//初始化视图
@@ -62,7 +67,9 @@ public class SelectDoctorActivity extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 					long arg3) {
-				
+				Constant.saveDoctor(SelectDoctorActivity.this, list.get(position));
+				startActivity(new Intent(SelectDoctorActivity.this,DoctorInfoActivity.class));
+				Log.d(TAG, "Click Doctor = " + list.get(position).toString());
 			}
 		});
 	}
@@ -91,7 +98,7 @@ public class SelectDoctorActivity extends Activity{
 						list.add(map);
 					}		
 					Log.d(TAG, "List = " + list);
-					hospitalAdapter = new HospitalAdapter(SelectDoctorActivity.this, list);		
+					hospitalAdapter = new DoctorAdapter(SelectDoctorActivity.this, list);		
 					mListView.setAdapter(hospitalAdapter);
 				} catch (JSONException e) {					
 					e.printStackTrace();

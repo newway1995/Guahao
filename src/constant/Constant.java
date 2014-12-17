@@ -1,11 +1,23 @@
 package constant;
 
+import java.util.HashMap;
+
 import common.util.CacheHandler;
 
 import module.activity.R;
+import module.entity.Doctor;
 import android.content.Context;
 import android.content.res.Resources;
+import android.util.Log;
 
+/**
+ * @author niuwei
+ * @email nniuwei@163.com
+ * @ClassName:Constant.java
+ * @Package:constant
+ * @time:上午12:29:12 2014-12-18
+ * @useage:TODO
+ */
 public class Constant {
 	public static final String APP_NAME = "Guahao";
 	
@@ -25,12 +37,19 @@ public class Constant {
 	public static final String UNLOGGED = "no";//没有登录
 	public static final String USERNAME = "username";//当前用户名
 	public static final String PASSWORD = "password";//当前用户的密码
+	
 	public static final String USER_ID = "user_id";//当前用户的ID
 	public static final String USER_INFO = "user_info";//当前用户的其他信息	
 	public static final String USER_HOSPITAL_ID = "hid";//当前用户选择的医院id
 	public static final String USER_HOSPITAL_NAME = "hname";//当前用户选择的医院name
 	public static final String USER_SECTION_ID = "sid";//当前用户选择的科室id
 	public static final String USER_SECTION_NAME = "sname";//当前用户选择的科室name
+	public static final String USER_DOCTOR_ID = "did";//当前用户选择的医生id
+	public static final String USER_DOCTOR_NAME = "dname";//当前用户选择的医生name	
+	public static final String USER_DOCTOR_IMG = "dimg";//当前用户选择的医生img
+	public static final String USER_DOCTOR_LEVEL = "dlevel";//当前用户选择的医生level
+	public static final String USER_DOCTOR_FAVORITE = "dfavorite";//当前用户选择的医生擅长
+	
 	
 	//net参数常量
 	public static final String PAGE_COUNT = "pageCount";//从服务器获取多少页面
@@ -202,5 +221,35 @@ public class Constant {
 	 * */
 	public static void setLogin(Context context,String isLogin){
 		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.IS_LOGIN, isLogin);
-	}		
+	}	
+	
+	/**
+	 * @param doctor
+	 * 保存doctor的信息
+	 */
+	public static void saveDoctor(Context context,HashMap<String, String>map){
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_ID, map.get("id"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_IMG, map.get("img"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_NAME, map.get("name"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_FAVORITE, map.get("favorite"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_LEVEL, map.get("level"));
+	}
+	
+	
+	/**
+	 * @param context
+	 * @return 读取用户选择的医生信息
+	 */
+	public static Doctor getDoctor(Context context){
+		int id = Integer.parseInt(CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_ID));
+		String name = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_NAME);
+		String img = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_IMG);
+		String favorite = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_FAVORITE);
+		String level = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_LEVEL);
+		String hname = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_HOSPITAL_NAME);
+		String sname = CacheHandler.readCache(context, Constant.USER_INFO, Constant.USER_SECTION_NAME);
+		Doctor doctor = new Doctor(id, name, sname, level, hname, favorite, img);
+		Log.d("NIUWEI", doctor.toString());
+		return doctor;
+	}
 }

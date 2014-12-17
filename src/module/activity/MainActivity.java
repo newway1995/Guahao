@@ -25,7 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
-
+	
 	private final static String TAG = "MainActivity";
 	private GuahaoFragment guahaoFragment;
 	private ZixunFragment zixunFragment;
@@ -54,7 +54,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         initView();
         initData();
     }
-
+    
+    
     private void initView(){
     	guahaoText = (TextView)findViewById(R.id.main_guahao);
     	zixunText = (TextView)findViewById(R.id.main_zixun);

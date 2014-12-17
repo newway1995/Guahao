@@ -1,14 +1,20 @@
 package module.activity.guahao;
 
+import java.util.Random;
+
 import common.core.BaseLoginActivity;
+import constant.Constant;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import module.activity.LoginActivity;
 import module.activity.R;
+import module.entity.Doctor;
 import module.view.SegmentedGroup;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 /**
  * @author niuwei
@@ -20,10 +26,16 @@ import android.widget.RadioGroup;
  */
 public class DoctorInfoActivity extends BaseLoginActivity implements RadioGroup.OnCheckedChangeListener{
 	
+	private final String TAG = "DoctorInfoActivity";
+	
 	private SegmentedGroup segmentedGroup;//控件
 	private FragmentManager fragmentManager;//管理Fragment
 	private DoctorInfoDetailFragment detailFragment;//显示医生的详细信息
 	private DoctorInfoRemainFragment remainFragment;//显示剩余票数
+	private Doctor doctor; 
+	private TextView concernText;//关注
+	private TextView jiuzhenText;//就诊
+	private Random random;
 	
 	@Override
 	protected void setRootView() {
@@ -33,16 +45,23 @@ public class DoctorInfoActivity extends BaseLoginActivity implements RadioGroup.
 
 	@Override
 	protected void initData() {//初始化数据
-		super.initData();		
+		super.initData();
+		doctor = Constant.getDoctor(this);
+		Log.d(TAG, doctor.toString());
 		fragmentManager = getFragmentManager();			
 		segmentedGroup.check(R.id.doctor_info_doctor_detail);//初始化选中事件
+		concernText.setText("关注:" + random.nextInt(200) + "人");
+		jiuzhenText.setText("就诊:" + random.nextInt(100) + "人");
 	}
 	
 	@Override
 	protected void initView() {//初始化视图
 		super.initView();
 		segmentedGroup = (SegmentedGroup)findViewById(R.id.doctor_info_segment);
-		segmentedGroup.setOnCheckedChangeListener(this);		
+		segmentedGroup.setOnCheckedChangeListener(this);	
+		concernText = (TextView)findViewById(R.id.doctor_info_concern);
+		jiuzhenText = (TextView)findViewById(R.id.doctor_info_jiuzhen);
+		random = new Random();
 	}
 	
 	@Override

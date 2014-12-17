@@ -18,18 +18,28 @@ import android.widget.RelativeLayout;
  */
 public class FaxianFragment extends Fragment implements OnClickListener{
 
+	@Override
+	public void onResume() {
+		initView(parentView);
+		initData();
+		super.onResume();
+	}
+
 	private RelativeLayout mingyizaixian;
 	private RelativeLayout yishengdongtai;
 	private RelativeLayout jibing;
+	private View parentView;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View parentView = inflater.inflate(R.layout.fragment_faxian, null);
+		parentView = inflater.inflate(R.layout.fragment_faxian, null);
 		initView(parentView);
 		initData();
 		return parentView;
 	}
+	
+	
 	
 	private void initView(View parentView){
 		mingyizaixian = (RelativeLayout)parentView.findViewById(R.id.faxian_mingyizaixian);

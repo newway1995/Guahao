@@ -12,6 +12,7 @@
         android:background="@color/white"
         android:textAppearance="@style/black_light_18"
         android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
         />
     <TextView 
         android:id="@+id/doctorinfo_detail_desc"
@@ -22,6 +23,7 @@
         android:background="@color/white"
         android:textAppearance="@style/black_light_18"
         android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
         />
 
 </LinearLayout>

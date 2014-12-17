@@ -1,6 +1,8 @@
 package module.activity.guahao;
 
+import constant.Constant;
 import module.activity.R;
+import module.entity.Doctor;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,13 +24,14 @@ public class DoctorInfoDetailFragment extends Fragment implements OnClickListene
 	private TextView descText;//医院简介 
 	private TextView jobText;//医生描述
 	private boolean isJobShowing = false;
-	
+	private Doctor doctor;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View parentView = inflater.inflate(R.layout.fragment_doctorinfo_detail, null);
 		initView(parentView);
+		initData();
 		return parentView;
 	}
 	
@@ -39,6 +42,14 @@ public class DoctorInfoDetailFragment extends Fragment implements OnClickListene
 		descText = (TextView)parentView.findViewById(R.id.doctorinfo_detail_desc);
 		jobText = (TextView)parentView.findViewById(R.id.doctorinfo_detail_job);
 		descText.setOnClickListener(this);
+	}
+	/**
+	 * 初始化数据
+	 * */
+	private void initData(){
+		doctor = Constant.getDoctor(getActivity());
+		jobText.setText(doctor.getLevel().equals("0") ? "主治医师" : "专家");
+		descText.setText(doctor.getAdept());
 	}
 
 	@Override

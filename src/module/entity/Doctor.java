@@ -21,6 +21,8 @@ public class Doctor {
 	private String level;//医生职务
 	private String hospital_name;
 	private String adept;//擅长
+	private String img;//img
+	
 	
 	/**
 	 * @param id
@@ -30,13 +32,14 @@ public class Doctor {
 	 * @param hospital_name
 	 * @param adept
 	 * */
-	public Doctor(int id,String name,String section_name,String level,String hospital_name,String adept){
+	public Doctor(int id,String name,String section_name,String level,String hospital_name,String adept,String img){
 		this.id = id;
 		this.name = name;
 		this.section_name = section_name;
 		this.level = level;
 		this.hospital_name = hospital_name;
 		this.adept = adept;
+		this.setImg(img);
 	}
 	
 	public int getId() {
@@ -74,5 +77,13 @@ public class Doctor {
 	}
 	public void setAdept(String adept) {
 		this.adept = adept;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 }

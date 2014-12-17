@@ -131,7 +131,12 @@ public class GuahaoFragment extends Fragment implements View.OnClickListener{
 			}
 			break;
 		case R.id.guahao_go_guahao:
-			startActivity(new Intent(getActivity(),DoctorInfoActivity.class));
+			if (!CacheHandler.readCache(getActivity(), Constant.USER_INFO, Constant.USER_HOSPITAL_NAME).equals("") && 
+					!CacheHandler.readCache(getActivity(), Constant.USER_INFO, Constant.USER_SECTION_NAME).equals("")) {
+				startActivity(new Intent(getActivity(),SelectSectionActivity.class));
+			}else {
+				Toast.makeText(getActivity(), "请先选择医院和科室", Toast.LENGTH_SHORT).show();
+			}			
 			break;
 		case R.id.guahao_search:
 			startActivity(new Intent(getActivity(),SelectLocationActivity.class));
