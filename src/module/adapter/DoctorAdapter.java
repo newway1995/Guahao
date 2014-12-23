@@ -7,6 +7,8 @@ import module.activity.R;
 
 import org.kymjs.aframe.bitmap.KJBitmap;
 
+import constant.Constant;
+
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,7 +27,7 @@ import android.widget.TextView;
  * @useage:医生list适配器
  */
 public class DoctorAdapter extends BaseAdapter{
-	private final static String TAG = "DoctorHospital";
+	private final static String TAG = "DoctorAdapter";
 	ArrayList<HashMap<String, String >> list;	
 	private LayoutInflater inflater;
 	
@@ -63,7 +65,11 @@ public class DoctorAdapter extends BaseAdapter{
 		TextView dscptText = (TextView)convertView.findViewById(R.id.select_hospital_level);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("img"));
+		//需要显示的图片的地址
+		String imgPath = Constant.IMAGE_DOCTOR_PATH_SUFFIX + list.get(position).get("img").substring(4);
+		Log.d(TAG, "ImagePath" + imgPath);
+		//图片大小 96 * 96
+		kjBitmap.display(imageView, imgPath,96,96);
 		titleText.setText(list.get(position).get("name"));
 		if (list.get(position).get("level").equals("0")) {
 			dscptText.setText("职务 : 主治医师");

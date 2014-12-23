@@ -60,6 +60,9 @@ public class Constant {
 	public static final String HID = "hid";
 	public static final String SID = "sid";
 	
+	//ImagePath
+	public static final String IMAGE_DOCTOR_PATH_SUFFIX = "http://1.sysicode.sinaapp.com/doctor/";
+	
 	/**
 	 * 返回所有的疾病列表
 	 * @param Resources resources

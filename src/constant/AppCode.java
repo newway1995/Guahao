@@ -33,6 +33,8 @@ public class AppCode {
 	public static final String ACTION_GET_SECTION = "API_GH_GET_SECTION_BY_HID";
 	public static final String ACTION_GET_DOCTOR = "API_GH_GET_DOCTOR_BY_ID";
 	
+	public static final String ACTION_GET_CONSULT_DOCTOR = "API_GH_GET_CONSULT_DOCTOR";
+	
 	public static final int LOGIN = 1;
 	public static final int CHANGE_PWD = 2;
 	public static final int DOCTOR_ONLINE = 3;

@@ -57,8 +57,35 @@
         android:layout_gravity="center_vertical"
         android:background="@drawable/corners_white"
         android:padding="15dp"
+        android:layout_marginTop="5dp"
         android:inputType="text"
         android:hint="@string/zixun_dept"
+        />
+    
+    <EditText
+        android:id="@+id/zixun_hospital"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/corners_white"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="@string/zixun_hospital"
+        android:visibility="gone"
+        />
+    
+    <EditText
+        android:id="@+id/zixun_doctor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/corners_white"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="@string/consult_doctor"
+        android:visibility="gone"
         />
     
     <!-- 分割线 -->
@@ -66,6 +93,7 @@
         android:layout_width="fill_parent"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
         android:layout_height="1dp"
         android:background="@drawable/doct_list_item_divider"
         />

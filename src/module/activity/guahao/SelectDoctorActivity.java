@@ -35,6 +35,12 @@ import android.widget.ListView;
  */
 public class SelectDoctorActivity extends Activity{
 
+	@Override
+	protected void onStop() {
+		super.onStop();
+		finish();
+	}
+
 	private final String TAG = "SelectDoctorActivity"; 
 	@SuppressWarnings("unused")
 	private Department clickDepartment;
@@ -46,7 +52,7 @@ public class SelectDoctorActivity extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_mingyi);
+		setContentView(R.layout.activity_listview_norefresh);
 		initView();
 		initData();
 		asyncGet(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_HOSPITAL_ID),
@@ -56,7 +62,7 @@ public class SelectDoctorActivity extends Activity{
 	//初始化视图
 	private void initView(){
 		getActionBar().setDisplayHomeAsUpEnabled(true);		
-		mListView = (ListView)findViewById(R.id.mingyi_listview);
+		mListView = (ListView)findViewById(R.id.listview_no_refresh);
 		list = new ArrayList<HashMap<String,String>>();
 		clickDepartment = (Department)getIntent().getSerializableExtra("click_department");
 	}
@@ -119,5 +125,6 @@ public class SelectDoctorActivity extends Activity{
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
 	
 }

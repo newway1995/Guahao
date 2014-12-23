@@ -6,6 +6,7 @@ import java.util.HashMap;
 import module.activity.R;
 import module.view.RefreshLayout;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -18,7 +19,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -61,7 +61,7 @@ public class DoctorInfoRemainFragment extends Fragment implements OnClickListene
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Toast.makeText(getActivity(), "第" + (position + 1) + "被点击", Toast.LENGTH_SHORT).show();
+				startActivity(new Intent(getActivity(),GuahaoActivity.class));
 			}
 		});
 		mListView.setAdapter(adapter);

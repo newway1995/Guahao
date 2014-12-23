@@ -52,6 +52,12 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/select_hospital"> 
         </activity>
+        <!-- 咨询更多医生 -->
+        <activity
+            android:name="module.activity.zixun.MoreDoctor"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/back"> 
+        </activity>
         <!-- 选择科室 -->
         <activity
             android:name="module.activity.guahao.SelectSectionActivity"
@@ -181,6 +187,12 @@
             android:name="module.activity.guahao.SelectDoctorActivity"
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/select_doctor">
+        </activity>
+        <!-- 挂号界面 -->
+        <activity
+            android:name="module.activity.guahao.GuahaoActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/guahao_info">
         </activity>
         
         <receiver

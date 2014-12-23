@@ -1,5 +1,7 @@
 package common.core;
 
+import org.kymjs.aframe.ui.AnnotateUtil;
+
 import constant.Constant;
 
 import android.app.Activity;
@@ -20,6 +22,8 @@ import android.view.View.OnClickListener;
  */
 public abstract class BaseLoginActivity extends Activity implements OnClickListener{
 
+	public final String TAG = this.getClass().getSimpleName();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
@@ -41,6 +45,7 @@ public abstract class BaseLoginActivity extends Activity implements OnClickListe
 		if (Constant.isLogin(this)) {//如果是已经登录,则不处理
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 			setRootView();
+			AnnotateUtil.initBindView(this);
 			initView();
 			initData();	
 		}else {

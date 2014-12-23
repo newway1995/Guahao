@@ -1,5 +1,7 @@
 package module.entity;
 
+import java.io.Serializable;
+
 import org.kymjs.aframe.database.annotate.Id;
 
 /**
@@ -10,7 +12,12 @@ import org.kymjs.aframe.database.annotate.Id;
  * @time:下午2:04:57 2014-12-1
  * @useage:医生实体
  */
-public class Doctor {
+public class Doctor implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3776879019214071711L;
+	
 	// 将id属性设置为主键，必须有一个主键，
     // 其实如果变量名为：'id'或'_id'默认就是主键
     // 也就是在一个JavaBean里面必须有'id'或'_id'或'@Id()'注解，否则会报错

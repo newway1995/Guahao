@@ -323,5 +323,11 @@ public class SelectLocationActivity extends Activity implements OnScrollListener
             topIsShowing = false;
         }  
 	}
+	
+	@Override
+	protected void onStop() {
+		finish();
+		super.onStop();
+	}
 		
 }

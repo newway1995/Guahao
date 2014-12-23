@@ -7,6 +7,8 @@ import module.activity.R;
 
 import org.kymjs.aframe.bitmap.KJBitmap;
 
+import constant.Constant;
+
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -63,7 +65,8 @@ public class HospitalAdapter extends BaseAdapter{
 		TextView dscptText = (TextView)convertView.findViewById(R.id.select_hospital_level);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("img"));
+		String imgPath = Constant.IMAGE_DOCTOR_PATH_SUFFIX + list.get(position).get("img").substring(4);
+		kjBitmap.display(imageView, imgPath,96,96);
 		titleText.setText(list.get(position).get("name"));
 		dscptText.setText("等级 : " + list.get(position).get("level"));
 		return convertView;

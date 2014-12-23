@@ -2,6 +2,8 @@ package module.activity.guahao;
 
 import java.util.Random;
 
+import org.kymjs.aframe.bitmap.KJBitmap;
+
 import common.core.BaseLoginActivity;
 import constant.Constant;
 
@@ -13,6 +15,7 @@ import module.activity.LoginActivity;
 import module.activity.R;
 import module.entity.Doctor;
 import module.view.SegmentedGroup;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -35,6 +38,8 @@ public class DoctorInfoActivity extends BaseLoginActivity implements RadioGroup.
 	private Doctor doctor; 
 	private TextView concernText;//关注
 	private TextView jiuzhenText;//就诊
+	private ImageView doctorImage;//医生图像
+	private KJBitmap kjBitmap;//显示图片
 	private Random random;
 	
 	@Override
@@ -52,15 +57,18 @@ public class DoctorInfoActivity extends BaseLoginActivity implements RadioGroup.
 		segmentedGroup.check(R.id.doctor_info_doctor_detail);//初始化选中事件
 		concernText.setText("关注:" + random.nextInt(200) + "人");
 		jiuzhenText.setText("就诊:" + random.nextInt(100) + "人");
+		kjBitmap.display(doctorImage,Constant.IMAGE_DOCTOR_PATH_SUFFIX + doctor.getImg().substring(4),96,96);
 	}
 	
 	@Override
 	protected void initView() {//初始化视图
 		super.initView();
+		kjBitmap = KJBitmap.create();
 		segmentedGroup = (SegmentedGroup)findViewById(R.id.doctor_info_segment);
 		segmentedGroup.setOnCheckedChangeListener(this);	
 		concernText = (TextView)findViewById(R.id.doctor_info_concern);
 		jiuzhenText = (TextView)findViewById(R.id.doctor_info_jiuzhen);
+		doctorImage = (ImageView)findViewById(R.id.doctor_info_portrait);
 		random = new Random();
 	}
 	
