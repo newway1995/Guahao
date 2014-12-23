@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_02"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/takephoto" 
+        android:background="@drawable/choose_photo"/>
+
+    <Button
+        android:id="@+id/btn_01"
+        style="@style/width_fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_above="@+id/btn_02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/choose_photo"
+        android:text="@string/pickphoto" />
+
+</RelativeLayout>

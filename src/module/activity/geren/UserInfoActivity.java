@@ -1,9 +1,12 @@
 package module.activity.geren;
 
 import common.core.BaseLoginActivity;
+import common.util.CacheHandler;
+import constant.Constant;
 
 import module.activity.LoginActivity;
 import module.activity.R;
+import android.content.Intent;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,7 +40,7 @@ public class UserInfoActivity extends BaseLoginActivity implements OnClickListen
 	@Override
 	protected void initData() {
 		super.initData();
-		user_info_username.setText("登录名： 15652953455");
+		user_info_username.setText("用户名："+CacheHandler.readCache(this, Constant.USER_INFO,Constant.USER_ID));
 	}
 
 	@Override
@@ -65,6 +68,7 @@ public class UserInfoActivity extends BaseLoginActivity implements OnClickListen
 			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.user_info_portrait:
+			startActivity(new Intent(UserInfoActivity.this,PhotoActivity.class));
 			Toast.makeText(this, "名医吃饭去了,有事请拨110", Toast.LENGTH_SHORT).show();
 			break;
 		default:

@@ -28,6 +28,13 @@
 	        android:layout_below="@id/item_doctorinfo_remain_time"
 	        android:paddingTop="5dp"
 	        />
+	    <TextView
+	        android:id="@+id/item_doctorinfo_remain_rest_ticket"
+	        style="@style/none_fill_parent"
+	        android:textAppearance="@style/black_light_14"
+	        android:layout_below="@id/item_doctorinfo_remain_fee"
+	        android:paddingTop="5dp"
+	        />
 	    <Button
 	        android:id="@+id/item_doctorinfo_remain_submit"
 	        style="@style/none_fill_parent"

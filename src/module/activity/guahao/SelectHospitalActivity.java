@@ -144,6 +144,12 @@ public class SelectHospitalActivity extends Activity implements SwipeRefreshLayo
 	}
 
 	@Override
+	protected void onStop() {
+		finish();
+		super.onStop();
+	}
+	
+	@Override
 	public void onRefresh() {
 		asyncGet(pageCount, ++pageCount, true);
 	}

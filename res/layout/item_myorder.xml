@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+    
+	<ImageView
+	    android:id="@+id/item_history_doctor_portrait"
+	    style="@style/none_fill_parent"
+	    android:background="@drawable/doctor_empty_image_light"
+	    android:contentDescription="@string/app_name"/>
+	
+	<TextView
+	    style="@style/none_fill_parent"
+	    android:id="@+id/item_history_doctor_name"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/item_history_doctor_portrait"
+	    android:textAppearance="@style/black_18"
+	    android:layout_alignTop="@id/item_history_doctor_portrait"
+	    />
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_toRightOf="@id/item_history_doctor_portrait"
+	    android:layout_below="@id/item_history_doctor_name"
+	    android:layout_marginLeft="10dp"
+	    style="@style/none_fill_parent">
+	    <TextView
+		    style="@style/none_fill_parent"
+		    android:id="@+id/item_history_hospital"		    
+		    android:textAppearance="@style/gray_14"
+		    />
+	    
+		<View
+            android:layout_height="15dp"
+			android:layout_width="1dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/divider_blue_vertical"
+            />
+	    	    
+	    <TextView
+		    style="@style/none_fill_parent"
+		    android:id="@+id/item_history_section"
+		    android:layout_marginLeft="10dp"		    
+		    android:textAppearance="@style/gray_14"
+		    />
+	</LinearLayout>
+	<TextView
+	    style="@style/none_fill_parent"
+	    android:id="@+id/item_history_time"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/item_history_doctor_portrait"
+	    android:textAppearance="@style/gray_18"
+	    android:layout_alignBottom="@id/item_history_doctor_portrait"
+	    />
+	
+	<ImageView 
+        style="@style/none_fill_parent"        
+        android:background="@drawable/right_arrow"
+        android:layout_alignParentRight="true"	
+        android:layout_centerVertical="true"        
+        android:contentDescription="@string/app_name"/>
+</RelativeLayout>

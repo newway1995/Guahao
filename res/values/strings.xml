@@ -39,7 +39,8 @@
 	<string name="get_identify">获取验证码</string>
 	<string name="register_new">注册新账号</string>
 	<string name="forget_pwd">忘记密码</string>
-	
+	<string name="pickphoto">相册</string>
+   	<string name="takephoto">照相机</string>
 	
 	<string name="username">牛威</string>
 	<string name="zhuzhi">主治医师</string>
@@ -116,4 +117,14 @@
     <string name="order_step_three">然后就可以凭身份证和短信去医院就诊</string>
     
     <string name="select_doctor">选择医生</string>
+    <string name="guahao_info">预约信息</string>
+    <string name="jiuzhen_man">就诊人 : </string>
+    <string name="chufuzhen">初/复诊 : </string>
+    <string name="zhifufangshi">支付方式 : </string>
+    <string name="info_hospital_name">医院名称:</string>
+    <string name="section_name">挂号科室:</string>
+    <string name="doctor_name">医生姓名:</string>
+    <string name="menzhen_time">门诊时间:</string>
+    <string name="menzhen_class">门诊类型:</string>
+    <string name="guahao_fee">挂号费用:</string>
 </resources>

@@ -23,9 +23,15 @@
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
         <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
         <item name="android:windowAnimationStyle">@style/SwipeAnimationActivity</item>
     </style>
 
+    <style name="MenuTextStyle">
+    	<item name="android:textColor">@color/actionbar_text</item>
+    	<item name="android:textSize">18sp</item>
+	</style>
+    
     <!-- ActionBar styles -->
     <style name="MyActionBar"
            parent="@android:style/Widget.Holo.ActionBar">
@@ -186,6 +192,10 @@
 	    <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">14sp</item>
 	</style>
+	<style name="gray_13">
+	    <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">13sp</item>
+	</style>
 	<!-- 灰色 12sp -->
 	<style name="gray_12">
 	    <item name="android:textColor">@color/gray</item>
@@ -241,6 +251,10 @@
 	    <item name="android:textColor">@color/black_light</item>
         <item name="android:textSize">14sp</item>
 	</style>
+	<style name="black_light_13">
+	    <item name="android:textColor">@color/black_light</item>
+        <item name="android:textSize">13sp</item>
+	</style>
 	<!-- 蓝色18 -->
 	<style name="blue_18">
 	    <item name="android:textColor">@color/actionbar_background</item>
@@ -266,7 +280,12 @@
 	    <item name="android:textColor">@color/green</item>
         <item name="android:textSize">14sp</item>
 	</style>
-	
+	<style name="photo_choose">  
+    	<item name="android:windowBackground">@color/transparent</item>  
+    	<item name="android:windowNoTitle">true</item>  
+    	<item name="android:windowIsTranslucent">true</item>  
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>  
+	</style>  
 
 	
 </resources>

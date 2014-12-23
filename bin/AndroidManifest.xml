@@ -94,6 +94,12 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/my_order_list">
         </activity>
+        <!-- 我的预约单历史 -->
+        <activity
+            android:name="module.activity.geren.MyOrderActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/my_order_list">
+        </activity>
         <!-- 我的咨询 -->
         <activity
             android:name="module.activity.geren.ZixunActivity"
@@ -182,7 +188,19 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/select_doctor">
         </activity>
-        
+        <!-- 挂号界面 -->
+        <activity
+            android:name="module.activity.guahao.GuahaoActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/guahao_info">
+        </activity>
+        <!-- 用户头像上传 -->
+        <activity
+            android:name="module.activity.geren.PhotoActivity"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/doctor_info"
+            android:theme="@style/photo_choose">
+        </activity>
         <receiver
             android:name="common.receiver.NetWorkReceiver">
             <intent-filter>

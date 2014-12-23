@@ -148,4 +148,35 @@ public class HospitalModel {
 		};
 		new MyAsyncTask(inter, true, context).execute();
 	}
+	
+	public void getDoctorTicket(final Context context , final String did,final NetResultInterface resultInterface){
+		Log.d(TAG, "getDoctorTicket");
+		AsyncInter inter = new AsyncInter() {
+			String result = "";
+			@Override
+			public void onPreExecute() {
+			}
+			
+			@Override
+			public void onPostExecute() {
+				Log.d(TAG, "getDoctorTicket" + result);
+				resultInterface.parseResult(result);
+			}
+			
+			@Override
+			public void interruptTask() {
+
+			}
+			
+			@Override
+			public void doInBackground() {
+				ArrayList<NameValuePair> params = new ArrayList<NameValuePair>();
+				params.add(new BasicNameValuePair("action",AppCode.ACTION_GET_TICKET));
+				params.add(new BasicNameValuePair(Constant.USER_DOCTOR_ID, did));
+				
+				result = AppCode.getData(context, params, AppNet.Access.GET);
+			}
+		};
+		new MyAsyncTask(inter, true, context).execute();
+	}
 }

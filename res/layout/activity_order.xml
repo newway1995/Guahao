@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <module.view.RefreshLayout
+        android:id="@+id/order_list"
+        style="@style/width_fill_parent"  >
+		
+        <ListView
+            android:id="@+id/order_listview"
+            style="@style/width_fill_parent"
+            android:background="@android:color/transparent" >            
+        </ListView>
+    </module.view.RefreshLayout>
+    
+
+</LinearLayout>

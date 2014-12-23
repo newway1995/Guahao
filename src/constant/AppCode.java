@@ -32,7 +32,9 @@ public class AppCode {
 	public static final String ACTION_GET_HOSPITAL = "API_GH_GET_HOSPITAL_BY_CITY_ID";
 	public static final String ACTION_GET_SECTION = "API_GH_GET_SECTION_BY_HID";
 	public static final String ACTION_GET_DOCTOR = "API_GH_GET_DOCTOR_BY_ID";
-	
+	public static final String ACTION_GET_TICKET ="API_GH_GET_TICKET_BY_DID";
+	public static final String ACTION_GUAHAO ="API_GH_GUAHAO";
+	public static final String ACTION_GET_ORDER = "API_GH_GET_ORDER_BY_USER_ID";
 	public static final int LOGIN = 1;
 	public static final int CHANGE_PWD = 2;
 	public static final int DOCTOR_ONLINE = 3;

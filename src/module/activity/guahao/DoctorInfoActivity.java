@@ -49,7 +49,7 @@ public class DoctorInfoActivity extends BaseLoginActivity implements RadioGroup.
 		doctor = Constant.getDoctor(this);
 		Log.d(TAG, doctor.toString());
 		fragmentManager = getFragmentManager();			
-		segmentedGroup.check(R.id.doctor_info_doctor_detail);//初始化选中事件
+		segmentedGroup.check(R.id.doctor_info_doctor_remain);//初始化选中事件
 		concernText.setText("关注:" + random.nextInt(200) + "人");
 		jiuzhenText.setText("就诊:" + random.nextInt(100) + "人");
 	}

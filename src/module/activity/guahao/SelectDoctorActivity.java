@@ -67,7 +67,7 @@ public class SelectDoctorActivity extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 					long arg3) {
-				Constant.saveDoctor(SelectDoctorActivity.this, list.get(position));
+				Constant.saveDoctor(SelectDoctorActivity.this, list.get(position));//所选择的医生的信息已经保存到cache中
 				startActivity(new Intent(SelectDoctorActivity.this,DoctorInfoActivity.class));
 				Log.d(TAG, "Click Doctor = " + list.get(position).toString());
 			}

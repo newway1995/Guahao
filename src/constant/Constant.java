@@ -49,8 +49,15 @@ public class Constant {
 	public static final String USER_DOCTOR_IMG = "dimg";//当前用户选择的医生img
 	public static final String USER_DOCTOR_LEVEL = "dlevel";//当前用户选择的医生level
 	public static final String USER_DOCTOR_FAVORITE = "dfavorite";//当前用户选择的医生擅长
-	
-	
+	public static final String USER_DOCTOR_TICKET = "ticket_num";//当前用户选择的医生的剩余票数
+	public static final String USER_ORDER_TIME = "order_time" ;//当前用户预约的时间
+	public static final String USER_ORDER_KIND = "order_kind"; //当前用户预约的门诊种类
+	public static final String USER_ORDER_FEE = "order_fee"; //当前用户预约的门诊费用
+	public static final String USER_ORDER_HISTORY_HOSPITAL = "history_hospital_name";
+	public static final String USER_ORDER_HISTORY_SECTION = "history_section_name";
+	public static final String USER_ORDER_HISTORY_DOCTOR = "history_doctort_name";
+	public static final String USER_ORDER_HISTORY_TIME = "history_order_time";
+	public static final String USER_ORDER_HISTORY_KIND = "history_order_kind";
 	//net参数常量
 	public static final String PAGE_COUNT = "pageCount";//从服务器获取多少页面
 	public static final String PAGE_FROM = "pageFrom";	//从第几页开始获取
@@ -59,6 +66,10 @@ public class Constant {
 	public static final String CITY_ID = "city_id";
 	public static final String HID = "hid";
 	public static final String SID = "sid";
+	public static final String FRI = "周五上午";
+	public static final String MON = "周一上午";
+			
+	
 	
 	/**
 	 * 返回所有的疾病列表
@@ -233,6 +244,27 @@ public class Constant {
 		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_NAME, map.get("name"));
 		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_FAVORITE, map.get("favorite"));
 		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_DOCTOR_LEVEL, map.get("level"));
+		CacheHandler.writeCache(context,Constant.USER_INFO,Constant.USER_DOCTOR_TICKET,map.get("ticket_num"));
+		
+	}
+	public static void saveOrderHistory(Context context,HashMap<String, String>map){
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_HISTORY_HOSPITAL, map.get("hospital_name"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_HISTORY_SECTION, map.get("section_name"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_HISTORY_DOCTOR, map.get("doctor_name"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_HISTORY_KIND, map.get("order_info"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_HISTORY_TIME, map.get("order_time"));
+		CacheHandler.writeCache(context,Constant.USER_INFO,Constant.USER_DOCTOR_TICKET,map.get("ticket_num"));
+		
+	}
+	/**
+	 * @param doctor
+	 * 保存doctor的信息
+	 */
+	public static void saveOrder(Context context,HashMap<String ,String> map)
+	{
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_TIME, map.get("time_choice"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_KIND, map.get("kind"));
+		CacheHandler.writeCache(context, Constant.USER_INFO, Constant.USER_ORDER_FEE, map.get("fee"));
 	}
 	
 	
