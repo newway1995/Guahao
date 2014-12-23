@@ -1,4 +1,4 @@
-package module.activity.faxian;
+package module.activity.zixun;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,55 +10,56 @@ import org.json.JSONObject;
 import common.receiver.NetResultInterface;
 import common.receiver.RefreshLoadInterface;
 
-import constant.AppCode;
-
-
 import module.activity.R;
-import module.adapter.MingyiNewsAdapter;
-import module.model.FaxianModel;
+import module.adapter.DoctorAdapter;
+import module.entity.Doctor;
+import module.model.HospitalModel;
 import module.view.RefreshLayout;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 /**
  * @author niuwei
  * @email nniuwei@163.com
- * 上午8:48:24
- * 名医在线
+ * @ClassName:MoreDoctor.java
+ * @Package:module.activity.zixun
+ * @time:上午4:25:36 2014-12-23
+ * @useage:咨询更多专家
  */
-public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener{
-	private final static String TAG = "MingyiActivity";
-	
-	private RefreshLayout swipeRefreshLayout;
+public class MoreDoctor extends Activity implements SwipeRefreshLayout.OnRefreshListener{
+	public static final String TAG = "MoreDoctor";
+		 
 	private ListView mListView;
-	private MingyiNewsAdapter mingyiNewsAdapter;
-	private ArrayList<HashMap<String, String >> list;	
+	private RefreshLayout swipeRefreshLayout;
+	private DoctorAdapter adapter;
+	private ArrayList<HashMap<String, String>> list;
+	private Doctor doctor;
 	private int pageCount;
-	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		setContentView(R.layout.activity_mingyi);
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_mingyi);
 		initView();
 		initData();
 	}
-	
+
 	private void initView(){
-		getActionBar().setDisplayHomeAsUpEnabled(true);//设置ActionBar
-		getActionBar().setTitle(getResources().getString(R.string.mingyizaixian));
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 		swipeRefreshLayout = (RefreshLayout)findViewById(R.id.mingyi_list);
 		mListView = (ListView)findViewById(R.id.mingyi_listview);
 		list = new ArrayList<HashMap<String,String>>();
 	}
 	
-	private void initData(){
+	public void initData(){
 		pageCount = 0;
 		swipeRefreshLayout.setOnRefreshListener(this);
 		swipeRefreshLayout.setColorScheme(android.R.color.holo_green_dark, android.R.color.holo_green_light,
@@ -72,35 +73,55 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 				swipeRefreshLayout.setLoading(false);
 			}
 		});
+		
+		mListView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				HashMap<String, String> map = list.get(position);
+				doctor = new Doctor(Integer.parseInt(map.get("id")), map.get("name"), map.get("section_name"), map.get("level"), map.get("hospital_name"), map.get("favorite"), map.get("img"));
+				Intent intent = new Intent(MoreDoctor.this,ConsultActivity.class);
+				intent.putExtra("consultDoctor", doctor);
+				startActivity(intent);
+			}
+		});
+		
 		asyncGetData(pageCount,++pageCount,true);
 	}
 	
-	//异步获取数据
+	
 	private void asyncGetData(int pageFrom,int pageCount,final boolean isClear){
-		FaxianModel.getInstance().getNews(MingyiActivity.this, pageFrom, pageCount, AppCode.ACTION_DOCTOR_ONLINE, new NetResultInterface() {
+		HospitalModel.getInstance().getDoctor(this, true, pageCount, pageFrom, new NetResultInterface() {
 			
 			@Override
 			public void parseResult(String result) {
 				if (isClear) {
 					list.clear();//先清空
 				}
-				Log.d(TAG, "result = "+result);
+				Log.d(TAG, "Result = " + result);
 				JSONObject jObject;
 				try {
 					jObject = new JSONObject(result);
-					JSONArray jArray = jObject.getJSONArray("news");
+					JSONArray jArray = jObject.getJSONArray("doctor");
 					for (int i = 0; i < jArray.length(); i++) {//循环便利
 						JSONObject jsonObject = jArray.getJSONObject(i);
 						HashMap< String, String> map = new HashMap<String, String>();
-						map.put("id", jsonObject.getString("id"));
-						map.put("title", jsonObject.getString("title"));
-						map.put("content", jsonObject.getString("content"));
-						map.put("time", jsonObject.getString("time"));
+						map.put("id", jsonObject.getString("id"));//医生id
+						map.put("name", jsonObject.getString("name"));
+						map.put("hospital_id", jsonObject.getString("hospital_id"));
+						map.put("hospital_name", jsonObject.getString("hospital_name"));
+						map.put("section_id", jsonObject.getString("section_id"));
+						map.put("section_name", jsonObject.getString("section_name"));
 						map.put("img", jsonObject.getString("img"));
+						map.put("ticket_num", jsonObject.getString("ticket_num"));
+						map.put("level", jsonObject.getString("level"));
+						map.put("favorite", jsonObject.getString("favorite"));
 						list.add(map);
 					}		
-					mingyiNewsAdapter = new MingyiNewsAdapter(MingyiActivity.this,list);		
-					mListView.setAdapter(mingyiNewsAdapter);
+					Log.d(TAG, "List = " + list);
+					adapter = new DoctorAdapter(MoreDoctor.this, list);		
+					mListView.setAdapter(adapter);
 				} catch (JSONException e) {					
 					e.printStackTrace();
 				} finally{
@@ -108,45 +129,25 @@ public class MingyiActivity extends Activity implements SwipeRefreshLayout.OnRef
 				}
 			}
 		});
-		
-	}
+	}		
 	
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.share, menu);
-        return true;
-	}
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			this.finish();
-			break;
-		case R.id.actionbar_share:
-			//Toast.makeText(this, "分享还没做好,不要着急哦,亲", Toast.LENGTH_SHORT).show();
-			shareApp();
+			finish();
 			break;
 
 		default:
 			break;
 		}
-		return super.onOptionsItemSelected(item);
+		return super.onOptionsItemSelected(item);		
 	}
 
+	
 	@Override
 	public void onRefresh() {
 		asyncGetData(pageCount,++pageCount,false);
-	}	
-	
-	private void shareApp(){
-		Intent sendIntent = new Intent(); 
-		sendIntent.setAction(Intent.ACTION_SEND);  
-		sendIntent.putExtra(Intent.EXTRA_TEXT, "2014/2015年度大手笔制作,你还在因为担心挂号难而通宵排队吗?你还在由于挂号不上而被老婆责怪吗?你还在为了给朋友挂号而" +
-				"拿出自己的休息时间吗? !哈! 你还在由于什么,挂号网App,你一生的医生,你值得拥有.");  
-		sendIntent.setType("text/plain");  
-		startActivity(Intent.createChooser(sendIntent, "Share"));  
 	}
-		
+	
 }

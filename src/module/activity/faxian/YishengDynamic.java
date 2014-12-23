@@ -19,13 +19,13 @@ import module.view.RefreshLayout;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -127,12 +127,21 @@ public class YishengDynamic extends Activity implements SwipeRefreshLayout.OnRef
 			this.finish();
 			break;
 		case R.id.actionbar_share:
-			Toast.makeText(this, "分享还没做好,不要着急哦,亲", Toast.LENGTH_SHORT).show();
+			shareApp();
 			break;
 
 		default:
 			break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	private void shareApp(){
+		Intent sendIntent = new Intent(); 
+		sendIntent.setAction(Intent.ACTION_SEND);  
+		sendIntent.putExtra(Intent.EXTRA_TEXT, "2014/2015年度大手笔制作,你还在因为担心挂号难而通宵排队吗?你还在由于挂号不上而被老婆责怪吗?你还在为了给朋友挂号而" +
+				"拿出自己的休息时间吗? !哈! 你还在由于什么,挂号网App,你一生的医生,你值得拥有.");  
+		sendIntent.setType("text/plain");  
+		startActivity(Intent.createChooser(sendIntent, "Share"));  
 	}
 }

@@ -21,6 +21,7 @@
 	<string name="my_order">我的预约</string>
 	<string name="cancel">取消</string>
 	<string name="select_hospital">选择医院</string>
+	<string name="back">返回</string>
 	<string name="select_section">选择科室</string>
 	<string name="sure">确定</string>
 	<string name="sure_change">确定修改</string>
@@ -29,6 +30,8 @@
 	<string name="female">女</string>
 	<string name="age">年龄:</string>
 	<string name="zixun_dept">咨询科室:</string>
+	<string name="consult_doctor">咨询医生:</string>
+	<string name="zixun_hospital">咨询医院:</string>
 	<string name="login">登陆</string>	
 	<string name="login_hint">挂号网账户可直接登陆</string>
 	<string name="login_hint_username">登录名或手机号</string>
@@ -123,7 +126,11 @@
     <string name="zhifufangshi">支付方式 : </string>
     <string name="info_hospital_name">医院名称:</string>
     <string name="section_name">挂号科室:</string>
+<<<<<<< HEAD
     <string name="doctor_name">医生姓名:</string>
+=======
+    <string name="doctor_name">医院姓名:</string>
+>>>>>>> origin/master
     <string name="menzhen_time">门诊时间:</string>
     <string name="menzhen_class">门诊类型:</string>
     <string name="guahao_fee">挂号费用:</string>

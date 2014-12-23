@@ -52,6 +52,12 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/select_hospital"> 
         </activity>
+        <!-- 咨询更多医生 -->
+        <activity
+            android:name="module.activity.zixun.MoreDoctor"
+            android:logo="@drawable/abs__ic_ab_back_holo_light"
+            android:label="@string/back"> 
+        </activity>
         <!-- 选择科室 -->
         <activity
             android:name="module.activity.guahao.SelectSectionActivity"
@@ -194,6 +200,7 @@
             android:logo="@drawable/abs__ic_ab_back_holo_light"
             android:label="@string/guahao_info">
         </activity>
+<<<<<<< HEAD
         <!-- 用户头像上传 -->
         <activity
             android:name="module.activity.geren.PhotoActivity"
@@ -201,6 +208,9 @@
             android:label="@string/doctor_info"
             android:theme="@style/photo_choose">
         </activity>
+=======
+        
+>>>>>>> origin/master
         <receiver
             android:name="common.receiver.NetWorkReceiver">
             <intent-filter>

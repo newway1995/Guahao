@@ -48,7 +48,7 @@ public class SelectSectionActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Log.d(TAG, "onCreate");
-		setContentView(R.layout.activity_mingyi);
+		setContentView(R.layout.activity_listview_norefresh);
 		initView();
 		initData();		
 		//判断页面的来源--是直接从guahaoFragment跳转还是从医院列表当中点击进入的
@@ -63,7 +63,7 @@ public class SelectSectionActivity extends Activity{
 	
 	private void initView(){
 		getActionBar().setDisplayHomeAsUpEnabled(true);			
-		mListView = (ListView)findViewById(R.id.mingyi_listview);
+		mListView = (ListView)findViewById(R.id.listview_no_refresh);
 	}
 	
 	private void initData(){

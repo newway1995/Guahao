@@ -85,6 +85,25 @@
             style="@style/width_fill_parent">
             <TextView
 		        style="@style/none_fill_parent"
+<<<<<<< HEAD
+=======
+		        android:text="@string/menzhen_class"
+		        android:textAppearance="@style/gray_13"
+		        android:layout_marginRight="5dp"
+		        />
+            <TextView
+                android:id="@+id/order_info_menzhen_class"
+		        style="@style/none_fill_parent"
+		        android:text="@string/menzhen_class"
+		        android:textAppearance="@style/black_light_13"
+		        />
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="horizontal"
+            style="@style/width_fill_parent">
+            <TextView
+		        style="@style/none_fill_parent"
+>>>>>>> origin/master
 		        android:text="@string/guahao_fee"
 		        android:textAppearance="@style/gray_13"
 		        android:layout_marginRight="5dp"

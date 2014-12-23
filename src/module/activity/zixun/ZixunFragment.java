@@ -24,7 +24,6 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 /**
@@ -66,9 +65,9 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 	
 	private void initViewPager(){
 		mViews = new ArrayList<View>();			
-		ZixunDoctorLayout sView1 = new ZixunDoctorLayout(getActivity());
-		ZixunDoctorLayout sView2 = new ZixunDoctorLayout(getActivity());
-		ZixunDoctorLayout sView3= new ZixunDoctorLayout(getActivity());
+		ZixunDoctorLayout sView1 = new ZixunDoctorLayout(getActivity(),1);
+		ZixunDoctorLayout sView2 = new ZixunDoctorLayout(getActivity(),2);
+		ZixunDoctorLayout sView3= new ZixunDoctorLayout(getActivity(),3);
 		mViews.add(sView1.getView());
 		mViews.add(sView2.getView());
 		mViews.add(sView3.getView());
@@ -141,7 +140,7 @@ public class ZixunFragment extends Fragment implements OnClickListener{
 			startActivity(new Intent(getActivity(),ConsultActivity.class));
 			break;
 		case R.id.zixun_more_zhuanjia:
-			Toast.makeText(getActivity(), "咨询更多专家", Toast.LENGTH_SHORT).show();
+			startActivity(new Intent(getActivity(),MoreDoctor.class));
 			break;
 		default:
 			break;

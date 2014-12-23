@@ -23,7 +23,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * @author niuwei
@@ -66,6 +65,7 @@ public class DoctorInfoRemainFragment extends Fragment implements OnClickListene
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+<<<<<<< HEAD
 				if(Integer.parseInt(list.get(0).get("ticket_num"))!=0&&Integer.parseInt(list.get(0).get("ticket_num"))!=0)
 				{
 					Constant.saveOrder(getActivity(), list.get(position));
@@ -75,6 +75,9 @@ public class DoctorInfoRemainFragment extends Fragment implements OnClickListene
 					Toast.makeText(getActivity(), "票数不足，无法预约",Toast.LENGTH_SHORT).show() ;
 				}
 				
+=======
+				startActivity(new Intent(getActivity(),GuahaoActivity.class));
+>>>>>>> origin/master
 			}
 		});
 		mListView.setAdapter(adapter);

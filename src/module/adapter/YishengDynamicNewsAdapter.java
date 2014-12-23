@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 import org.kymjs.aframe.bitmap.KJBitmap;
 
+import constant.Constant;
+
 import module.activity.R;
 
 import android.content.Context;
@@ -57,7 +59,8 @@ public class YishengDynamicNewsAdapter extends BaseAdapter{
 		TextView contentText = (TextView)convertView.findViewById(R.id.item_yishengdynamic_content);
 		
 		KJBitmap kjBitmap = KJBitmap.create();
-		kjBitmap.display(imageView, list.get(position).get("img"));
+		String imgPath = Constant.IMAGE_DOCTOR_PATH_SUFFIX + list.get(position).get("img").substring(4);
+		kjBitmap.display(imageView, imgPath,96,96);
 		nameText.setText(list.get(position).get("doctor_name"));
 		timeText.setText(list.get(position).get("time"));
 		contentText.setText(list.get(position).get("content"));

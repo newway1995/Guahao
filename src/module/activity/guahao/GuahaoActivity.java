@@ -1,5 +1,6 @@
 package module.activity.guahao;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 
 import org.apache.http.NameValuePair;
@@ -11,10 +12,16 @@ import module.activity.R;
 import module.activity.geren.UserInfoActivity;
 import android.content.Intent;
 import android.util.Log;
+=======
+import org.kymjs.aframe.ui.BindView;
+
+import module.activity.R;
+>>>>>>> origin/master
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+<<<<<<< HEAD
 import android.widget.Toast;
 import common.core.BaseLoginActivity;
 import common.util.AsyncInter;
@@ -22,6 +29,10 @@ import common.util.CacheHandler;
 import common.util.MyAsyncTask;
 import constant.AppCode;
 import constant.AppNet;
+=======
+import common.core.BaseLoginActivity;
+import common.util.CacheHandler;
+>>>>>>> origin/master
 import constant.Constant;
 
 
@@ -43,6 +54,11 @@ public class GuahaoActivity extends BaseLoginActivity{
 	private TextView doctorlText;//医生姓名
 	@BindView(id = R.id.order_info_menzhen_time)
 	private TextView timeText;//门诊时间
+<<<<<<< HEAD
+=======
+	@BindView(id = R.id.order_info_menzhen_class)
+	private TextView typeText;//门诊类型
+>>>>>>> origin/master
 	@BindView(id = R.id.order_info_guahao_fee)
 	private TextView feeText;//挂号费用
 	@BindView(id = R.id.order_info_name)
@@ -59,8 +75,14 @@ public class GuahaoActivity extends BaseLoginActivity{
 		hospitalText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_HOSPITAL_NAME));
 		sectionText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_SECTION_NAME));
 		doctorlText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_DOCTOR_NAME));
+<<<<<<< HEAD
 		timeText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_ORDER_TIME));
 		feeText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_ORDER_FEE));
+=======
+		timeText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_DOCTOR_NAME));
+		typeText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_DOCTOR_NAME));
+		feeText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_DOCTOR_NAME));
+>>>>>>> origin/master
 		userText.setText(CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_ID));
 		zhifuText.setText("去医院支付");
 	}
@@ -101,13 +123,17 @@ public class GuahaoActivity extends BaseLoginActivity{
 			finish();
 			break;
 		case R.id.actionbar_order_info_submit:
+<<<<<<< HEAD
 			submitOrder();
+=======
+>>>>>>> origin/master
 			break;
 		default:
 			break;
 		}
 		return super.onMenuItemSelected(featureId, item);
 	}
+<<<<<<< HEAD
 	public void submitOrder()
 	{
 		String temp_ticket_num = CacheHandler.readCache(this, Constant.USER_INFO, Constant.USER_DOCTOR_TICKET);
@@ -177,4 +203,6 @@ public class GuahaoActivity extends BaseLoginActivity{
 		new MyAsyncTask(inter, true, GuahaoActivity.this).execute();
 	}
 	
+=======
+>>>>>>> origin/master
 }
